@@ -1,3 +1,12 @@
+<<<<<<< HEAD
+.obsidian/workspace
+.obsidian/workspace.json
+.obsidian/cache
+.obsidian/plugins/*/data.json
+.trash/
+.DS_Store
+=======
 .DS_Store
 .obsidian/
 .医学多模态论文/
+>>>>>>> 1f9f94b14509587ab5eeff4d78fa37a77ce8c20c
