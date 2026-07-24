@@ -686,3 +686,85 @@ Inter.speakEnglish();        // ✅
 
 避免出错的话，不要随意的重构、重写（abstract除外）
 
+
+### Object里面的toString、equals函数
+如果想要输出的不是地址值，那么重写这个函数就行了
+
+### 克隆：浅克隆和深克隆，oject的clone为浅克隆. 重点看一下代码怎么写的
+
+### 浅克隆
+![[Pasted image 20260724100347.png]]
+
+### 深克隆
+![[Pasted image 20260724100326.png]]
+![[Pasted image 20260724100258.png]]
+
+
+
+### BigInteger和BigDecimal的一些细节
+![[Pasted image 20260724110327.png]]
+
+```
+public static BigDecimal valueOf(double val) {
+    return new BigDecimal(Double.toString(val));
+}
+```
+
+`Double.toString(0.989)` 输出的是 `"0.989"` —— Java 的 `Double.toString` 有去舍逻辑：它只生成能唯一区分这个 double 值的最少小数位数，不会把二进制尾数里的微小误差暴露出来。
+
+
+### 正则表达式
+![[Pasted image 20260724143332.png]]
+
+
+### 爬虫配合正则表达式
+```
+package com.cqu.regex;  
+  
+import java.util.regex.Matcher;  
+import java.util.regex.Pattern;  
+  
+public class RegexDemo {  
+    public static void main(String[] args) {  
+        String str = "ithisjava1isa code\n" +  
+                "learningjavaforyears\n" +  
+                "thejavavmrunseverywhere\n" +  
+                "effectivejava12itemone";  
+        Pattern p = Pattern.compile("java\\d{0,2}");  // 先编译
+        Matcher m = p.matcher(str);  // 创建matcher对象
+  
+        while (m.find()) {  // 寻找
+            System.out.println(m.group()); // 找到并分组  
+        }  
+    }  
+}
+```
+
+### SimpleDateFormat
+你就学会两个就行了，解析和格式化这两个函数，字符串无法比较，你把转换为date类型，然后通过get函数得到毫秒值就行了
+![[Pasted image 20260724154438.png]]
+
+
+### Calendar
+你在外面写 `Calendar cal = Calendar.getInstance();`，**编译时类型**（左边）是抽象的 `Calendar`，但**运行时类型**（右边实际 new 出来的）是 `GregorianCalendar`。
+```
+public static Calendar getInstance() {
+    // 实际返回的是 GregorianCalendar，它是 Calendar 的子类
+    return new GregorianCalendar(TimeZone.getDefault(), Locale.getDefault());
+}
+```
+
+![[Pasted image 20260724160233.png]]
+
+![[Pasted image 20260724160955.png]]
+
+
+### 包装类
+![[Pasted image 20260724161553.png]]
+
+在Integer中 -128-127里面的数据，java都会实现的创建对应的对象，因此我们使用的时候就直接应用就行了
+
+![[Pasted image 20260724161843.png]]
+
+![[Pasted image 20260724161901.png]]
+
