@@ -989,3 +989,9 @@ public boolean removeIf(Predicate<? super E> filter) {
 | 批量条件删除（推荐）           | `list.removeIf(...)`      |
 | 传统 for + 索引遍历 + 条件删除 | `list.remove(i); i--;`    |
 |                      |                           |
+
+### 泛型，注意java是一个伪泛型
+![[Pasted image 20260727155545.png]]
+在编译的时候会检查当前的泛型是否符合要求，但是在真正的.class文件里面，其实存储的是object对象，在遍历的时候，会自动将其强转为对应的类型。
+
+这也解释了为什么不能基本数据类型创建对应的list对象，因为基本数据类型不能转换为oject对象。
