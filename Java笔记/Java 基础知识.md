@@ -772,6 +772,107 @@ public static Calendar getInstance() {
 ![[Pasted image 20260726104114.png]]
 
 
+### Array类的常用用法
+![[Pasted image 20260726152510.png]]
+
+```
+package com.cqu.arrayLearning;  
+  
+import java.lang.reflect.Array;  
+import java.util.Arrays;  
+import java.util.Comparator;  
+  
+public class ArrayLearning {  
+    public static void main(String[] args) {  
+        //第一个知识点：对于int 类型的数组来说，Arrays采用的双轴快排算法  
+        //第二个知识点，为什么java的Arrays.sort要区分Integer和int呢,主要原因就是出现在了comparator<>上面  
+        //需要使用泛型,但是int作为基本数据类型是不支持的,因此这样不可以的.  
+  
+        int[] arr = {1,65,54,2,6,8,0,4,23};  
+        Arrays.sort(arr);  
+        System.out.println(Arrays.toString(arr));  
+  
+  
+        //第三个知识点,comparator的排序采用的是插入算法加二分查找;  
+        /*        * o1代表的是无序序列,o2代表的是有序序列,  
+        * 算法的整个过程是,假设当前o1所指的元素为A,  
+        * 把A往有序序列 里面插入,在插入的时候利用二分查找确定A元素的插入点  
+        * 那么此时就会和O2的数据进行比较,比较的规则就是compare  
+        * 如果说返回值是负数,则拿着A继续和前面的数据比较.(插入的元素是小的,放在前面)  
+        * 如果是正数或者0,则继续和A后面的数据进行比较.(插入的元素是大的,或者是一样的,放在后面)  
+        * */        Integer[] arr1 = {1,65,54,2,6,8,0,4,23};  
+        Arrays.sort(arr1, new Comparator<Integer>() {  
+            @Override  
+            public int compare(Integer o1, Integer o2) {  
+                return o1 - o2;  
+            }  
+        });  
+  
+        System.out.println(Arrays.toString(arr1));  
+  
+  
+        Integer[] arr2 = {1,65,54,2,6,8,0,4,23};  
+        Arrays.sort(arr2, new Comparator<Integer>() {  
+            @Override  
+            public int compare(Integer o1, Integer o2) {  
+                return o2 - o1;  
+            }  
+        });  
+        System.out.println(Arrays.toString(arr2));  
+    }  
+}
+```
+
+
+### Lambda表达式
+![[Pasted image 20260726154951.png]]
+![[Pasted image 20260726154837.png]]
+
+### ArrayList的删除常见问题
+`ArrayList.remove(int index)` 底层是数组，删除不是简单的"挖空"，而是**后面的元素整体前移一位**。
+
+源码大致如下：
+
+```
+public E remove(int index) {
+    E oldValue = elementData[index];          // 1. 记住要删除的元素
+    
+    int numMoved = size - index - 1;          // 2. 需要前移的元素个数
+    if (numMoved > 0)
+        System.arraycopy(elementData, index+1, // 从 index+1 开始
+                         elementData, index,    // 往 index 处复制
+                         numMoved);            // 复制 numMoved 个
+    elementData[--size] = null;              // 3. 尾部置空，size-1
+    return oldValue;
+}
+```
+
+用你的兔子例子直观感受。假设 `rbsCannotProduce` 当前为 `[兔A, 兔B, 兔C]`，调用 `remove(0)` 删除兔A：
+
+```
+删除前: [兔A, 兔B, 兔C, null, null, ...]
+           ↑
+         index=0
+
+System.arraycopy 执行:
+  把 elementData[1]→复制到→elementData[0]
+  把 elementData[2]→复制到→elementData[1]
+  移动 2 个元素
+
+删除后: [兔B, 兔C, 兔C, null, null, ...]  
+                      ↑ 这个就是原来兔C的旧位置，被置 null
+         [兔B, 兔C, null, null, null, ...]
+          size=2
+```
+
+所以 `remove(0)` 之后：
+
+- 原来在索引 1 的兔B → 现在在索引 0
+- 原来在索引 2 的兔C → 现在在索引 1
+
+如果你的循环紧接着 `j++`（j 从 0 变 1），你处理的就是现在的索引 1（兔C），兔B 被完美跳过——它已经滑到了索引 0，而你再也回不去了。
+
+也就是说我们**要倒着删除。**
 
 ### 集合体系
 ![[Pasted image 20260727104338.png]]
@@ -888,106 +989,3 @@ public boolean removeIf(Predicate<? super E> filter) {
 | 批量条件删除（推荐）           | `list.removeIf(...)`      |
 | 传统 for + 索引遍历 + 条件删除 | `list.remove(i); i--;`    |
 |                      |                           |
-
-
-### Array类的常用用法
-![[Pasted image 20260726152510.png]]
-
-```
-package com.cqu.arrayLearning;  
-  
-import java.lang.reflect.Array;  
-import java.util.Arrays;  
-import java.util.Comparator;  
-  
-public class ArrayLearning {  
-    public static void main(String[] args) {  
-        //第一个知识点：对于int 类型的数组来说，Arrays采用的双轴快排算法  
-        //第二个知识点，为什么java的Arrays.sort要区分Integer和int呢,主要原因就是出现在了comparator<>上面  
-        //需要使用泛型,但是int作为基本数据类型是不支持的,因此这样不可以的.  
-  
-        int[] arr = {1,65,54,2,6,8,0,4,23};  
-        Arrays.sort(arr);  
-        System.out.println(Arrays.toString(arr));  
-  
-  
-        //第三个知识点,comparator的排序采用的是插入算法加二分查找;  
-        /*        * o1代表的是无序序列,o2代表的是有序序列,  
-        * 算法的整个过程是,假设当前o1所指的元素为A,  
-        * 把A往有序序列 里面插入,在插入的时候利用二分查找确定A元素的插入点  
-        * 那么此时就会和O2的数据进行比较,比较的规则就是compare  
-        * 如果说返回值是负数,则拿着A继续和前面的数据比较.(插入的元素是小的,放在前面)  
-        * 如果是正数或者0,则继续和A后面的数据进行比较.(插入的元素是大的,或者是一样的,放在后面)  
-        * */        Integer[] arr1 = {1,65,54,2,6,8,0,4,23};  
-        Arrays.sort(arr1, new Comparator<Integer>() {  
-            @Override  
-            public int compare(Integer o1, Integer o2) {  
-                return o1 - o2;  
-            }  
-        });  
-  
-        System.out.println(Arrays.toString(arr1));  
-  
-  
-        Integer[] arr2 = {1,65,54,2,6,8,0,4,23};  
-        Arrays.sort(arr2, new Comparator<Integer>() {  
-            @Override  
-            public int compare(Integer o1, Integer o2) {  
-                return o2 - o1;  
-            }  
-        });  
-        System.out.println(Arrays.toString(arr2));  
-    }  
-}
-```
-
-
-### Lambda表达式
-![[Pasted image 20260726154951.png]]
-![[Pasted image 20260726154837.png]]
-
-### ArrayList的删除常见问题
-`ArrayList.remove(int index)` 底层是数组，删除不是简单的"挖空"，而是**后面的元素整体前移一位**。
-
-源码大致如下：
-
-```
-public E remove(int index) {
-    E oldValue = elementData[index];          // 1. 记住要删除的元素
-    
-    int numMoved = size - index - 1;          // 2. 需要前移的元素个数
-    if (numMoved > 0)
-        System.arraycopy(elementData, index+1, // 从 index+1 开始
-                         elementData, index,    // 往 index 处复制
-                         numMoved);            // 复制 numMoved 个
-    elementData[--size] = null;              // 3. 尾部置空，size-1
-    return oldValue;
-}
-```
-
-用你的兔子例子直观感受。假设 `rbsCannotProduce` 当前为 `[兔A, 兔B, 兔C]`，调用 `remove(0)` 删除兔A：
-
-```
-删除前: [兔A, 兔B, 兔C, null, null, ...]
-           ↑
-         index=0
-
-System.arraycopy 执行:
-  把 elementData[1]→复制到→elementData[0]
-  把 elementData[2]→复制到→elementData[1]
-  移动 2 个元素
-
-删除后: [兔B, 兔C, 兔C, null, null, ...]  
-                      ↑ 这个就是原来兔C的旧位置，被置 null
-         [兔B, 兔C, null, null, null, ...]
-          size=2
-```
-
-所以 `remove(0)` 之后：
-
-- 原来在索引 1 的兔B → 现在在索引 0
-- 原来在索引 2 的兔C → 现在在索引 1
-
-如果你的循环紧接着 `j++`（j 从 0 变 1），你处理的就是现在的索引 1（兔C），兔B 被完美跳过——它已经滑到了索引 0，而你再也回不去了。
-
-也就是说我们**要倒着删除。**
