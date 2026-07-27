@@ -871,3 +871,22 @@ System.arraycopy 执行:
 如果你的循环紧接着 `j++`（j 从 0 变 1），你处理的就是现在的索引 1（兔C），兔B 被完美跳过——它已经滑到了索引 0，而你再也回不去了。
 
 也就是说我们**要倒着删除。**
+
+**正常来说对于删除的操作，我还是用迭代器进行删除**
+
+### ArrayList add方法的底层原理
+1. 首先创建一个空数组的时候，size=0；
+2. 当添加第一个元素的时候，此时数组扩容到size=10；
+3. 当超过10的时候，此时add又要扩1.5倍，也就是15；
+4. 如果要添加很多元素的时候，此此时需要扩容，那么我们就要更具需要的大小进行扩容
+
+![[Pasted image 20260727145223.png]]
+
+这里我想强调的是，利用list进行remove元素的时候，list的iteration有一个叫int expectedModCount = modCount; 使用remove或者add，会导致modCount+1，而由于expectedModeCount在创建时候就已经确定了，此时两者不相等
+final void checkForComodification() {  
+    if (modCount != expectedModCount)  
+        throw new ConcurrentModificationException();  
+}
+
+### LinkList的功能
+![[Pasted image 20260727143805.png]]
