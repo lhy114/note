@@ -997,8 +997,12 @@ public boolean removeIf(Predicate<? super E> filter) {
 这也解释了为什么不能基本数据类型创建对应的list对象，因为基本数据类型不能转换为oject对象。
 
 ![[Pasted image 20260727161004.png]]
+
+### 泛型的通配符
 ![[Pasted image 20260727161523.png]]
 
 泛型不具备继承性：如果说有三个类型的Ye、Fu、Zi他们以此继承，当使用泛型的时候，也就是说类似于ArrayLIst\<Ye>、ArrayLIst\<Fu>、ArrayLIst\<ZI>这三个类型的此时是不具有继承的类型的，也就是说他们三者不相关
 
 但是对于他们存储的数据类型Ye、Fu、Zi任然有对应的继承关系
+
+![[Pasted image 20260727162359.png]]
