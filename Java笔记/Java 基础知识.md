@@ -768,3 +768,124 @@ public static Calendar getInstance() {
 
 ![[Pasted image 20260724161901.png]]
 
+### 基本的查找方法
+![[Pasted image 20260726104114.png]]
+
+
+
+### 集合体系
+![[Pasted image 20260727104338.png]]
+
+注意：这里的有序和无序是指的，存和取是一样的顺序，而不是递增，递减的顺序
+
+![[Pasted image 20260727104442.png]]
+
+remove这里一定主要注意，如果要for循环删除判断每一个元素是否能够删除，一定要倒着删除。以及由于set集合没有索引，而collection是他们的父类，所以collection在设计的时候，remove不会针对索引进行删除
+
+**contains的一个小细节**，contains的原码是通过Object.equals进行比较的，因此如果我们自定义了一个类的时候，我们一定要重现这个类的equals方法来进行，否则就比较多是地址值
+
+在用迭代器进行遍历的时候是不能够用集合的方法进行删除的，只能用Iterator进行删除
+![[Pasted image 20260727120124.png]]
+![[Pasted image 20260727122206.png]]
+
+![[Pasted image 20260727122355.png]]
+这里使用增强for也是不行的，因为这里蕴含着用的也是迭代器
+![[Pasted image 20260727121834.png]]
+
+### 最主要的就是删除和添加元素，请你使用迭代器，注意普通的迭代器是没有对应的add的。
+
+
+## 什么时候用哪个
+
+### 用 `list.remove()` 的情况
+
+1. **不在迭代中用**——就是看一眼索引，直接删一次：
+    
+    ```
+    list.remove(2);
+    list.remove("aaa");
+    ```
+    
+2. **用传统 for 循环但是手动修正索引**——删完之后 `i--` 让指针退一步：
+    
+    ```
+    for (int i = 0; i < list.size(); i++) {
+        if (条件) {
+            list.remove(i);
+            i--;           // 退回去，因为下一个元素滑到当前位置了
+        }
+    }
+    ```
+    
+3. **倒着遍历**——从后往前删，后面的索引不会被前面的删除影响，也不用管 i--：
+    
+    ```
+    for (int i = list.size() - 1; i >= 0; i--) {
+        if (条件) list.remove(i);
+    }
+    ```
+    
+4. **批量操作**——不涉及遍历，语义清晰：
+    
+    ```
+    list.removeAll(某些集合);
+    list.retainAll(某些集合);
+    ```
+    
+
+### 用 `iterator.remove()` 的情况
+
+1. **用 Iterator 或 for-each 遍历时做条件删除**——这是 for-each 里唯一安全的写法：
+    
+    ```
+    Iterator<Student> it = stus.iterator();
+    while (it.hasNext()) {
+        if (条件) it.remove();
+    }
+    ```
+    
+2. **需要注意**：for-each 底下就是 Iterator，所以下面这种写法会抛异常：
+    
+    ```
+    for (Student s : stus) {
+        if (条件) stus.remove(s);   // ❌ ConcurrentModificationException
+    }
+    ```
+    
+
+### 但最推荐的现代写法是 `removeIf`
+
+Java 8 之后，99% 的遍历删除都可以被这一行替代：
+
+```
+stus.removeIf(stu -> stu.equals(stu2));
+```
+
+底层帮你封装好了 iterator 的 remove 逻辑，你不需要操心索引、指针、版本号这些事：
+
+```
+// ArrayList 的 removeIf 大致实现：
+public boolean removeIf(Predicate<? super E> filter) {
+    final ArrayList<E> list = this;
+    final int size = this.size;
+    BitSet removeSet = new BitSet(size);
+    // 先标记要删的、再批量删除——一次结构变更
+    ...
+}
+```
+
+它比循环里挨个 `remove()` 还更高效，因为只触发一次结构修正。
+
+---
+
+### 总结一表
+
+|场景|用什么|
+|---|---|
+|不遍历，删一个|`list.remove(index/obj)`|
+|倒着遍历删除|`list.remove(i)` + 倒序 for|
+|for-each 遍历中条件删除|`iterator.remove()`|
+|批量条件删除（推荐）|`list.removeIf(...)`|
+|传统 for + 索引遍历 + 条件删除|`list.remove(i); i--;`|
+
+你现在已经能预感那个 `for` 循环有坑了，说明对集合的机制理解已经挺深了。
