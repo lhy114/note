@@ -995,3 +995,5 @@ public boolean removeIf(Predicate<? super E> filter) {
 在编译的时候会检查当前的泛型是否符合要求，但是在真正的.class文件里面，其实存储的是object对象，在遍历的时候，会自动将其强转为对应的类型。
 
 这也解释了为什么不能基本数据类型创建对应的list对象，因为基本数据类型不能转换为oject对象。
+
+![[Pasted image 20260727161004.png]]
