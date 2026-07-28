@@ -1024,3 +1024,7 @@ public boolean removeIf(Predicate<? super E> filter) {
 但是对于他们存储的数据类型Ye、Fu、Zi任然有对应的继承关系
 
 ![[Pasted image 20260727162359.png]]
+
+### 平衡二叉树的旋转机制
+这里的二叉树其实指代的是二叉排序树，由于二叉排序树它只要求zuo
+![[Pasted image 20260728110257.png]]
