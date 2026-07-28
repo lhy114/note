@@ -1092,8 +1092,14 @@ A 的平衡因子为 2 ，若仍按照右旋调整，则变化后的图形为这
 ### LinkedHashSet底层原理：有序、不重复、无索引
 ![[Pasted image 20260728150253.png]]
 
-### TreeSet的特点
+### TreeSet的特点及其排序
 ![[Pasted image 20260728150749.png]]
+![[Pasted image 20260728153152.png]]
 由于TreeSet的底层是红黑树，因此，我们没有必要写hashCode和equal函数，但是我们主要实现的是：
 ![[Pasted image 20260728152621.png]]
-这个接口，其实跟之前的
+这个接口，其实跟之前的ArrayList.sort方法重写一样
+![[Pasted image 20260728152859.png]]
+
+对于TreeSet的添加规则，他是根据红黑树进行存储的，因此add也要遵守红黑规则
+![[Pasted image 20260728153015.png]]
+
