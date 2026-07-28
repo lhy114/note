@@ -1118,3 +1118,4 @@ A 的平衡因子为 2 ，若仍按照右旋调整，则变化后的图形为这
 |`TreeSet` / `ConcurrentSkipListSet`|O(log n)|
 |`ArrayList` / `LinkedList` / 所有 List|O(n)|
 |`PriorityQueue` / `ArrayDeque`|O(n)|
+### 双列集合
