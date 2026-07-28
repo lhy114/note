@@ -1091,3 +1091,6 @@ A 的平衡因子为 2 ，若仍按照右旋调整，则变化后的图形为这
 
 ### LinkedHashSet底层原理：有序、不重复、无索引
 ![[Pasted image 20260728150253.png]]
+
+### TreeSet的特点
+![[Pasted image 20260728150749.png]]
