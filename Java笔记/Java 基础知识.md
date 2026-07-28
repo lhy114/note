@@ -1108,3 +1108,13 @@ A 的平衡因子为 2 ，若仍按照右旋调整，则变化后的图形为这
 ### 使用场景
 反正就一句话，如果允许重复，优先用ArrayList；不允许重复，优先利用HashSet；然后如果要排序就用TreeSet，其他的很少用。
 ![[Pasted image 20260728155333.png]]
+
+另外一个就是，算法面试的时候，如果你想要在O（1）的时候找到想要的数据，则建议用hashset
+
+|类型|contains 复杂度|
+|---|---|
+|`HashSet` / `LinkedHashSet`|O(1) 平均|
+|`EnumSet`|O(1)|
+|`TreeSet` / `ConcurrentSkipListSet`|O(log n)|
+|`ArrayList` / `LinkedList` / 所有 List|O(n)|
+|`PriorityQueue` / `ArrayDeque`|O(n)|
