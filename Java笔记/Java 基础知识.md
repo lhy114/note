@@ -1072,3 +1072,9 @@ A 的平衡因子为 2 ，若仍按照右旋调整，则变化后的图形为这
 
 ### Set的性质：无序，不重复，没有索引
 ![[Pasted image 20260728143458.png]]
+
+### HashSet集合
+![[Pasted image 20260728143801.png]]
+![[Pasted image 20260728144406.png]]
+
+#### HashSet JDK8以前底层原理
