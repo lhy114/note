@@ -1219,3 +1219,12 @@ Exception in thread "main" java.lang.ClassCastException: class com.cqu.hashmaple
 ![[Pasted image 20260729142303.png]]
 
 ![[Pasted image 20260729143957.png]]
+
+
+### 可变参数
+小细节：方法的新参数只能写一个可变参数;且要写最后面
+格式：数据类型...参数名称
+
+### Collections：主要是集合的工具类，主要是处理操作结合的功能
+![[Pasted image 20260729152504.png]]
+
