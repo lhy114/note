@@ -1122,3 +1122,5 @@ A 的平衡因子为 2 ，若仍按照右旋调整，则变化后的图形为这
 特点：key-value，key不能重复，value能够重复，在java中，我们一般叫做entry对象
 ![[Pasted image 20260728162346.png]]
 
+### HashMap的特点
+![[Pasted image 20260729095727.png]]
