@@ -1064,7 +1064,7 @@ A 的平衡因子为 2 ，若仍按照右旋调整，则变化后的图形为这
 
 ### 红黑树
 红黑树是一个特殊的二叉查找树。高度不平衡，拥有特殊的红黑规则。
-【红黑树 - 定义, 插入, 构建】 https://www.bilibili.com/video/BV1Xm421x7Lg/?share_source=copy_web&vd_source=ebc16eb9580bf7732b00ade8c5a61b48 看这隔阂
+【红黑树 - 定义, 插入, 构建】 https://www.bilibili.com/video/BV1Xm421x7Lg/?share_source=copy_web&vd_source=ebc16eb9580bf7732b00ade8c5a61b48 看这个视频
 ![[Pasted image 20260728115423.png]]
 ![[Pasted image 20260728115938.png]]
    ![[Pasted image 20260728120719.png]]
