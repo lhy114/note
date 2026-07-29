@@ -1216,3 +1216,5 @@ Exception in thread "main" java.lang.ClassCastException: class com.cqu.hashmaple
 我们来查看一下原码：
 在TreeMap调用put添加元素的时候，
 ![[Pasted image 20260729142303.png]]
+
+![[Pasted image 20260729143957.png]]
