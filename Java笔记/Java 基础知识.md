@@ -1132,4 +1132,87 @@ A 的平衡因子为 2 ，若仍按照右旋调整，则变化后的图形为这
 ### TreeMap
 ![[Pasted image 20260729120204.png]]
 
-**TreeMap的一些小细节**，当自己创建一些自定yi dui xia
+**TreeMap的一些小细节**，当自己创建一些自定定义对象的时候，一定要实现comparable接口或者传递比较器对象，否则会报错，例如
+```
+package com.cqu.hashmaplearning;  
+  
+public class Student2 {  
+    private String name;  
+    private int age;  
+  
+  
+    public Student2() {  
+    }  
+  
+    public Student2(String name, int age) {  
+        this.name = name;  
+        this.age = age;  
+    }  
+  
+    /**  
+     * 获取     * @return name  
+     */    public String getName() {  
+        return name;  
+    }  
+  
+    /**  
+     * 设置     * @param name  
+     */  
+    public void setName(String name) {  
+        this.name = name;  
+    }  
+  
+    /**  
+     * 获取     * @return age  
+     */    public int getAge() {  
+        return age;  
+    }  
+  
+    /**  
+     * 设置     * @param age  
+     */  
+    public void setAge(int age) {  
+        this.age = age;  
+    }  
+  
+    public String toString() {  
+        return "Student2{name = " + name + ", age = " + age + "}";  
+    }  
+  
+  
+}
+
+
+package com.cqu.hashmaplearning;  
+  
+import java.util.TreeMap;  
+  
+public class TreeMapDemo04 {  
+    public static void main(String[] args) {  
+        Student2 s1 = new Student2("zhangsan", 18);  
+        Student2 s2 = new Student2("lisi", 20);  
+        Student2 s3 = new Student2("wangwu", 19);  
+  
+        TreeMap<Student2, String> tm = new TreeMap<>();  
+  
+        tm.put(s1, "北京");  
+        tm.put(s2, "上海");  
+        tm.put(s3, "广州");  
+  
+        System.out.println(tm);  
+    }  
+}
+
+包括原因：
+Exception in thread "main" java.lang.ClassCastException: class com.cqu.hashmaplearning.Student2 cannot be cast to class java.lang.Comparable (com.cqu.hashmaplearning.Student2 is in unnamed module of loader 'app'; java.lang.Comparable is in module java.base of loader 'bootstrap')
+	at java.base/java.util.TreeMap.compare(TreeMap.java:1604)
+	at java.base/java.util.TreeMap.addEntryToEmptyMap(TreeMap.java:811)
+	at java.base/java.util.TreeMap.put(TreeMap.java:820)
+	at java.base/java.util.TreeMap.put(TreeMap.java:569)
+	at com.cqu.hashmaplearning.TreeMapDemo04.main(TreeMapDemo04.java:13)
+
+```
+
+我们来查看一下原码：
+在TreeMap调用put添加元素的时候，
+![[Pasted image 20260729142303.png]]
