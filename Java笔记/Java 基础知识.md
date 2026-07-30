@@ -1263,3 +1263,6 @@ Map<String, Integer> mp = list.stream()
 System.out.println(mp);
 ```
 
+### 方法引用
+![[Pasted image 20260730184919.png]]
+
