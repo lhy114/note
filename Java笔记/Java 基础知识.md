@@ -1228,4 +1228,4 @@ Exception in thread "main" java.lang.ClassCastException: class com.cqu.hashmaple
 ### Collections：主要是集合的工具类，主要是处理操作结合的功能
 ![[Pasted image 20260729152504.png]]
 
-
+### 不可变集合List.of、集合.of为  格式 注意禁止被修改，但是能够被访问
