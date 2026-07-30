@@ -1230,4 +1230,6 @@ Exception in thread "main" java.lang.ClassCastException: class com.cqu.hashmaple
 
 ### 不可变集合List.of、集合.of为  格式 注意禁止被修改，但是能够被访问. 注意map的of方法不是可变参数，最多只有20个参数，因为对于一个方法来说，只有一个可变参数，不能有多个可变参数，你可以使用ofEntries方法
 
+### Stream流
+![[Pasted image 20260730140755.png]]
 
