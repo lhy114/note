@@ -1228,3 +1228,4 @@ Exception in thread "main" java.lang.ClassCastException: class com.cqu.hashmaple
 ### Collections：主要是集合的工具类，主要是处理操作结合的功能
 ![[Pasted image 20260729152504.png]]
 
+
