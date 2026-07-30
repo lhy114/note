@@ -1236,3 +1236,30 @@ Exception in thread "main" java.lang.ClassCastException: class com.cqu.hashmaple
 ![[Pasted image 20260730141715.png]]
 ![[Pasted image 20260730141845.png]] 
 ![[Pasted image 20260730162728.png]]
+
+**针对collect 为map对象的书写**
+```
+// 将list转换为map的形式  
+Map<String, Integer> mp = list.stream()  
+        .filter(s -> "男".equals(s.split("-")[1]))  
+        .collect(Collectors.toMap(new Function<String, String>() {  
+            @Override  
+            public String apply(String s) {  
+                /***  
+                 * 注意这里的代表的是key的值，  
+                 * 第一个string代表的是从流里面获得的值  
+                 * 第二个string代表的是你要存入map里面的值的类型  
+                 */  
+                return s.split("-")[0];  
+            }  
+        }, new Function<String, Integer>() {  
+  
+            @Override  
+            public Integer apply(String s) {  
+                return Integer.valueOf(s.split("-")[2]);  
+            }  
+        }));  
+  
+System.out.println(mp);
+```
+
