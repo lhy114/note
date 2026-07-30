@@ -1271,3 +1271,5 @@ System.out.println(mp);
 ![[Pasted image 20260730190112.png]]
 #### 引用成员方法
 ![[Pasted image 20260730190127.png]]
+### 引用构造方法
+![[Pasted image 20260730201325.png]]
