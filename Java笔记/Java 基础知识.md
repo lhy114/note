@@ -1275,3 +1275,4 @@ System.out.println(mp);
 ![[Pasted image 20260730201325.png]]
 ### 方法引用的规则
 ![[Pasted image 20260730202238.png]]
+![[Pasted image 20260730203402.png]]
