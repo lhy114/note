@@ -1276,3 +1276,6 @@ System.out.println(mp);
 ### 方法引用的规则
 ![[Pasted image 20260730202238.png]]
 ![[Pasted image 20260730203402.png]]
+
+### 异常
+![[Pasted image 20260730212240.png]]
