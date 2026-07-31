@@ -1317,3 +1317,4 @@ Exception in thread "main" java.lang.ArithmeticException: / by zero
 ![[Pasted image 20260731155134.png]]
 #### FileOutputStream
 ![[Pasted image 20260731160037.png]]
+![[Pasted image 20260731160911.png]]
