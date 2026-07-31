@@ -1318,3 +1318,6 @@ Exception in thread "main" java.lang.ArithmeticException: / by zero
 #### FileOutputStream
 ![[Pasted image 20260731160037.png]]
 ![[Pasted image 20260731160911.png]]
+![[Pasted image 20260731163004.png]]
+读的速度极其之慢
+
