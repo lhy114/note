@@ -1305,3 +1305,5 @@ Exception in thread "main" java.lang.ArithmeticException: / by zero
 注意一下这段代码，2/0先出现了一个算术异常，由于catch里面没有写，所以程序还是会抛出。因此要么在catch里面填上，要么转移一下顺序（转移一下顺序由于arr\[10]，先抛出索引越界异常，但是catch捕获）
 
 **小的注意点**：当抛出的异常的父类一定要在最下面，在jdk7之后，我们也可以在catch中捕获多个异常，用“｜”
+
+![[Pasted image 20260731105014.png]]
