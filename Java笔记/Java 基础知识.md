@@ -1311,4 +1311,7 @@ Exception in thread "main" java.lang.ArithmeticException: / by zero
 
 **编译时异常（Checked Exception）是 Java 设计者希望强制程序员处理的风险，而运行时异常（Unchecked Exception）通常代表程序逻辑错误，不要求强制声明。**
 
-### IO的相关zh
+
+### 文件File类，看api就会了
+### IO的相关知识
+![[Pasted image 20260731155134.png]]
