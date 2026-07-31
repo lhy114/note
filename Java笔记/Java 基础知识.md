@@ -1279,3 +1279,29 @@ System.out.println(mp);
 
 ### 异常
 ![[Pasted image 20260730212303.png]]
+
+```
+package com.cqu.execeptionlearning;  
+  
+public class ExceptionLearning01 {  
+    public static void main(String[] args) {  
+        int[] arr = {1,2,3,4,5};  
+  
+        try {  
+            System.out.println(2/0);  
+            System.out.println(arr[10]);  
+        }catch (ArrayIndexOutOfBoundsException e){  
+            System.out.println("索引越界");  
+        }  
+        System.out.println("程序执行完毕");  
+    }  
+}
+
+
+Exception in thread "main" java.lang.ArithmeticException: / by zero
+	at com.cqu.execeptionlearning.ExceptionLearning01.main(ExceptionLearning01.java:8)
+```
+
+注意一下这段代码，2/0先出现了一个算术异常，由于catch里面没有写，所以程序还是会抛出。因此要么在catch里面填上，要么转移一下顺序（转移一下顺序由于arr\[10]，先抛出索引越界异常，但是catch捕获）
+
+**小的注意点**：当抛出的异常的父类一定要在最下面，在jdk7之后，我们也可以在catch中捕获多个异常，用“｜”
