@@ -1315,3 +1315,5 @@ Exception in thread "main" java.lang.ArithmeticException: / by zero
 ### 文件File类，看api就会了
 ### IO的相关知识
 ![[Pasted image 20260731155134.png]]
+#### FileOutputStream
+![[Pasted image 20260731160037.png]]
