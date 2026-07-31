@@ -1307,3 +1307,5 @@ Exception in thread "main" java.lang.ArithmeticException: / by zero
 **小的注意点**：当抛出的异常的父类一定要在最下面，在jdk7之后，我们也可以在catch中捕获多个异常，用“｜”
 
 ![[Pasted image 20260731105014.png]]
+![[Pasted image 20260731105604.png]]
+
