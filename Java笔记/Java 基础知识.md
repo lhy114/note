@@ -1322,6 +1322,7 @@ Exception in thread "main" java.lang.ArithmeticException: / by zero
 读的速度极其之慢
 
 ### GBK
-**汉字**
-![[Pasted image 20260801100951.png]]
+![[Pasted image 20260801101055.png]]
 
+### Unicode 万国码
+ 
