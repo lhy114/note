@@ -1342,4 +1342,5 @@ Exception in thread "main" java.lang.ArithmeticException: / by zero
 ![[Pasted image 20260801143847.png]]
 注意两个缓冲区的是不同的，节约点时间其实是对于硬盘的IO时间
 ![[Pasted image 20260801144105.png]]
-注意这里的readline不会读如换行和回车，因此要手动j
+注意这里的readline不会读如换行和回车，因此要手动加入换行符。
+写入的时候利用write的时候，要加入newline（）
