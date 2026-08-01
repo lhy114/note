@@ -1331,3 +1331,4 @@ Exception in thread "main" java.lang.ArithmeticException: / by zero
 ### 字符流
 ![[Pasted image 20260801102623.png]]
 ![[Pasted image 20260801102643.png]]
+![[Pasted image 20260801104338.png]]
