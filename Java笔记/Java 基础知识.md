@@ -1321,3 +1321,7 @@ Exception in thread "main" java.lang.ArithmeticException: / by zero
 ![[Pasted image 20260731163004.png]]
 读的速度极其之慢
 
+### GBK
+**汉字**
+![[Pasted image 20260801100951.png]]
+
