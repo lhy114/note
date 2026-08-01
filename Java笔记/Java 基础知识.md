@@ -1327,3 +1327,7 @@ Exception in thread "main" java.lang.ArithmeticException: / by zero
 ### Unicode 万国码
  ![[Pasted image 20260801101656.png]]
  ![[Pasted image 20260801102119.png]]
+
+### 字符流
+![[Pasted image 20260801102623.png]]
+![[Pasted image 20260801102643.png]]
