@@ -1325,4 +1325,5 @@ Exception in thread "main" java.lang.ArithmeticException: / by zero
 ![[Pasted image 20260801101055.png]]
 
 ### Unicode 万国码
+ ![[Pasted image 20260801101656.png]]
  
