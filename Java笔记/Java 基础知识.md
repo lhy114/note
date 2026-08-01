@@ -1336,5 +1336,6 @@ Exception in thread "main" java.lang.ArithmeticException: / by zero
 
 ![[Pasted image 20260801105710.png]]
 
+### 缓冲流
 ![[Pasted image 20260801120221.png]]
 
