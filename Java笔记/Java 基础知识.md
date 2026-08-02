@@ -1345,6 +1345,7 @@ Exception in thread "main" java.lang.ArithmeticException: / by zero
 注意这里的readline不会读如换行和回车，因此要手动加入换行符。
 写入的时候利用write的时候，要加入newline（）
 
-### 转换流
+### 转换流：使用场景，当字节流想要用字符流的功能都时候，例如读取一行，或者制定编码的时候，可以用转换流，注意名字就行了
 ![[Pasted image 20260802103732.png]]
 
+### 序列化流/对象操作输出流，将java对象写到
