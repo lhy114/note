@@ -1348,4 +1348,7 @@ Exception in thread "main" java.lang.ArithmeticException: / by zero
 ### 转换流：使用场景，当字节流想要用字符流的功能都时候，例如读取一行，或者制定编码的时候，可以用转换流，注意名字就行了
 ![[Pasted image 20260802103732.png]]
 
-### 序列化流/对象操作输出流，将java对象写到
+### 序列化流/对象操作输出流，将java对象写到本地文件中，注意这个类一定要实现serializable接口
+只有实现了serializable接口，我们才能够将对象进行序列化
+
+### 反序列化流/对象操作输入流，将java对象读入到程序中来。 
