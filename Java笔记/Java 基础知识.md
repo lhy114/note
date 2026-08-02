@@ -1358,3 +1358,7 @@ Exception in thread "main" java.lang.ArithmeticException: / by zero
 transient： 关键字，可以让我们想要的属性不会被序列化到文件中
 
 ![[Pasted image 20260802110459.png]]![[Pasted image 20260802114504.png]]
+### 打印流printStream
+![[Pasted image 20260802144244.png]]
+
+### 解压缩流
