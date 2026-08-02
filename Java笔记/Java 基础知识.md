@@ -1352,3 +1352,6 @@ Exception in thread "main" java.lang.ArithmeticException: / by zero
 只有实现了serializable接口，我们才能够将对象进行序列化
 
 ### 反序列化流/对象操作输入流，将java对象读入到程序中来。 
+
+**一些小细节**，当我们实现了javabean类对象的序列化对象之后，如果后期业务有需求改变javabean类，那么此时反序列化进行匹配的时候，由于版本号发生了改变，因此此时java就会抛出异常。所以我们在实际过程中需要固定版本号
+![[Pasted image 20260802110459.png]]
