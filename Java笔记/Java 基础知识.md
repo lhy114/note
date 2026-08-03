@@ -1364,4 +1364,46 @@ transient： 关键字，可以让我们想要的属性不会被序列化到文�
 ### 解压缩流, 需要注意java只能识别zip压缩包，同时通过zip流得到的对象为entry类型的，其他的看api就行了
 
 
- 
+### Properties主要保存的是一些配置文件路径，里面一般存放的是字符串那些。是一个双列集合，拥有map的所有性质，但是最重要的是能够和IO流合在一起
+
+例如
+```
+package com.cqu.IOlearning;  
+  
+import java.io.FileOutputStream;  
+import java.io.IOException;  
+import java.util.Properties;  
+  
+public class PropertiesLearning01 {  
+    public static void main(String[] args) throws IOException {  
+        Properties prop = new Properties();  
+        prop.put("username", "liuhongyu");  
+        prop.put("password", "123456");  
+        FileOutputStream fos = new FileOutputStream("/Users/liuhongyu/IdeaProjects/JavaLearning/myfile/test.properties");  
+        prop.store(fos,"forTest");  
+  
+    }  
+}
+
+package com.cqu.IOlearning;  
+  
+import java.io.FileInputStream;  
+import java.io.IOException;  
+import java.util.Map;  
+import java.util.Properties;  
+import java.util.Set;  
+  
+public class PropertiesLearning02 {  
+    public static void main(String[] args) throws IOException {  
+        Properties properties = new Properties();  
+        FileInputStream fis = new FileInputStream("/Users/liuhongyu/IdeaProjects/JavaLearning/myfile/test.properties");  
+        properties.load(fis);  
+        fis.close();  
+  
+        Set<Map.Entry<Object, Object>> entries = properties.entrySet();  
+        for (Map.Entry<Object, Object> entry : entries) {  
+            System.out.println(entry.getKey() + "--->" + entry.getValue());  
+        }  
+    }  
+}
+```
