@@ -1407,3 +1407,9 @@ public class PropertiesLearning02 {
     }  
 }
 ```
+
+### 并发和并行
+![[Pasted image 20260803162416.png]]
+### 线程和进程
+线程相当于一个程序的某一个功能
+进程相当于一个程序
