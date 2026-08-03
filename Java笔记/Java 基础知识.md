@@ -1417,3 +1417,23 @@ public class PropertiesLearning02 {
 ### 多线程的三种实现方式
 ![[Pasted image 20260803163742.png]]
 第三种方式能够得到线程运行的结果
+```
+package com.cqu.thread;  
+  
+import java.util.concurrent.ExecutionException;  
+import java.util.concurrent.FutureTask;  
+  
+public class ThreadLearning03 {  
+    public static void main(String[] args) throws ExecutionException, InterruptedException {  
+        // 要执行的任务  
+        MyCallable mc = new MyCallable();  
+        // 存储运行的结果  
+        FutureTask<Integer> ft = new FutureTask<>(mc);  
+        Thread t1 = new Thread(ft);  
+        t1.start();  
+  
+        Integer res = ft.get();  
+        System.out.println(res);  
+    }  
+}
+```
