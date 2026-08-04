@@ -1452,3 +1452,12 @@ public class ThreadLearning03 {
 ### 公平锁和非公平锁  
 `new ReentrantLock()` 默认非公平：允许插队，吞吐高，但可能造成某个线程长期抢不到锁。`new ReentrantLock(true)` 公平：按等待时间排队，不容易饿死线程，但排队和唤醒有额外开销，吞吐稍低。`synchronized` 只有非公平。
 
+### 线程统一起跑
+用 `CountDownLatch` 当发令枪：所有线程先等待，主线程把它们都启动后再放行。
+
+```
+static final CountDownLatch START = new CountDownLatch(1); // 发令枪
+
+```
+RedEnvelopeThread.START.countDown(); // 发令：一起冲
+```
