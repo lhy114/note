@@ -1470,3 +1470,6 @@ RedEnvelopeThread.START.countDown(); // 发令：一起冲
 ![[Pasted image 20260804115700.png]]![[Pasted image 20260804115918.png]]
 ### 反射
 ![[Pasted image 20260804163300.png]]
+获取：
+1. 得到class文件
+![[Pasted image 20260804163923.png]]
