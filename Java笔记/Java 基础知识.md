@@ -1448,3 +1448,7 @@ public class ThreadLearning03 {
 ![[Pasted image 20260803200235.png]]
 ### 同步代码块，synchornonized，注意锁对象一定要是唯一的，一般用这个类的字节码文件
 ![[Pasted image 20260803200345.png]]
+
+### 公平锁和非公平锁  
+`new ReentrantLock()` 默认非公平：允许插队，吞吐高，但可能造成某个线程长期抢不到锁。`new ReentrantLock(true)` 公平：按等待时间排队，不容易饿死线程，但排队和唤醒有额外开销，吞吐稍低。`synchronized` 只有非公平。
+
