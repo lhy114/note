@@ -1445,4 +1445,6 @@ public class ThreadLearning03 {
 ### 线程的生命周期
 ![[Pasted image 20260803171105.png]]
 
+![[Pasted image 20260803200235.png]]
 ### 同步代码块，synchornonized，注意锁对象一定要是唯一的，一般用这个类的字节码文件
+![[Pasted image 20260803200345.png]]
