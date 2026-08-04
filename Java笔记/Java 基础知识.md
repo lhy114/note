@@ -1458,6 +1458,7 @@ public class ThreadLearning03 {
 ```
 static final CountDownLatch START = new CountDownLatch(1); // 发令枪
 
-```
+START.await()
+
 RedEnvelopeThread.START.countDown(); // 发令：一起冲
 ```
