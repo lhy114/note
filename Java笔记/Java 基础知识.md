@@ -1416,7 +1416,7 @@ public class PropertiesLearning02 {
 
 ### 多线程的三种实现方式
 ![[Pasted image 20260803163742.png]]
-第三种方式能够得到线程运行的结果
+**第三种方式能够得到线程运行的结果**
 ```
 package com.cqu.thread;  
   
@@ -1462,3 +1462,4 @@ START.await()
 
 RedEnvelopeThread.START.countDown(); // 发令：一起冲
 ```
+![[Pasted image 20260804113754.png]]
