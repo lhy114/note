@@ -1468,3 +1468,5 @@ RedEnvelopeThread.START.countDown(); // 发令：一起冲
 
 ### 自定义线程池![[Pasted image 20260804115428.png]]临时线程的创建时间为：核心线程满了，且阻塞队列也满了，那么此时才会创建临时线程，所以它执行的顺序其实不一样的。
 ![[Pasted image 20260804115700.png]]![[Pasted image 20260804115918.png]]
+### 反射
+![[Pasted image 20260804163300.png]]
