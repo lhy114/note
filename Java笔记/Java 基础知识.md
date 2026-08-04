@@ -1462,4 +1462,4 @@ START.await()
 
 RedEnvelopeThread.START.countDown(); // 发令：一起冲
 ```
-![[Pasted image 20260804113754.png]]
+![[Pasted image 20260804113754.png]]![[Pasted image 20260804114523.png]]![[Pasted image 20260804114634.png]]
