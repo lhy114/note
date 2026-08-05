@@ -1473,3 +1473,4 @@ RedEnvelopeThread.START.countDown(); // 发令：一起冲
 获取：
 1. 得到class文件
 ![[Pasted image 20260804163923.png]]![[Pasted image 20260804165852.png]]![[Pasted image 20260804170243.png]]
+### 反射和代理，你需要的时候看看代码就行了，需要的时候在学就行了
