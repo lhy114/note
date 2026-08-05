@@ -19,4 +19,6 @@
 **删除数据**
 ![[Pasted image 20260805163237.png]]
 
-### SQ
+### SQL查询语句
+#### SELECT关键字
+![[Pasted image 20260805163707.png]]![[Pasted image 20260805163828.png]]
