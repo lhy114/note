@@ -11,3 +11,4 @@
 **二维表操作**
 ![[Pasted image 20260805151120.png]]
 ![[Pasted image 20260805151249.png]]
+![[Pasted image 20260805152645.png]]![[Pasted image 20260805152740.png]]![[Pasted image 20260805152836.png]]
