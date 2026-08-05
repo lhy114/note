@@ -24,3 +24,5 @@
 ![[Pasted image 20260805163707.png]]![[Pasted image 20260805163828.png]]![[Pasted image 20260805164254.png]]![[Pasted image 20260805165805.png]]![[Pasted image 20260805170126.png]]![[Pasted image 20260805170613.png]]![[Pasted image 20260805170920.png]]![[Pasted image 20260805172136.png]]
 #### DCL 数据控制语音
 ![[Pasted image 20260805172517.png]]![[Pasted image 20260805203540.png]]![[Pasted image 20260805203635.png]]
+#### 常见函数
+![[Pasted image 20260805204150.png]]
