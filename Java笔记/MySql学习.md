@@ -75,4 +75,9 @@
 存储引擎就是存储数据、建立索引、更新/查询数据等技术的实现方式。存储引擎是基于表的，而不是基于库的，所以存储引擎也可被称为表类型。
 ![[Pasted image 20260806142520.png]]![[Pasted image 20260806142550.png]]
 ##### InnoDB
-![[Pasted image 20260806143127.png]]
+![[Pasted image 20260806143127.png]]![[Pasted image 20260806143507.png]]
+##### MyISAM
+![[Pasted image 20260806143551.png]]
+##### Memory
+![[Pasted image 20260806143721.png]]
+![[Pasted image 20260806143754.png]]
