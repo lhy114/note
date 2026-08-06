@@ -145,4 +145,6 @@
 “必须最左”更多是指索引列本身的顺序，而不是你写 SQL 的先后顺序。以及你不能使用范围条件查询，此时type会变成range。 
 ![[Pasted image 20260806172732.png]]
 第一个select语句只使用到了profession和age这个索引，status会失效，而第二个使用了全部索引。
-![[Pasted image 20260806174507.png]]![[Pasted image 20260806174617.png]]![[Pasted image 20260806174749.png]]![[Pasted image 20260806175025.png]]
+![[Pasted image 20260806174507.png]]![[Pasted image 20260806174617.png]]![[Pasted image 20260806174749.png]]![[Pasted image 20260806175025.png]]![[Pasted image 20260806175226.png]]
+这个还是要看数据的情况，所以我们无法判断
+![[Pasted image 20260806175550.png]]
