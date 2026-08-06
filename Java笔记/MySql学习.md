@@ -61,5 +61,9 @@
 #### 表子查询， 一般用作from语句后作为一个临时表
 ![[Pasted image 20260806101916.png]]
 
-### 事务
+### 事务及其四大特性
 ![[Pasted image 20260806110302.png]]![[Pasted image 20260806110952.png]]![[Pasted image 20260806111010.png]]![[Pasted image 20260806111210.png]]
+### 并发事务
+
+![[Pasted image 20260806111540.png]]
+![[Pasted image 20260806111626.png]]![[Pasted image 20260806111742.png]]
