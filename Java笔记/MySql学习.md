@@ -41,8 +41,12 @@
 ##### 一对一
 ![[Pasted image 20260806094547.png]]
 #### 多表查询
+最主要的就是要明确你是内连接还是外连接，如果是内连接，你就用where，如果是外连接，老老实实用left outer join or right outer join
+
 ![[Pasted image 20260806095040.png]]
 ##### 内连接查询
 ![[Pasted image 20260806095137.png]]
 ##### 外连接查询
 ![[Pasted image 20260806095608.png]]![[Pasted image 20260806095916.png]]
+##### 联合查询
+![[Pasted image 20260806100431.png]]
