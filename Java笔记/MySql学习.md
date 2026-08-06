@@ -49,4 +49,7 @@
 ##### 外连接查询
 ![[Pasted image 20260806095608.png]]![[Pasted image 20260806095916.png]]
 ##### 联合查询
-![[Pasted image 20260806100431.png]]
+![[Pasted image 20260806100646.png]]
+#### 子查询
+![[Pasted image 20260806100758.png]]
+##### 标量子查询
