@@ -144,4 +144,4 @@
 ![[Pasted image 20260806171559.png]]
 “必须最左”更多是指索引列本身的顺序，而不是你写 SQL 的先后顺序。以及你不能使用范围条件查询，此时type会变成range。 
 ![[Pasted image 20260806172732.png]]
-第一个select语句只使用到了profession和age这个索引，status会失效，而第二个使用了全部索引，因为有了=号，是的mysql能够定位到age=30这个数据，此时我们
+第一个select语句只使用到了profession和age这个索引，status会失效，而第二个使用了全部索引。
