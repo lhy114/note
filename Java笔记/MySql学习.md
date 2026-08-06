@@ -27,4 +27,7 @@
 #### 常见函数
 ![[Pasted image 20260805204150.png]]![[Pasted image 20260805204744.png]]![[Pasted image 20260805205039.png]]![[Pasted image 20260805205331.png]]
 #### 约束
+**常见约束**
 ![[Pasted image 20260806092136.png]]
+**外键约束**
+![[Pasted image 20260806093128.png]]
