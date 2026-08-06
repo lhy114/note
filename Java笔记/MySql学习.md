@@ -56,3 +56,7 @@
 ![[Pasted image 20260806101102.png]]
 ##### 列子查询
 ![[Pasted image 20260806101157.png]]
+##### 行子查询
+![[Pasted image 20260806101650.png]]
+#### 表子查询
+![[Pasted image 20260806101916.png]]
