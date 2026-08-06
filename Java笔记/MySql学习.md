@@ -125,4 +125,16 @@
 
 ##### SQL性能分析![[Pasted image 20260806161957.png]]
 ![[Pasted image 20260806164509.png]]![[Pasted image 20260806164909.png]]
-![[Pasted image 20260806165014.png]]![[Pasted image 20260806165244.png]]![[Pasted image 20260806170139.png]]
+![[Pasted image 20260806165014.png]]![[Pasted image 20260806165244.png]]
+![[Pasted image 20260806170139.png]]
+![[Pasted image 20260806170650.png]]
+
+|type|含义|例子|
+|---|---|---|
+|`system`|表只有一行，const 的特例|几乎只出现在系统表，业务表遇不到|
+|`const`|主键/唯一索引等值查询，最多 1 行|`WHERE id = 2`|
+|`eq_ref`|连接查询时，被驱动表用主键/唯一索引等值匹配，每次只匹配 1 行|`student JOIN class ON student.class_id = class.id`|
+|`ref`|普通索引等值匹配，可能返回多行|`WHERE age = 19`（age 有普通索引）|
+|`range`|索引范围扫描|`WHERE id BETWEEN 1 AND 100`、`age > 18`、`IN`|
+|`index`|全索引扫描：遍历整个索引树，但读的是索引不是整行数据|`SELECT id FROM student`（覆盖索引）|
+|`ALL`|全表扫描，扫聚簇索引的所有叶子页，最差|`WHERE name = '小%'` 且 name 无索引|
