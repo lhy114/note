@@ -122,5 +122,7 @@
 -----
 ##### 索引的语法
 ![[Pasted image 20260806161252.png]]
-![[Pasted image 20260806161957.png]]
-![[Pasted image 20260806164509.png]]
+
+##### SQL性能分析![[Pasted image 20260806161957.png]]
+![[Pasted image 20260806164509.png]]![[Pasted image 20260806164909.png]]
+![[Pasted image 20260806165014.png]]![[Pasted image 20260806165244.png]]
