@@ -63,7 +63,9 @@
 
 ### 事务及其四大特性
 ![[Pasted image 20260806110302.png]]![[Pasted image 20260806110952.png]]![[Pasted image 20260806111010.png]]![[Pasted image 20260806111210.png]]
-### 并发事务
+#### 并发事务
 
 ![[Pasted image 20260806111540.png]]
 ![[Pasted image 20260806111626.png]]![[Pasted image 20260806111742.png]]
+#### 事务的隔离级别
+![[Pasted image 20260806111911.png]]![[Pasted image 20260806111949.png]]
