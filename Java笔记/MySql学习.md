@@ -80,4 +80,5 @@
 ![[Pasted image 20260806143551.png]]
 ##### Memory
 ![[Pasted image 20260806143721.png]]
-![[Pasted image 20260806143754.png]]
+![[Pasted image 20260806143754.png]]![[Pasted image 20260806143936.png]]
+#### 索引
