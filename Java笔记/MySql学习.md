@@ -87,3 +87,4 @@
 
 ##### B+树
 ![[Pasted image 20260806145917.png]]
+![[Pasted image 20260806150553.png]]
