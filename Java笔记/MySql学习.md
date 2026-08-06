@@ -30,4 +30,5 @@
 **常见约束**
 ![[Pasted image 20260806092136.png]]
 **外键约束**
-![[Pasted image 20260806093128.png]]
+![[Pasted image 20260806093128.png]]![[Pasted image 20260806093546.png]]
+前两个为默认行为，
