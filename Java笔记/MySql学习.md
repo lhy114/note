@@ -44,3 +44,5 @@
 ![[Pasted image 20260806095040.png]]
 ##### 内连接查询
 ![[Pasted image 20260806095137.png]]
+##### 外连接查询
+![[Pasted image 20260806095608.png]]![[Pasted image 20260806095916.png]]
