@@ -189,5 +189,17 @@ JOIN (
   SELECT id
   FROM t_user
   ORDER BY id
-  LIMIT 1000000, 20 // 先通过id进行查表，返回一个id子表
-) tmp ON t.id = tmp.id;// 然后用一个id进行匹配返回dui
+  LIMIT 1000000, 20 // 先通过id进行查表，返回一个id子表，也就是**延迟关联**
+) tmp ON t.id = tmp.id;// 然后用一个id进行匹配返回对应的数据
+
+如果业务是“下一页 / 上一页”，根本不用 offset，记住上一页最后一条的 id 就行：
+
+一页最后一条记录的 id = 1000000
+SELECT * FROM t_user
+WHERE id > 1000000
+ORDER BY id
+LIMIT 20;
+
+
+##### count优化
+![[Pasted image 20260807102515.png]]
