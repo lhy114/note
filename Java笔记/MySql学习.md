@@ -225,3 +225,6 @@ DML也就是update、delete、insert这些操作，如果where等走的是索引
 ![[Pasted image 20260807112202.png]]![[Pasted image 20260807112738.png]]
 
 ![[Pasted image 20260807112853.png]]
+
+#### 存储过程
+![[Pasted image 20260807141203.png]]![[Pasted image 20260807141322.png]]![[Pasted image 20260807141457.png]]
