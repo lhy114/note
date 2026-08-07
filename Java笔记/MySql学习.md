@@ -214,3 +214,4 @@ InnoDB的**普通 SELECT 不加锁、DML 加行锁、范围加间隙锁、没走
 DML也就是update、delete、insert这些操作，如果where等走的是索引，那么只会触发行锁，如果走的是没有索引的字段，那么此时锁就会锁住全表，另外一个进程无法对这张表进行任何操作
 
 #### 视图view
+![[Pasted image 20260807110702.png]]
