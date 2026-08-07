@@ -150,3 +150,7 @@
 ![[Pasted image 20260806175550.png]]![[Pasted image 20260806180057.png]]![[Pasted image 20260806180624.png]]![[Pasted image 20260806181043.png]]![[Pasted image 20260806184014.png]]
 ##### 索引的使用原则
 ![[Pasted image 20260806184251.png]]
+
+#### SQL 优化
+##### 插入数据的优化
+![[Pasted image 20260807092046.png]]![[Pasted image 20260807092153.png]]
