@@ -255,5 +255,9 @@ DML也就是update、delete、insert这些操作，如果where等走的是索引
 ![[Pasted image 20260807144923.png]]![[Pasted image 20260807145815.png]]
 
 #### 存储函数
-必须要有fan hui zhi
+必须要有返回值，且参数列表都是in类型的。很少用，因为存储过程也能够做
 ![[Pasted image 20260807150232.png]]
+
+#### 触发器
+![[Pasted image 20260807150627.png]]
+行级触发器：对于一条update语句如果影响了5行数据，那么这个触发器会触发4
