@@ -202,4 +202,6 @@ LIMIT 20;
 
 
 ##### count优化
-![[Pasted image 20260807102515.png]]
+![[Pasted image 20260807102515.png]]![[Pasted image 20260807102850.png]]
+
+##### update优化
