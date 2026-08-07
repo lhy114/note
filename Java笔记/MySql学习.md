@@ -252,4 +252,8 @@ DML也就是update、delete、insert这些操作，如果where等走的是索引
 ![[Pasted image 20260807144405.png]]
 
 ##### 游标（存储表返回的数据）
-![[Pasted image 20260807144923.png]]
+![[Pasted image 20260807144923.png]]![[Pasted image 20260807145815.png]]
+
+#### 存储函数
+必须要有fan hui zhi
+![[Pasted image 20260807150232.png]]
