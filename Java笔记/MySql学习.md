@@ -283,6 +283,7 @@ DML也就是update、delete、insert这些操作，如果where等走的是索引
 ###### 元数据锁
 ![[Pasted image 20260807160311.png]]
 ###### 意向锁
+意向锁是“行锁和表锁之间的快速冲突检查器”，而且它是双向的
 ![[Pasted image 20260807160734.png]]
 ![[Pasted image 20260807160850.png]]
 ![[Pasted image 20260807160911.png]]
