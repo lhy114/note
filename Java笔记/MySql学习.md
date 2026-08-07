@@ -345,3 +345,8 @@ UPDATE 和 DELETE 天然是“当前读”，不需要你写 `FOR UPDATE`，它�
 
 #### InnoDB引擎
 ##### 逻辑存储结构
+![[Pasted image 20260807172615.png]]
+
+##### 架构
+![[Pasted image 20260807172714.png]]
+**内存结构**
