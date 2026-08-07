@@ -227,4 +227,10 @@ DML也就是update、delete、insert这些操作，如果where等走的是索引
 ![[Pasted image 20260807112853.png]]
 
 #### 存储过程
-![[Pasted image 20260807141203.png]]![[Pasted image 20260807141322.png]]![[Pasted image 20260807141457.png]]
+![[Pasted image 20260807141203.png]]
+
+##### 存储过程定义![[Pasted image 20260807141322.png]]
+![[Pasted image 20260807141457.png]]注意：在命令行中，执行创建存储过程的SQL时，需要通过关键字 delimiter 指定SQL语句的结束符。
+
+##### 变量定义
+![[Pasted image 20260807141940.png]]
