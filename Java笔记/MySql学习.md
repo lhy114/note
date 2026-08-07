@@ -147,11 +147,14 @@
 第一个select语句只使用到了profession和age这个索引，status会失效，而第二个使用了全部索引。
 ![[Pasted image 20260806174507.png]]![[Pasted image 20260806174617.png]]![[Pasted image 20260806174749.png]]![[Pasted image 20260806175025.png]]![[Pasted image 20260806175226.png]]
 这个还是要看数据的情况，所以我们无法判断
-![[Pasted image 20260806175550.png]]![[Pasted image 20260806180057.png]]![[Pasted image 20260806180624.png]]![[Pasted image 20260806181043.png]]![[Pasted image 20260806184014.png]]
-##### 索引的使用原则
+![[Pasted image 20260806175550.png]]![[Pasted image 20260806180057.png]]
+
+覆盖索引不是一个“新类型的索引”，而是**某条查询恰好不需要回表的状态**：查询用到的所有列，都被包含在某个索引里，索引自身就能“回答”这条查询。![[Pasted image 20260806180624.png]]![[Pasted image 20260806181043.png]]![[Pasted image 20260806184014.png]]
+##### 索引的设计原则
 ![[Pasted image 20260806184251.png]]
 
 #### SQL 优化(我对这一章的理解，首先你要对你建立的索引数据结构及其清楚，然后遵循最左前缀法则就行了)
+![[Pasted image 20260807104120.png]]
 ##### 插入数据的优化
 ![[Pasted image 20260807092046.png]]![[Pasted image 20260807092153.png]]
 ##### 主键优化插入
