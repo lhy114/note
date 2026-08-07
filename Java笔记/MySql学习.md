@@ -179,4 +179,15 @@
 
 这一章节还是我来进行分析吧，假设id不是主键且没有建立索引
 SELECT * FROM t_user ORDER BY id LIMIT 1000000, 20;
-如果是上述的sql语句执行，那么会出现回表cha
+如果是上述的sql语句执行，那么会出现回表查询，而且order by会导致mysql首先会进行file sort这一步也就十分耗时，然后在limit 1000000这个阶段，select在limit执行之前，所以还是把所有的数据进行返回。
+
+所以我们的思路就很明确了，首先尽量id建立一个索引，这样我们就不需要把时间耗在sort上。然后select我们不需要前1000000的所有数据，我们要的是后部分的数据，所以select * 前面就可以省略了，因此我们可以采用。
+
+SELECT t.*
+FROM t_user t
+JOIN (
+  SELECT id
+  FROM t_user
+  ORDER BY id
+  LIMIT 1000000, 20 // 先通过id进行查表，返回一个id子表
+) tmp ON t.id = tmp.id;// 然后用一个id进行匹配返回dui
