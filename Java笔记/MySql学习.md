@@ -349,6 +349,8 @@ UPDATE 和 DELETE 天然是“当前读”，不需要你写 `FOR UPDATE`，它�
 
 ##### 架构
 ![[Pasted image 20260807172714.png]]
-**内存结构**
+###### **内存结构**
 ![[Pasted image 20260807173103.png]]
-![[Pasted image 20260807173240.png]]![[Pasted image 20260807173351.png]]![[Pasted image 20260807173417.png]]
+![[Pasted image 20260807173240.png]]![[Pasted image 20260807173351.png]]![[Pasted image 20260807173449.png]]
+
+###### 磁盘结构
