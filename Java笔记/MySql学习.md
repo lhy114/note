@@ -275,4 +275,12 @@ DML也就是update、delete、insert这些操作，如果where等走的是索引
 ![[Pasted image 20260807154945.png]]
 ![[Pasted image 20260807155445.png]]
 ##### 表级锁
+![[Pasted image 20260807155554.png]]
+###### 表锁
+![[Pasted image 20260807160037.png]]
+
+###### 元数据锁
+![[Pasted image 20260807160311.png]]
+###### 意向锁
+
 ##### 行级锁
