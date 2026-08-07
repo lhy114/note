@@ -291,4 +291,6 @@ DML也就是update、delete、insert这些操作，如果where等走的是索引
 ![[Pasted image 20260807162039.png]]
 **行锁**：
 ![[Pasted image 20260807163001.png]]![[Pasted image 20260807163048.png]]![[Pasted image 20260807163611.png]]
-这里要注意一下，如果你的查询
+这里要注意一下，如果你的DML在检索的时候，没有根据索引进行查询，那么此时行锁就会升级为表锁。如果select 语句加了锁，同样也会变成表锁。一句话总结：**普通 SELECT 永远不加锁；会“锁全表”的是当前读（FOR UPDATE/FOR SHARE）和 UPDATE/DELETE，而且本质是“全表扫描逐行加锁”，不是真正的表锁升级。**
+
+**间隙锁/键值锁**
