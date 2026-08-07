@@ -220,5 +220,6 @@ DML也就是update、delete、insert这些操作，如果where等走的是索引
 ![[Pasted image 20260807110702.png]]
 
 ##### 视图的检查选项
-**cascaded**简单来说，哪个视图加了cascaded字段，它就会检查当前视图以及yi l
-![[Pasted image 20260807111856.png]]
+**cascaded**简单来说，哪个视图加了cascaded字段，它就会检查当前视图以及依赖视图之前的所有范围
+![[Pasted image 20260807111856.png]]**local**就比较简单了， 
+![[Pasted image 20260807112202.png]]
