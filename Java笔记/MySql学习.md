@@ -247,3 +247,6 @@ DML也就是update、delete、insert这些操作，如果where等走的是索引
 
 ##### repeat
 ![[Pasted image 20260807144153.png]]
+
+##### loop
+![[Pasted image 20260807144405.png]]
