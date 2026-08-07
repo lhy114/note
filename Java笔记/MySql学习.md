@@ -176,3 +176,7 @@
 
 ##### limit 优化
 ![[Pasted image 20260807101101.png]]
+
+这一章节还是我来进行分析吧，假设id不是主键且没有建立索引
+SELECT * FROM t_user ORDER BY id LIMIT 1000000, 20;
+如果是上述的sql语句执行，那么会出现回表cha
