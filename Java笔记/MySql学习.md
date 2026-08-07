@@ -250,3 +250,6 @@ DML也就是update、delete、insert这些操作，如果where等走的是索引
 
 ##### loop
 ![[Pasted image 20260807144405.png]]
+
+##### 游标（存储表返回的数据）
+![[Pasted image 20260807144923.png]]
