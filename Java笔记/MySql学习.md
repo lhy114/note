@@ -239,5 +239,11 @@ DML也就是update、delete、insert这些操作，如果where等走的是索引
 ##### if
 ![[Pasted image 20260807142844.png]]
 
-Case:
+##### Case:
 ![[Pasted image 20260807143637.png]]
+
+##### while
+![[Pasted image 20260807143950.png]]
+
+##### repeat
+![[Pasted image 20260807144153.png]]
