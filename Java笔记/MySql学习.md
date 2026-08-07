@@ -205,3 +205,6 @@ LIMIT 20;
 ![[Pasted image 20260807102515.png]]![[Pasted image 20260807102850.png]]
 
 ##### update优化
+![[Pasted image 20260807103327.png]]
+InnoDB的**普通 SELECT 不加锁、DML 加行锁、范围加间隙锁、没走索引锁全表**。
+DML也就是update、delete、insert这些操作，如果where等走的是索引，那么只会触发行锁，如果走的是没有索引的字段，那么此时锁就会锁住全表，另外一个进程无法对这张表进行任何操作
