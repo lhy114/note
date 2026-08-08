@@ -45,4 +45,9 @@ Connection conn = DriverManager.getConnection(url, user, pwd);
 这一句执行时，`DriverManager` 内部已经自动帮你做了“加载类 + 执行静态代码块 + registerDriver”，你手写 `Class.forName` 只是重复做同一件事。
 
 ### DriverManager
-![[Pasted image 20260808194525.png]]
+![[Pasted image 20260808194525.png]]**`META-INF`**，是 JAR 文件规范里的一个**标准元数据目录**，意思是 "metadata information"。它不是导入项目时才生成的，而是打包 jar 的时候就已经写在压缩包里面了，只是 IntelliJ 展开依赖时你才看得到。
+![[Pasted image 20260808195304.png]]
+
+### Connection
+![[Pasted image 20260808195359.png]]
+![[Pasted image 20260808195500.png]]
