@@ -520,3 +520,6 @@ UPDATE 和 DELETE 天然是“当前读”，不需要你写 `FOR UPDATE`，它�
 ![[Pasted image 20260808141914.png]]![[Pasted image 20260808142024.png]]
 
 ##### 按月分片
+![[Pasted image 20260808142244.png]]![[Pasted image 20260808142322.png]]
+#### Mycat的管理及监控
+##### 原理
