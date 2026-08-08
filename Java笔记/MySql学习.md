@@ -477,5 +477,9 @@ UPDATE 和 DELETE 天然是“当前读”，不需要你写 `FOR UPDATE`，它�
 #### Mycat学习
 ##### 概述
 ![[Pasted image 20260808102029.png]]
-##### 安装
-![[Pasted image 20260808102208.png]]
+##### 安装，自己看官方文档
+#### 结构
+![[Pasted image 20260808102738.png]]
+
+
+
