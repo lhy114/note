@@ -461,4 +461,4 @@ UPDATE 和 DELETE 天然是“当前读”，不需要你写 `FOR UPDATE`，它�
 ### 主从复制
 ![[Pasted image 20260808095359.png]]
 ![[Pasted image 20260808095556.png]]![[Pasted image 20260808095734.png]]
-![[Pasted image 20260808095907.png]]![[Pasted image 20260808100125.png]]
+![[Pasted image 20260808095907.png]]![[Pasted image 20260808100125.png]]![[Pasted image 20260808100310.png]]![[Pasted image 20260808100412.png]]![[Pasted image 20260808100559.png]]
