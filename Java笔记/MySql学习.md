@@ -465,6 +465,9 @@ UPDATE 和 DELETE 天然是“当前读”，不需要你写 `FOR UPDATE`，它�
 ### 分库分表
 ![[Pasted image 20260808101214.png]]
 #### 拆分策略
-
+![[Pasted image 20260808101357.png]]
 ##### 垂直拆分
+![[Pasted image 20260808101554.png]]
 ##### 水平拆分
+![[Pasted image 20260808101741.png]]
+
