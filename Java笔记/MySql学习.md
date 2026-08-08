@@ -451,4 +451,6 @@ UPDATE 和 DELETE 天然是“当前读”，不需要你写 `FOR UPDATE`，它�
 ![[Pasted image 20260808093632.png]]
 #### 二进制日志
 ![[Pasted image 20260808093853.png]]
-![[Pasted image 20260808094055.png]]![[Pasted image 20260808094107.png]]
+![[Pasted image 20260808094055.png]]![[Pasted image 20260808094107.png]]![[Pasted image 20260808094526.png]]
+#### 查询日志
+![[Pasted image 20260808094701.png]]
