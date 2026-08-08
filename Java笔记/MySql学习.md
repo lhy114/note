@@ -457,3 +457,7 @@ UPDATE 和 DELETE 天然是“当前读”，不需要你写 `FOR UPDATE`，它�
 
 #### 慢查询日志
 ![[Pasted image 20260808095047.png]]
+
+### 主从复制
+![[Pasted image 20260808095359.png]]
+![[Pasted image 20260808095556.png]]![[Pasted image 20260808095734.png]]
