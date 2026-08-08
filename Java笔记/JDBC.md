@@ -67,3 +67,6 @@ Connection conn = DriverManager.getConnection(url, user, pwd);
 ![[Pasted image 20260808202259.png]]![[Pasted image 20260808202858.png]]
 注意默认是没有开启的，请在url进行开启，原理就是你在返回对象的时候，这个时候就已经把sql发给了mysql了
 ![[Pasted image 20260808203229.png]]
+
+### 数据库连接池
+![[Pasted image 20260808203701.png]]![[Pasted image 20260808203754.png]]![[Pasted image 20260808204156.png]]
