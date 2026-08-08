@@ -508,4 +508,5 @@ UPDATE 和 DELETE 天然是“当前读”，不需要你写 `FOR UPDATE`，它�
 ##### 枚举分片
 ![[Pasted image 20260808140451.png]]![[Pasted image 20260808140531.png]]
 
-##### 分片
+##### 应用指定分片
+![[Pasted image 20260808141112.png]]![[Pasted image 20260808141136.png]]
