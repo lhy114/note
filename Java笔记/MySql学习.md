@@ -515,4 +515,8 @@ UPDATE 和 DELETE 天然是“当前读”，不需要你写 `FOR UPDATE`，它�
 ![[Pasted image 20260808141349.png]]
 ![[Pasted image 20260808141523.png]]
 ##### 字符串hash解析
-![[Pasted image 20260808141618.png]]
+![[Pasted image 20260808141618.png]]![[Pasted image 20260808141746.png]]
+##### 按（天）日期分片
+![[Pasted image 20260808141914.png]]![[Pasted image 20260808142024.png]]
+
+##### 按月分片
