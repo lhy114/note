@@ -64,4 +64,5 @@ Connection conn = DriverManager.getConnection(url, user, pwd);
 
 你会发现where恒等于true，那么你都会返回所有结果，此时登陆就成功了
 
-![[Pasted image 20260808202259.png]]
+![[Pasted image 20260808202259.png]]![[Pasted image 20260808202858.png]]
+注意默认是没有开启的，请在url进行开启，原理就是ni
