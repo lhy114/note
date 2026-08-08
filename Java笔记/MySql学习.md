@@ -599,3 +599,4 @@ SELECT * FROM tb_user WHERE name = '小明';  -- 3 个分片都查一遍，合�
 
 #### 双主双从
 ![[Pasted image 20260808150828.png]]
+![[Pasted image 20260808151031.png]]![[Pasted image 20260808151116.png]]
