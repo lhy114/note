@@ -594,4 +594,8 @@ SELECT * FROM tb_user WHERE name = '小明';  -- 3 个分片都查一遍，合�
 ![[Pasted image 20260808145256.png]]
 
 ### 读写分离
-![[Pasted image 20260808145841.png]]![[Pasted image 20260808150156.png]]![[Pasted image 20260808150259.png]]
+#### 一主一从
+![[Pasted image 20260808145841.png]]![[Pasted image 20260808150156.png]]![[Pasted image 20260808150259.png]]![[Pasted image 20260808150653.png]]
+
+#### 双主双从
+![[Pasted image 20260808150828.png]]
