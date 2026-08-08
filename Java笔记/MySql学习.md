@@ -489,3 +489,4 @@ UPDATE 和 DELETE 天然是“当前读”，不需要你写 `FOR UPDATE`，它�
 
 #### Mycat的分片
 ##### 垂直拆分
+![[Pasted image 20260808113631.png]]
