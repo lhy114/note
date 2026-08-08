@@ -588,3 +588,6 @@ SELECT * FROM tb_user WHERE name = '小明';  -- 3 个分片都查一遍，合�
 ![[Pasted image 20260808142923.png]]
 
 ##### 管理
+![[Pasted image 20260808144354.png]]
+
+##### Mycat-web/eye
