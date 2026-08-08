@@ -45,3 +45,4 @@ Connection conn = DriverManager.getConnection(url, user, pwd);
 这一句执行时，`DriverManager` 内部已经自动帮你做了“加载类 + 执行静态代码块 + registerDriver”，你手写 `Class.forName` 只是重复做同一件事。
 
 ### DriverManager
+![[Pasted image 20260808194525.png]]
