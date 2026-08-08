@@ -501,3 +501,11 @@ UPDATE 和 DELETE 天然是“当前读”，不需要你写 `FOR UPDATE`，它�
 ##### 取模分片
 ![[Pasted image 20260808140005.png]]
 ![[Pasted image 20260808140045.png]]
+
+##### 一致性hash
+![[Pasted image 20260808140205.png]]![[Pasted image 20260808140239.png]]
+
+##### 枚举分片
+![[Pasted image 20260808140451.png]]![[Pasted image 20260808140531.png]]
+
+##### 分片
