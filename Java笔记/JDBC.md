@@ -55,3 +55,6 @@ Connection conn = DriverManager.getConnection(url, user, pwd);
 ![[Pasted image 20260808195853.png]]
 ### ResultSet
 ![[Pasted image 20260808200338.png]]
+
+### PreparedStatement
+![[Pasted image 20260808201432.png]]
