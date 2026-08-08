@@ -493,3 +493,11 @@ UPDATE 和 DELETE 天然是“当前读”，不需要你写 `FOR UPDATE`，它�
 
 ##### 水平拆分
 ![[Pasted image 20260808114813.png]]
+#### 分片规则
+##### 范围分片
+![[Pasted image 20260808135922.png]]
+![[Pasted image 20260808135900.png]]
+
+##### 取模分片
+![[Pasted image 20260808140005.png]]
+![[Pasted image 20260808140045.png]]
