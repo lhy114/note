@@ -480,6 +480,9 @@ UPDATE 和 DELETE 天然是“当前读”，不需要你写 `FOR UPDATE`，它�
 ##### 安装，自己看官方文档
 #### 结构
 ![[Pasted image 20260808102738.png]]
-
+#### 配置文件
+##### schema.xml
+![[Pasted image 20260808105707.png]]
+![[Pasted image 20260808105827.png]]
 
 
