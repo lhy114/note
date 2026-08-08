@@ -485,4 +485,7 @@ UPDATE 和 DELETE 天然是“当前读”，不需要你写 `FOR UPDATE`，它�
 ![[Pasted image 20260808105707.png]]
 ![[Pasted image 20260808105827.png]]
 
-![[Pasted image 20260808110018.png]]![[Pasted image 20260808110138.png]]![[Pasted image 20260808110221.png]]![[Pasted image 20260808113036.png]]
+![[Pasted image 20260808110018.png]]![[Pasted image 20260808110138.png]]![[Pasted image 20260808110221.png]]![[Pasted image 20260808113036.png]]![[Pasted image 20260808113114.png]]
+
+#### Mycat的分片
+##### 垂直拆分
