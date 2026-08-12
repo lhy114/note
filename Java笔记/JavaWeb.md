@@ -54,4 +54,13 @@ public class simpleRequest {
 }
 ```
 
-![[Pasted image 20260812125800.png]]![[Pasted image 20260812142900.png]]![[Pasted image 20260812143019.png]]![[Pasted image 20260812143618.png]]
+![[Pasted image 20260812125800.png]]![[Pasted image 20260812142900.png]]![[Pasted image 20260812143019.png]]![[Pasted image 20260812143618.png]]![[Pasted image 20260812144446.png]]
+
+|写法|含义|
+|---|---|
+|`yyyy`|年|
+|`MM`|月，**必须大写**|
+|`dd`|日|
+|`HH`|24 小时制，**必须大写**|
+|`mm`|分钟，小写|
+|`ss`|秒|
