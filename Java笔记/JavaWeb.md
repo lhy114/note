@@ -75,3 +75,10 @@ public class simpleRequest {
 ## 三层架构（目的是希望每一个 类是单一职责的）
 ![[Pasted image 20260812151833.png]]
 ![[Pasted image 20260812160546.png]]
+## 控制反转和依赖注入
+![[Pasted image 20260812160822.png]]
+![[Pasted image 20260812161155.png]]
+
+### IOC 控制反转
+
+### DI 依赖注入
