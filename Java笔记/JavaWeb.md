@@ -10,3 +10,4 @@ Controller、Service、Mapper 都放在启动类所在包的下面。
 ![[Pasted image 20260812104311.png]]
 ![[Pasted image 20260812104228.png]]
 ## 响应协议
+![[Pasted image 20260812105021.png]]![[Pasted image 20260812105038.png]]
