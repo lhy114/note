@@ -54,4 +54,4 @@ public class simpleRequest {
 }
 ```
 
-![[Pasted image 20260812125800.png]]
+![[Pasted image 20260812125800.png]]![[Pasted image 20260812142900.png]]![[Pasted image 20260812143019.png]]
