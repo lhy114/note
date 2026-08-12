@@ -28,5 +28,6 @@ Tomcat 是一个用 Java 写的 **Web 服务器 / Servlet 容器**，由 Apache 
 **spring**本身不是服务器，不负责监听端口、接收请求。Spring Web MVC 负责的是“收到请求后，调用哪个 Controller 方法，返回什么数据”这套业务逻辑。
 
 浏览器 → HTTP 请求 → Tomcat → Spring 的 DispatcherServlet → Controller → 返回结果 → Tomcat → 浏览器.**注意，现在的spring已经集成了tomcat**
+![[Pasted image 20260812111344.png]]
 
 ![[Pasted image 20260812110806.png]]
