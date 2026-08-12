@@ -8,3 +8,5 @@ public interface UserMapper {
     public List<User> list();  
 }
 ```
+
+![[Pasted image 20260812172931.png]]
