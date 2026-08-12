@@ -81,4 +81,7 @@ public class simpleRequest {
 
 ### IOC 控制反转
 ![[Pasted image 20260812161540.png]]
+![[Pasted image 20260812161824.png]]
 ### DI 依赖注入
+![[Pasted image 20260812162305.png]]
+![[Pasted image 20260812162251.png]]
