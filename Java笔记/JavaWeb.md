@@ -36,3 +36,20 @@ Tomcat 是一个用 Java 写的 **Web 服务器 / Servlet 容器**，由 Apache 
 ![[Pasted image 20260812114256.png]]![[Pasted image 20260812114327.png]]
 # 请求
 ![[Pasted image 20260812124409.png]]
+```
+package com.cqu.controller;  
+  
+import org.springframework.web.bind.annotation.RequestMapping;  
+import org.springframework.web.bind.annotation.RequestParam;  
+import org.springframework.web.bind.annotation.RestController;  
+  
+@RestController  
+public class simpleRequest {  
+    @RequestMapping("/getParam")  
+    public String getParam(String name, @RequestParam(name = "age", required = true) Integer value) {  
+        System.out.println(name+","+value);  
+        System.out.println();  
+        return "ok";  
+    }  
+}
+```
