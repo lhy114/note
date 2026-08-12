@@ -67,5 +67,6 @@ public class simpleRequest {
 | `ss`   | 秒               |
 ![[Pasted image 20260812145026.png]]![[Pasted image 20260812145615.png]]
 
-## 响应
-![[Pasted image 20260812150147.png]]
+## 响应，这里要学习统一响应结果
+![[Pasted image 20260812150147.png]]![[Pasted image 20260812150602.png]]
+![[Pasted image 20260812150802.png]]
