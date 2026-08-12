@@ -12,4 +12,5 @@ Controller、Service、Mapper 都放在启动类所在包的下面。
 ## 响应协议
 ![[Pasted image 20260812105021.png]]![[Pasted image 20260812105038.png]]
 
-## 协议解析
+## 协议解析和web服务器
+![[Pasted image 20260812110252.png]]
