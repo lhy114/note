@@ -74,3 +74,4 @@ public class simpleRequest {
 # 分层解耦
 ## 三层架构（目的是希望每一个 类是单一职责的）
 ![[Pasted image 20260812151833.png]]
+![[Pasted image 20260812160546.png]]
