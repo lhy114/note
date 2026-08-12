@@ -35,3 +35,4 @@ Tomcat 是一个用 Java 写的 **Web 服务器 / Servlet 容器**，由 Apache 
 # 请求响应
 ![[Pasted image 20260812114256.png]]![[Pasted image 20260812114327.png]]
 # 请求
+![[Pasted image 20260812124409.png]]
