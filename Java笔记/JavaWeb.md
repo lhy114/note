@@ -70,3 +70,7 @@ public class simpleRequest {
 ## 响应，这里要学习统一响应结果
 ![[Pasted image 20260812150147.png]]![[Pasted image 20260812150602.png]]
 ![[Pasted image 20260812150802.png]]
+
+# 分层解耦
+## 三层架构（目的是希望每一个 类是单一职责的）
+![[Pasted image 20260812151833.png]]
