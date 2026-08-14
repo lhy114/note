@@ -85,3 +85,6 @@ public class simpleRequest {
 ### DI 依赖注入
 ![[Pasted image 20260812162354.png]]
 ![[Pasted image 20260812162251.png]]
+
+# Restful
+![[Pasted image 20260814121833.png]]
