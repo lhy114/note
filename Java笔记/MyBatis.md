@@ -1,3 +1,4 @@
+## 定义
 ![[Pasted image 20260812162705.png]]![[Pasted image 20260812164813.png]]
 
 ```
@@ -9,4 +10,17 @@ public interface UserMapper {
 }
 ```
 
-![[Pasted image 20260812172931.png]]![[Pasted image 20260812201326.png]]![[Pasted image 20260812201623.png]]![[Pasted image 20260812202218.png]]![[Pasted image 20260812202319.png]]![[Pasted image 20260812202534.png]]![[Pasted image 20260812202619.png]]![[Pasted image 20260812202918.png]]![[Pasted image 20260812203129.png]]![[Pasted image 20260814102448.png]]
+![[Pasted image 20260812172931.png]]
+## 基础用法
+
+![[Pasted image 20260812201326.png]]
+
+![[Pasted image 20260812201623.png]]![[Pasted image 20260812202218.png]]![[Pasted image 20260812202319.png]]![[Pasted image 20260812202534.png]]![[Pasted image 20260812202619.png]]![[Pasted image 20260812202918.png]]![[Pasted image 20260812203129.png]]
+
+## XML文件
+![[Pasted image 20260814102448.png]]
+
+## 动态SQL
+![[Pasted image 20260814104103.png]]
+### if
+### foreach
