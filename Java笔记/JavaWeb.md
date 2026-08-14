@@ -105,4 +105,5 @@ public class simpleRequest {
 ![[Pasted image 20260814205403.png]]
 
 # 参数配置化
-![[Pasted image 20260814215115.png]]![[Pasted image 20260814215307.png]]![[Pasted image 20260814215509.png]]![[Pasted image 20260814215607.png]]
+![[Pasted image 20260814215115.png]]![[Pasted image 20260814215307.png]]![[Pasted image 20260814215509.png]]![[Pasted image 20260814215607.png]]![[Pasted image 20260814220111.png]]
+利用IOC进行自动注入值，首先你要给IOC容器，所以x
