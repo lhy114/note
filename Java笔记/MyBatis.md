@@ -27,3 +27,6 @@ public interface UserMapper {
 ![[Pasted image 20260814112447.png]]
 
 ### foreach
+![[Pasted image 20260814113400.png]]
+
+## sql&include
