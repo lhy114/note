@@ -23,4 +23,5 @@ public interface UserMapper {
 ## 动态SQL
 ![[Pasted image 20260814104103.png]]
 ### if
+![[Pasted image 20260814110414.png]]
 ### foreach
