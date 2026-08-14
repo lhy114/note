@@ -94,5 +94,7 @@ public class simpleRequest {
 
 # 文件上传
 ![[Pasted image 20260814201453.png]]
+![[Pasted image 20260814202252.png]]
 这里要明白前端上传的三要素，post，enctype和type，注意如果使用enctype为默认值xx-www-xx，那么此时只能够上传文件名而不会上传文件
 ![[Pasted image 20260814201711.png]]
+## 本地存储
