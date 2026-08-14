@@ -106,4 +106,4 @@ public class simpleRequest {
 
 # 参数配置化
 ![[Pasted image 20260814215115.png]]![[Pasted image 20260814215307.png]]![[Pasted image 20260814215509.png]]![[Pasted image 20260814215607.png]]![[Pasted image 20260814220111.png]]
-利用IOC进行自动注入值，首先你要给IOC容器，所以x
+利用IOC进行自动注入值，首先你要给IOC容器，所以需要Component注解，然后需要调用get、set方法，所以需要data注解，然后需要识别前缀，所以需要ConfigurationProperties
