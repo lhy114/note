@@ -100,4 +100,6 @@ public class simpleRequest {
 ## 本地存储
 ![[Pasted image 20260814202607.png]]
 这里要回顾一下UUID生成唯一的id值
-![[Pasted image 20260814202736.png]]
+![[Pasted image 20260814202736.png]]![[Pasted image 20260814203124.png]]
+## OSS(以阿里云为案例)
+
