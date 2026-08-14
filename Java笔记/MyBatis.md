@@ -24,4 +24,6 @@ public interface UserMapper {
 ![[Pasted image 20260814104103.png]]
 ### if
 ![[Pasted image 20260814110414.png]]
+![[Pasted image 20260814112447.png]]
+
 ### foreach
