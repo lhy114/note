@@ -104,4 +104,5 @@ public class simpleRequest {
 ## OSS(以阿里云为案例)
 ![[Pasted image 20260814205403.png]]
 
-# 参数p
+# 参数配置化
+![[Pasted image 20260814215115.png]]![[Pasted image 20260814215307.png]]![[Pasted image 20260814215509.png]]![[Pasted image 20260814215607.png]]
