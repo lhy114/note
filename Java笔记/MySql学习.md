@@ -21,7 +21,52 @@
 
 ####  SQL
 ##### SELECT关键字
-![[Pasted image 20260805163707.png]]![[Pasted image 20260805163828.png]]![[Pasted image 20260805164254.png]]![[Pasted image 20260805165805.png]]![[Pasted image 20260805170126.png]]![[Pasted image 20260805170613.png]]![[Pasted image 20260805170920.png]]![[Pasted image 20260805172136.png]]
+![[Pasted image 20260805163707.png]]![[Pasted image 20260805163828.png]]
+**自增 id 为什么不连续（1、2、3、6）**
+
+- MySQL 的 `AUTO_INCREMENT` 计数器只增不减，删除行后不会复用被删掉的 id
+- 这不是 MyBatis 配置问题，也不是删除失败，是“真删除 + 计数器不回退”
+- 事务回滚、并发插入也可能造成 id 空洞
+- 重置方式：`TRUNCATE TABLE 表名` 会清空并重置为 1；`ALTER TABLE 表名 AUTO_INCREMENT = 1` 会调整为 `max(id)+1`
+- id 是内部主键，不用于展示序号；页面序号用 `row_number()` 或前端列表下标
+
+**逻辑删除（软删除）是什么**
+
+- 逻辑删除不执行 `DELETE`，而是执行 `UPDATE 表 SET deleted = 1 WHERE id = ?`
+- 数据仍保留在表中，查询时自动过滤 `deleted = 0`
+- 普通 MyBatis 没有这个功能，MyBatis-Plus 提供了 `@TableLogic` 注解自动实现
+
+```
+@TableLogic
+private Integer deleted;
+```
+
+```
+mybatis-plus:
+  global-config:
+    db-config:
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+```
+
+**为什么要设计逻辑删除**
+
+- 数据可恢复：误删后把 `deleted` 改回 `0` 即可
+- 保留历史数据：删除用户后，订单、操作记录仍能关联到该用户
+- 保护关联数据：删除部门后，员工仍能指向这个部门
+- 满足审计和合规：删除留痕，数据本身不消失
+
+**逻辑删除的代价**
+
+- 表数据只会越来越多
+- 已删除的行仍占用主键和唯一索引，例如用户名不能重新注册
+- 每条查询都额外带 `deleted = 0` 条件
+
+**适用场景**
+
+- 适合：用户、订单、日志、需要审计和恢复的业务表
+- 不适合：临时表、中间表、学习项目里的简单业务，直接真删除更简单
+![[Pasted image 20260805164254.png]]![[Pasted image 20260805165805.png]]![[Pasted image 20260805170126.png]]![[Pasted image 20260805170613.png]]![[Pasted image 20260805170920.png]]![[Pasted image 20260805172136.png]]
 #### DCL 数据控制语音
 ![[Pasted image 20260805172517.png]]![[Pasted image 20260805203540.png]]![[Pasted image 20260805203635.png]]
 #### 常见函数
