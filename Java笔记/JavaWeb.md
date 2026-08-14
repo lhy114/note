@@ -88,3 +88,6 @@ public class simpleRequest {
 
 # Restful
 ![[Pasted image 20260814121833.png]]
+
+# PageHelp
+![[Pasted image 20260814170043.png]]
