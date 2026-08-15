@@ -338,4 +338,8 @@ Spring AOP 的代理，**有接口时历史上用 JDK 代理，没有接口用 C
 
 
 ### 通知类型
-![[Pasted image 20260815165053.png]]![[Pasted image 20260815165539.png]]
+![[Pasted image 20260815165053.png]]![[Pasted image 20260815165539.png]]![[Pasted image 20260815165818.png]]
+### 通知顺序
+![[Pasted image 20260815170049.png]]
+
+### 
