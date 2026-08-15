@@ -7,3 +7,6 @@
 ![[Pasted image 20260815222851.png]]![[Pasted image 20260815223114.png]]
 
 ## 第三方Bean的管理
+![[Pasted image 20260815223949.png]]![[Pasted image 20260815224012.png]]
+
+## 自动配置
