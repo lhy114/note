@@ -163,4 +163,4 @@ JWT 的 payload（以及 header）用的是 **Base64URL 编码**
 ![[Pasted image 20260815114644.png]]
 
 ### Interceptor
-![[Pasted image 20260815141752.png]]![[Pasted image 20260815141947.png]]
+![[Pasted image 20260815141752.png]]![[Pasted image 20260815141947.png]]![[Pasted image 20260815142432.png]]
