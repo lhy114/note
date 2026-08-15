@@ -151,3 +151,4 @@ JWT 的 payload（以及 header）用的是 **Base64URL 编码**
 
 
 ![[Pasted image 20260815103130.png]]![[Pasted image 20260815103456.png]]
+
