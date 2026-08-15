@@ -196,3 +196,6 @@ View              (渲染成 HTML / JSON)
 
 # Spring的事物管理
 ![[Pasted image 20260815161216.png]]![[Pasted image 20260815161708.png]]![[Pasted image 20260815161856.png]]
+
+这里的required，是两个方法公用一个事物，如果a功能发生异常，即使之前运行了b方法，那么此时事物回滚，b的操作相当于没有执行。对于那些出现错误，需要记录日志的方法，这时候是无法记录的（假设b是一个log记录的方法）
+![[Pasted image 20260815162429.png]]
