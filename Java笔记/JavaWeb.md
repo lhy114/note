@@ -343,4 +343,4 @@ Spring AOP 的代理，**有接口时历史上用 JDK 代理，没有接口用 C
 ![[Pasted image 20260815170049.png]]
 
 ### 切入点表达式
-![[Pasted image 20260815170217.png]]![[Pasted image 20260815170259.png]]![[Pasted image 20260815170558.png]]
+![[Pasted image 20260815170217.png]]![[Pasted image 20260815170259.png]]![[Pasted image 20260815170558.png]]![[Pasted image 20260815170737.png]]![[Pasted image 20260815170803.png]]![[Pasted image 20260815171015.png]]
