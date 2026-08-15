@@ -117,3 +117,4 @@ public class simpleRequest {
 由于http协议是无状态，每一次请求响应之间是没有关系的，但是为了能够实现会话跟踪技术，需要让每一次请求都含有共有数据。
 
 ### Cookis和Session
+![[Pasted image 20260815101849.png]]
