@@ -13,4 +13,4 @@
 ![[Pasted image 20260815224809.png]]
 要引入其他组件的依赖的时候 ，如果没有找到，请用componentscan解决
 
-![[Pasted image 20260815225123.png]]
+![[Pasted image 20260815225123.png]]![[Pasted image 20260815225800.png]]![[Pasted image 20260815225849.png]]
