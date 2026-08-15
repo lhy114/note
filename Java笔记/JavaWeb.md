@@ -166,3 +166,27 @@ JWT 的 payload（以及 header）用的是 **Base64URL 编码**
 ![[Pasted image 20260815141752.png]]![[Pasted image 20260815141947.png]]![[Pasted image 20260815142432.png]]![[Pasted image 20260815142836.png]]
 
 这里我要稍微说明一下，由于filter它不属于spring框架下面的内容，因此TomCat是无法直接访问controller的，所以需要这个dispathcerservlet进行操作，
+```
+浏览器请求
+    │
+    ▼
+DispatcherServlet  (唯一入口)
+    │
+    ▼
+HandlerMapping    (URL → Controller 方法 + 拦截器)
+    │
+    ▼
+HandlerAdapter    (调用具体 Controller 方法)
+    │
+    ▼
+Controller        (业务方法，返回 ModelAndView 或 @ResponseBody 数据)
+    │
+    ▼
+ViewResolver      (视图名 → 真正的视图)
+    │
+    ▼
+View              (渲染成 HTML / JSON)
+    │
+    ▼
+响应给浏览器
+```
