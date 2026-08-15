@@ -193,3 +193,6 @@ View              (渲染成 HTML / JSON)
 
 # 全局异常处理器
 ![[Pasted image 20260815160614.png]]
+
+# Spring的事物管理
+![[Pasted image 20260815161216.png]]
