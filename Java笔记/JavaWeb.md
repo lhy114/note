@@ -132,5 +132,19 @@ public class simpleRequest {
 ![[Pasted image 20260815102630.png]]
 ![[Pasted image 20260815103021.png]]
 JWT 的 payload（以及 header）用的是 **Base64URL 编码**
+```
+客户端                   服务器
+  │  1. 用户名 + 密码       │
+  ├───────────────────────► │ 验证密码
+  │                        │ 用【服务器自己的私钥】对 header.payload 签名
+  │  2. 返回 JWT           │
+  │ ◄──────────────────────┤
+  │  3. 之后每次请求带 JWT  │
+  ├───────────────────────► │ 用【服务器自己的公钥】验签
+  │                        │ 验签通过 → 信任 payload 里的 userId
+  
+  HS256注意是的对称密钥
+```
+
 
 ![[Pasted image 20260815103130.png]]![[Pasted image 20260815103456.png]]
