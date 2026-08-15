@@ -15,4 +15,7 @@
 
 ![[Pasted image 20260815225123.png]]![[Pasted image 20260815225800.png]]![[Pasted image 20260815225849.png]]
 
-![[Pasted image 20260815230332.png]]
+![[Pasted image 20260815230332.png]]![[Pasted image 20260815231004.png]]
+
+## 自定义starter
+![[Pasted image 20260815231316.png]]![[Pasted image 20260815231459.png]]
