@@ -559,4 +559,5 @@ public class RateLimitParser {
 
 
 ### 连接点
-![[Pasted image 20260815171724.png]]
+连接点（JoinPoint）是“所有可能被拦截的位置”，切入点（Pointcut）是“从中筛选出来、真正被拦截的那一部分”。切入点一定是连接点，但连接点不一定是切入点。
+![[Pasted image 20260815171724.png]]![[Pasted image 20260815171950.png]]
