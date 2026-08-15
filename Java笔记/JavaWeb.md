@@ -195,4 +195,4 @@ View              (渲染成 HTML / JSON)
 ![[Pasted image 20260815160614.png]]
 
 # Spring的事物管理
-![[Pasted image 20260815161216.png]]
+![[Pasted image 20260815161216.png]]![[Pasted image 20260815161708.png]]![[Pasted image 20260815161856.png]]
