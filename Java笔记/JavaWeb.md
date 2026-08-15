@@ -344,3 +344,219 @@ Spring AOP 的代理，**有接口时历史上用 JDK 代理，没有接口用 C
 
 ### 切入点表达式
 ![[Pasted image 20260815170217.png]]![[Pasted image 20260815170259.png]]![[Pasted image 20260815170558.png]]![[Pasted image 20260815170737.png]]![[Pasted image 20260815170803.png]]![[Pasted image 20260815171015.png]]
+![[Pasted image 20260815171520.png]]
+
+#### 一、注解本质是什么
+
+注解就是一段**元数据**，它本身不写逻辑、不执行代码，只是“贴在”类、方法、字段上，供框架或反射代码读取。
+
+```
+@Target(ElementType.METHOD)
+@Retention(RetentionPolicy.RUNTIME)
+public @interface OperationLog {
+    String value();
+}
+```
+
+这就是一个最简单的自定义注解。注意几个语法特征：
+
+- 用 `@interface` 声明，不是 `interface`
+- 里面的 `value()` 不是方法，是**注解元素**，相当于一个参数
+- 注解元素不能有 `throws`，不能用泛型
+- 使用时的写法是 `@OperationLog("登录")`，而不是 OperationLog("登录" = ...)，省略了 `value`
+
+#### 二、注解元素规则
+
+元素类型只允许这些：
+
+- 基本类型：`int`、`long`、`boolean` 等
+- `String`
+- `Class` 及其泛型：`Class<?>`
+- 枚举：`enum`
+- 注解类型
+- 以上类型的数组
+
+允许写法：
+
+```
+public @interface MyAnnotation {
+    String value() default "";              // String
+    int level() default 1;                  // 基本类型
+    Class<?> target() default Object.class; // Class
+    LevelEnum levelEnum() default LevelEnum.INFO; // 枚举
+    String[] tags() default {};             // 数组
+}
+```
+
+规则：
+
+- 元素可以给默认值 `default`
+- 使用时，没有默认值的元素**必须填**
+- 默认值不能是 `null`
+- 只有一个元素且叫 `value` 时，使用时可以省略名字：`@MyAnnotation("x")`；多个元素时写成 `@MyAnnotation(value = "x", level = 2)`
+
+#### 三、元注解：注解的注解
+
+定义自定义注解时，通常要加几个 JDK 自带的元注解。
+
+**@Target：指定能贴在哪里**
+
+|值|位置|
+|---|---|
+|`TYPE`|类、接口、枚举|
+|`METHOD`|方法|
+|`FIELD`|字段|
+|`PARAMETER`|方法参数|
+|`CONSTRUCTOR`|构造器|
+|`ANNOTATION_TYPE`|注解类型本身|
+
+```
+@Target({ElementType.METHOD, ElementType.TYPE})
+```
+
+**@Retention：指定注解能活多久**
+
+|值|生命周期|
+|---|---|
+|`SOURCE`|只在源码里，编译后丢弃，如 `@Override`|
+|`CLASS`|存在字节码里，但运行时读不到，默认值|
+|`RUNTIME`|运行时保留，**反射能读到，AOP 必须用它**|
+
+```
+@Retention(RetentionPolicy.RUNTIME)
+```
+
+**其他元注解**
+
+```
+@Documented   // 注解信息会被 javadoc 记录
+@Inherited    // 子类继承父类的这个注解（仅限类上）
+@Repeatable   // 允许同一个位置贴多个，如 @RequestMapping 的衍生
+```
+
+```
+@Repeatable(Schedules.class)
+public @interface Schedule {
+    String time();
+}
+
+@Schedule(time = "9:00")
+@Schedule(time = "18:00")
+public void run() {}
+```
+
+#### 四、使用自定义注解
+
+```
+public class UserService {
+
+    @OperationLog("查询用户")
+    public User getUser(Long id) {
+        return new User(id);
+    }
+}
+```
+
+到这一步，注解**什么都没干**，它只是挂在方法上。真正干活的是后面读取它的代码。
+
+#### 五、通过反射读取注解（核心）
+
+注解 + 反射才等于实际功能。常用 API：
+
+```
+boolean present = method.isAnnotationPresent(OperationLog.class);
+OperationLog log = method.getAnnotation(OperationLog.class);
+Annotation[] all = method.getAnnotations(); // 拿到方法上所有注解
+```
+
+完整解析例子：
+
+```
+import java.lang.reflect.Method;
+
+public class AnnotationParser {
+
+    public static void main(String[] args) throws Exception {
+        Method method = UserService.class.getMethod("getUser", Long.class);
+
+        // 1. 判断方法上有没有这个注解
+        if (method.isAnnotationPresent(OperationLog.class)) {
+
+            // 2. 取出注解对象
+            OperationLog annotation = method.getAnnotation(OperationLog.class);
+
+            // 3. 读取注解里的值
+            System.out.println("操作类型：" + annotation.value());
+        }
+    }
+}
+```
+
+注解对象是 JVM 在运行时根据 `@Retention(RUNTIME)` 生成的实例，读取方式类似于“找到标签，看标签上写的字”。
+
+类、字段、参数同理：
+
+```
+// 类上的注解
+Class<?> clazz = UserService.class;
+OperationLog classLog = clazz.getAnnotation(OperationLog.class);
+
+// 字段上的注解
+Field field = clazz.getDeclaredField("username");
+FieldLog fieldLog = field.getAnnotation(FieldLog.class);
+
+// 参数上的注解
+Parameter[] parameters = method.getParameters();
+ParameterLog paramLog = parameters[0].getAnnotation(ParameterLog.class);
+```
+
+#### 六、一个综合例子
+
+```
+// 1. 定义注解
+@Target(ElementType.METHOD)
+@Retention(RetentionPolicy.RUNTIME)
+public @interface RateLimit {
+    int limit() default 10;      // 每秒上限
+    String key() default "";     // 限流维度
+}
+
+// 2. 使用注解
+public class OrderService {
+
+    @RateLimit(limit = 5, key = "createOrder")
+    public void createOrder() {
+        System.out.println("创建订单");
+    }
+}
+
+// 3. 反射解析
+public class RateLimitParser {
+
+    public static void check(Object obj, String methodName, Class<?>... paramTypes) throws Exception {
+        Method method = obj.getClass().getMethod(methodName, paramTypes);
+        RateLimit rateLimit = method.getAnnotation(RateLimit.class);
+
+        if (rateLimit != null) {
+            System.out.println("限流配置：key=" + rateLimit.key()
+                    + ", limit=" + rateLimit.limit());
+        }
+    }
+}
+```
+
+实际框架里，解析逻辑通常放在 AOP 切面或框架启动扫描阶段，而不是自己手写反射，但原理完全相同。
+
+#### 七、常见坑
+
+- **忘了加 `@Retention(RUNTIME)`**：反射永远拿到 `null`，这是最常见的错
+- **`@Target` 写错位置**：比如注解只允许 `TYPE`，贴在方法上直接编译报错
+- **元素默认值不能为 null**：想让“不填”和“填了默认”区分开，用特殊值或 `Optional` 思路解决
+- **注解没有多态和继承**：注解的“继承”只有 `@Inherited` 管类上的注解，且子类没有自己的注解时才继承
+- **`@Inherited` 对方法、字段不生效**：它只作用于类
+- **注解元素是固定值**：不能是动态计算的结果，编译器要求在编译期确定
+
+
+
+### 连接点
+![[Pasted image 20260815171724.png]]
