@@ -2,3 +2,8 @@
 ## 获取Bean
 ![[Pasted image 20260815222718.png]]
 ![[Pasted image 20260815222636.png]]
+
+## Bean的作用域
+![[Pasted image 20260815222851.png]]![[Pasted image 20260815223114.png]]
+
+## 第三方Bean的管理
