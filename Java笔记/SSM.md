@@ -170,4 +170,9 @@ Spring MVC 里的 **MVC** 是 **Model - View - Controller** 的缩写，一个�
 ![[Pasted image 20260817170341.png]]![[Pasted image 20260817170451.png]]
 
 ## 如何加载Bean
-![[Pasted image 20260817171140.png]]![[Pasted image 20260817171211.png]]
+![[Pasted image 20260817171140.png]]![[Pasted image 20260817171211.png]]![[Pasted image 20260817171336.png]]
+
+## 请求与响应
+### get请求
+
+### post请求
