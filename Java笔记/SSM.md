@@ -84,5 +84,10 @@
 
 
 ### 注解开发（重点）
+#### 基本注解
 ![[Pasted image 20260817112705.png]]
 ![[Pasted image 20260817112751.png]]![[Pasted image 20260817113030.png]]
+#### Bean的生命周期
+![[Pasted image 20260817133813.png]]
+
+#### 自动装配
