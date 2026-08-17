@@ -84,6 +84,7 @@
 
 
 ### 注解开发（重点）
+![[Pasted image 20260817140745.png]]
 #### 基本注解
 ![[Pasted image 20260817112705.png]]
 ![[Pasted image 20260817112751.png]]![[Pasted image 20260817113030.png]]
@@ -104,3 +105,7 @@
 
 方法二：
 ![[Pasted image 20260817135047.png]]![[Pasted image 20260817135102.png]]![[Pasted image 20260817135117.png]]
+
+
+
+# Spring + mybatis
