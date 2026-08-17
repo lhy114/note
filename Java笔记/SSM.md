@@ -71,3 +71,5 @@
 ![[Pasted image 20260817110537.png]]
 
 
+### properties
+![[Pasted image 20260817111455.png]]
