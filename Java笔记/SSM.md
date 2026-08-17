@@ -19,6 +19,7 @@
 ![[Pasted image 20260817095747.png]]
 
 ### Bean的配置
+![[Pasted image 20260817112340.png]]
 #### bean的基础配置
 ![[Pasted image 20260817100316.png]]
 #### bean的别名
@@ -48,6 +49,7 @@
 ![[Pasted image 20260817102145.png]]![[Pasted image 20260817102152.png]]![[Pasted image 20260817102232.png]]
 
 ### 依赖注入的方式
+![[Pasted image 20260817112359.png]]
 ![[Pasted image 20260817103344.png]]
 
 #### setter-引用类型
@@ -78,4 +80,7 @@
 #### 创建容器
 ![[Pasted image 20260817111933.png]]
 #### 获得bean
-![[Pasted image 20260817111946.png]]
+![[Pasted image 20260817111946.png]]![[Pasted image 20260817112233.png]]![[Pasted image 20260817112244.png]]
+
+
+### 注解开发
