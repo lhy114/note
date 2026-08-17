@@ -37,3 +37,9 @@
 ![[Pasted image 20260817101109.png]]
 
 #### 实例工厂
+![[Pasted image 20260817101249.png]]
+
+#### 使用FactoryBean实现实例工厂
+![[Pasted image 20260817101553.png]]![[Pasted image 20260817101603.png]]
+
+### Bean的生命周期
