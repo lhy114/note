@@ -166,5 +166,8 @@ Spring MVC 里的 **MVC** 是 **Model - View - Controller** 的缩写，一个�
 - **Model（模型）**：业务数据和业务逻辑。比如 `UserService`、`UserRepository`、`User` 实体，它们负责查询数据库、处理业务规则，不关心怎么显示。
 - **View（视图）**：用户看到的页面。Spring MVC 里常用 Thymeleaf、JSP、FreeMarker 等模板来渲染数据，只负责展示，不写业务逻辑。
 - **Controller（控制器）**：接收用户请求，决定调用哪个 Service，把结果放进 Model，再返回给哪个 View。比如用 `@Controller` + `@GetMapping("/users")` 写的方法。
+## Spring MVC流程
+![[Pasted image 20260817170341.png]]![[Pasted image 20260817170451.png]]
 
-![[Pasted image 20260817170341.png]]![[Pasted image 20260817170451.png]]![[Pasted image 20260817170700.png]]
+## 如何加载Bean
+![[Pasted image 20260817171140.png]]![[Pasted image 20260817171211.png]]
