@@ -47,3 +47,4 @@
 
 ![[Pasted image 20260817102145.png]]![[Pasted image 20260817102152.png]]![[Pasted image 20260817102232.png]]
 
+### 依赖注入的方式
