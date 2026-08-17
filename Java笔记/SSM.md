@@ -121,5 +121,6 @@
 这里也就是说spring mybatis其实创建了两个bean，一个创建一个mybatis对象，然后扫描对应的mapper。
 
 
-原始的mybatis：首先chuang
+原始的mybatis：**这里我们可以看到最关键的就是sqlsessionFatory这个类**，所以我们希望将这个对象整合到bean中
 ![[Pasted image 20260817142534.png]]
+![[Pasted image 20260817142553.png]]![[Pasted image 20260817142609.png]]
