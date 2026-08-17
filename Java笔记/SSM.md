@@ -94,4 +94,8 @@
 ![[Pasted image 20260817134128.png]]![[Pasted image 20260817134142.png]]
 
 #### 自动装配-简单类型
+![[Pasted image 20260817134542.png]]
+#### 加载properties文件
+![[Pasted image 20260817134459.png]]
 
+#### 管理第三方bean
