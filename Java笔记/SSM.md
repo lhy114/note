@@ -19,7 +19,16 @@
 ![[Pasted image 20260817095747.png]]
 
 ### Bean的配置
+#### bean的基础配置
+![[Pasted image 20260817100316.png]]
 #### bean的别名
 ![[Pasted image 20260817100109.png]]
 
-#### Bean的作用范围（这里指代的是单）
+#### Bean的作用范围（这里指代的是单例还是多例）
+![[Pasted image 20260817100236.png]]
+
+### bean实例化
+
+#### 通过无参构造方法访问
+**注意这里的public改为private也能够实现**，这里通过反射的方法实现的
+![[Pasted image 20260817100602.png]]
