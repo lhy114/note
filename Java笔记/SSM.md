@@ -124,3 +124,9 @@
 原始的mybatis：**这里我们可以看到最关键的就是sqlsessionFatory这个类**，所以我们希望将这个对象整合到bean中
 ![[Pasted image 20260817142534.png]]
 ![[Pasted image 20260817142553.png]]![[Pasted image 20260817142609.png]]
+
+# Spring 整合 junit（测试类）
+![[Pasted image 20260817143145.png]]
+
+# AOP
+![[Pasted image 20260817143413.png]]![[Pasted image 20260817143602.png]]
