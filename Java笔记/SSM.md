@@ -133,3 +133,5 @@
 
 ## 切入点表达式
 ![[Pasted image 20260817145302.png]]![[Pasted image 20260817145327.png]]![[Pasted image 20260817145446.png]]
+## 通知类型
+![[Pasted image 20260817150202.png]]
