@@ -43,3 +43,7 @@
 ![[Pasted image 20260817101553.png]]![[Pasted image 20260817101603.png]]
 
 ### Bean的生命周期
+![[Pasted image 20260817102218.png]]
+
+![[Pasted image 20260817102145.png]]![[Pasted image 20260817102152.png]]![[Pasted image 20260817102232.png]]
+
