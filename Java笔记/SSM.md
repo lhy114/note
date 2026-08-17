@@ -140,4 +140,6 @@
 ### 获得切点参数
 ![[Pasted image 20260817150659.png]]![[Pasted image 20260817151221.png]]![[Pasted image 20260817151235.png]]
 
-## Spring事物
+## Spring的transcation
+1. 步骤一![[Pasted image 20260817152157.png]]
+2. 设置事物管理器，假设你的![[Pasted image 20260817152240.png]]
