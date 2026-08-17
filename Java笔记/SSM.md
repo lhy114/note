@@ -179,4 +179,5 @@ Spring MVC 里的 **MVC** 是 **Model - View - Controller** 的缩写，一个�
 **一句话**：get是直接通过url+值拼接得到的；而post是通过请求体得到的 
 
 #### 请求参数
-![[Pasted image 20260817172950.png]]![[Pasted image 20260817173033.png]]
+![[Pasted image 20260812150030.png]]
+![[Pasted image 20260817172950.png]]![[Pasted image 20260817173033.png]]![[Pasted image 20260817173508.png]]![[Pasted image 20260817173521.png]]![[Pasted image 20260817173559.png]]
