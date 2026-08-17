@@ -13,3 +13,13 @@
 2. 初始化IoC容器，然后通过容器获得bean，你只需要记住一点，ApplicationContext是IoC容器就行了。
 ![[Pasted image 20260817095352.png]]
 ### DI
+1. 配置一个set方法，spring他会自动调用
+![[Pasted image 20260817095707.png]]
+2. 配置文件的实现DI
+![[Pasted image 20260817095747.png]]
+
+### Bean的配置
+#### bean的别名
+![[Pasted image 20260817100109.png]]
+
+#### Bean的作用范围（这里指代的是单）
