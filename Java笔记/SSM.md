@@ -48,3 +48,11 @@
 ![[Pasted image 20260817102145.png]]![[Pasted image 20260817102152.png]]![[Pasted image 20260817102232.png]]
 
 ### 依赖注入的方式
+![[Pasted image 20260817103344.png]]
+
+#### setter-引用类型
+![[Pasted image 20260817103705.png]]
+#### setter-简单类型
+![[Pasted image 20260817103728.png]]
+
+#### 构造器
