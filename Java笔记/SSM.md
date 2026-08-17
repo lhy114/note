@@ -156,3 +156,5 @@
 ![[Pasted image 20260815161708.png]]
 
 ![[Pasted image 20260817152823.png]]
+### 事务的传播行为
+![[Pasted image 20260817153457.png]]![[Pasted image 20260817153553.png]]![[Pasted image 20260817153627.png]]
