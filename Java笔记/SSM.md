@@ -72,4 +72,10 @@
 
 
 ### properties
-![[Pasted image 20260817111455.png]]
+![[Pasted image 20260817111455.png]]![[Pasted image 20260817111707.png]]
+
+### 容器
+#### 创建容器
+![[Pasted image 20260817111933.png]]
+#### 获得bean
+![[Pasted image 20260817111946.png]]
