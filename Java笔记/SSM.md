@@ -108,7 +108,7 @@
 
 
 
-# Spring 整合 mybatis
+### Spring 整合 mybatis
 1. 倒入pom-mybatis的坐标
 2. 写对应参数，包括jdbc、mybatis的配置
 ![[Pasted image 20260817142108.png]]
@@ -125,17 +125,19 @@
 ![[Pasted image 20260817142534.png]]
 ![[Pasted image 20260817142553.png]]![[Pasted image 20260817142609.png]]
 
-# Spring 整合 junit（测试类）
+## Spring 整合 junit（测试类）
 ![[Pasted image 20260817143145.png]]
 
-# AOP，知道概念就行了，这里的spring写的很乱
+## AOP，知道概念就行了，这里的spring写的很乱
 ![[Pasted image 20260817143413.png]]![[Pasted image 20260817143602.png]]![[Pasted image 20260817143800.png]]![[Pasted image 20260817145547.png]]![[Pasted image 20260817145124.png]]
 
-## 切入点表达式
+### 切入点表达式
 ![[Pasted image 20260817145302.png]]![[Pasted image 20260817145327.png]]![[Pasted image 20260817145446.png]]
-## 通知类型
+### 通知类型
 ![[Pasted image 20260817150309.png]]
 ![[Pasted image 20260817150202.png]]![[Pasted image 20260817150240.png]]
 
-## 获得切点参数
+### 获得切点参数
 ![[Pasted image 20260817150659.png]]![[Pasted image 20260817151221.png]]![[Pasted image 20260817151235.png]]
+
+## Spring事物
