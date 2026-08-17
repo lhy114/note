@@ -142,4 +142,15 @@
 
 ## Spring的transcation
 1. 步骤一![[Pasted image 20260817152157.png]]
-2. 设置事物管理器，假设你的![[Pasted image 20260817152240.png]]
+2. 设置事物管理器，事务最终要由数据库存储引擎来执行，Java 层的 `@Transactional` 只是发指令，数据库不支持就白搭。![[Pasted image 20260817152240.png]]
+3. 开启事物注解驱动
+![[Pasted image 20260817152422.png]]
+
+### Spring事务角色
+![[Pasted image 20260817152617.png]]
+![[Pasted image 20260817152645.png]]
+默认值，只有一个事务，这样就做到同时成功，同时失败
+![[Pasted image 20260817152714.png]]
+
+### 事务的相关配置
+![[Pasted image 20260817152823.png]]
