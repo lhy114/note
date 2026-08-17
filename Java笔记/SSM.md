@@ -138,4 +138,4 @@
 ![[Pasted image 20260817150202.png]]![[Pasted image 20260817150240.png]]
 
 ## 获得切点参数
-![[Pasted image 20260817150659.png]]
+![[Pasted image 20260817150659.png]]![[Pasted image 20260817151221.png]]![[Pasted image 20260817151235.png]]
