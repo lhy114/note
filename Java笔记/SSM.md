@@ -62,3 +62,4 @@
 ![[Pasted image 20260817104303.png]]
 
 #### DI方式的选择
+![[Pasted image 20260817104426.png]]
