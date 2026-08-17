@@ -129,4 +129,7 @@
 ![[Pasted image 20260817143145.png]]
 
 # AOP，知道概念就行了，这里的spring写的很乱
-![[Pasted image 20260817143413.png]]![[Pasted image 20260817143602.png]]![[Pasted image 20260817143800.png]]![[Pasted image 20260817145124.png]]
+![[Pasted image 20260817143413.png]]![[Pasted image 20260817143602.png]]![[Pasted image 20260817143800.png]]![[Pasted image 20260817145547.png]]![[Pasted image 20260817145124.png]]
+
+## 切入点表达式
+![[Pasted image 20260817145302.png]]![[Pasted image 20260817145327.png]]![[Pasted image 20260817145446.png]]
