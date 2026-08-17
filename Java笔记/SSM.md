@@ -128,5 +128,5 @@
 # Spring 整合 junit（测试类）
 ![[Pasted image 20260817143145.png]]
 
-# AOP
-![[Pasted image 20260817143413.png]]![[Pasted image 20260817143602.png]]![[Pasted image 20260817143800.png]]
+# AOP，知道概念就行了，这里的spring写的很乱
+![[Pasted image 20260817143413.png]]![[Pasted image 20260817143602.png]]![[Pasted image 20260817143800.png]]![[Pasted image 20260817145124.png]]
