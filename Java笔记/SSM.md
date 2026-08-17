@@ -108,4 +108,18 @@
 
 
 
-# Spring + mybatis
+# Spring 整合 mybatis
+1. 倒入pom-mybatis的坐标
+2. 写对应参数，包括jdbc、mybatis的配置
+![[Pasted image 20260817142108.png]]
+
+3. mybatis实现
+![[Pasted image 20260817142213.png]]![[Pasted image 20260817142359.png]]
+
+![[Pasted image 20260817142407.png]]
+
+这里也就是说spring mybatis其实创建了两个bean，一个创建一个mybatis对象，然后扫描对应的mapper。
+
+
+原始的mybatis：首先chuang
+![[Pasted image 20260817142534.png]]
