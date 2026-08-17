@@ -99,3 +99,8 @@
 ![[Pasted image 20260817134459.png]]
 
 #### 管理第三方bean
+方法一：
+![[Pasted image 20260817135001.png]]
+
+方法二：
+![[Pasted image 20260817135047.png]]![[Pasted image 20260817135102.png]]![[Pasted image 20260817135117.png]]
