@@ -205,3 +205,5 @@ Spring MVC 里的 **MVC** 是 **Model - View - Controller** 的缩写，一个�
 
 ![[Pasted image 20260818150715.png]]
 
+## 表现层数据封装
+![[Pasted image 20260818152023.png]]
