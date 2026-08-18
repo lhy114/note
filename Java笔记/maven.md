@@ -21,5 +21,10 @@
 ## 可选依赖和排除依赖
 ![[Pasted image 20260818165127.png]]![[Pasted image 20260818165144.png]]
 
-# 聚合
+# 聚合与继承
+## 聚合
 ![[Pasted image 20260818165359.png]]
+![[Pasted image 20260818165718.png]]![[Pasted image 20260818165726.png]]
+
+## 继承
+![[Pasted image 20260818165856.png]]
