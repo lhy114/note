@@ -30,4 +30,4 @@
 ![[Pasted image 20260818165856.png]]![[Pasted image 20260818170233.png]]![[Pasted image 20260818170242.png]]![[Pasted image 20260818170249.png]]![[Pasted image 20260818170258.png]]![[Pasted image 20260818170307.png]]![[Pasted image 20260818170329.png]]
 
 # 属性
-![[Pasted image 20260818170611.png]]![[Pasted image 20260818170616.png]]
+![[Pasted image 20260818170611.png]]![[Pasted image 20260818170616.png]]![[Pasted image 20260818171253.png]]![[Pasted image 20260818171300.png]]![[Pasted image 20260818171311.png]]![[Pasted image 20260818171335.png]]![[Pasted image 20260818171525.png]]
