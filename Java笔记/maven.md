@@ -31,3 +31,6 @@
 
 # 属性
 ![[Pasted image 20260818170611.png]]![[Pasted image 20260818170616.png]]![[Pasted image 20260818171253.png]]![[Pasted image 20260818171300.png]]![[Pasted image 20260818171311.png]]![[Pasted image 20260818171335.png]]![[Pasted image 20260818171525.png]]
+
+# 多环境开发，切换配置
+![[Pasted image 20260818171836.png]]![[Pasted image 20260818171858.png]]
