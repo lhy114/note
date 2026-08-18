@@ -199,3 +199,9 @@ Spring MVC 里的 **MVC** 是 **Model - View - Controller** 的缩写，一个�
 ![[Pasted image 20260817205957.png]]
 
 # SSM 整合
+
+## 配置过程
+请查看 https://www.bilibili.com/video/BV1Fi4y1S7ix?spm_id_from=333.788.player.switch&vd_source=43668b2556859a05028a20161f3f22c6&p=59
+
+![[Pasted image 20260818150715.png]]
+
