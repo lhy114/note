@@ -210,4 +210,7 @@ Spring MVC 里的 **MVC** 是 **Model - View - Controller** 的缩写，一个�
 
 
 ## 异常处理器
-![[Pasted image 20260818153215.png]]
+![[Pasted image 20260818153215.png]]![[Pasted image 20260818153408.png]]
+
+### 处理方案
+![[Pasted image 20260818153736.png]]
