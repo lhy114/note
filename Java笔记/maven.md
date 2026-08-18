@@ -27,4 +27,7 @@
 ![[Pasted image 20260818165718.png]]![[Pasted image 20260818165726.png]]
 
 ## 继承
-![[Pasted image 20260818165856.png]]
+![[Pasted image 20260818165856.png]]![[Pasted image 20260818170233.png]]![[Pasted image 20260818170242.png]]![[Pasted image 20260818170249.png]]![[Pasted image 20260818170258.png]]![[Pasted image 20260818170307.png]]![[Pasted image 20260818170329.png]]
+
+# 属性
+![[Pasted image 20260818170611.png]]![[Pasted image 20260818170616.png]]
