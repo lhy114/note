@@ -213,4 +213,7 @@ Spring MVC 里的 **MVC** 是 **Model - View - Controller** 的缩写，一个�
 ![[Pasted image 20260818153215.png]]![[Pasted image 20260818153408.png]]
 
 ### 处理方案
-![[Pasted image 20260818153736.png]]
+![[Pasted image 20260818153736.png]]![[Pasted image 20260818154326.png]]![[Pasted image 20260818154338.png]]![[Pasted image 20260818154343.png]]![[Pasted image 20260818154410.png]]![[Pasted image 20260818154417.png]]
+
+
+## 拦截器
