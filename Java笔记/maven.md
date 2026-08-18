@@ -34,3 +34,5 @@
 
 # 多环境开发，切换配置
 ![[Pasted image 20260818171836.png]]![[Pasted image 20260818171858.png]]
+# 跳过测试
+![[Pasted image 20260818172355.png]]
