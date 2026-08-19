@@ -172,3 +172,5 @@ long total = result.getTotal();
 
 ### null的处理
 ![[Pasted image 20260819121628.png]]
+
+### 查询投影![[Pasted image 20260819141810.png]]
