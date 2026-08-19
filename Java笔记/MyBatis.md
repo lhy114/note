@@ -166,3 +166,6 @@ long total = result.getTotal();
 - 项目里已经用 MyBatis-Plus，就用它的 `selectPage` + `PaginationInnerInterceptor`，不要两个分页插件同时启用，否则可能重复拦截、SQL 被拼两次。
 - 老项目是原生 MyBatis 且不想引入 MP，用 PageHelper 更合适。
 - 如果使用 MP，但 PageHelper 拦截器比 MP 的分页拦截器先执行，也可能把 MP 的 SQL 再包一层，出现分页异常，所以二选一即可。
+
+### 条件查询
+![[Pasted image 20260819120222.png]]
