@@ -233,3 +233,8 @@ private Long id;
 ### 逻辑删除！！！
 ![[Pasted image 20260819143726.png]]![[Pasted image 20260819144132.png]]![[Pasted image 20260819144136.png]]
 ## 乐关锁
+![[Pasted image 20260819145221.png]]![[Pasted image 20260819145231.png]]![[Pasted image 20260819145236.png]]
+查询到之后version会+1，如果别人同时拿到，由于version改变了，因此update无法实现
+
+## 代码生成器
+![[Pasted image 20260819145545.png]]
