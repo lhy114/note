@@ -30,3 +30,6 @@ public interface UserMapper {
 ![[Pasted image 20260814113400.png]]
 ## sql&include
 ![[Pasted image 20260814113812.png]]
+
+
+# MyBatis Plus
