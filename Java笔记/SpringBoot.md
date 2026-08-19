@@ -32,3 +32,6 @@
 ![[Pasted image 20260819102905.png]]![[Pasted image 20260819102910.png]]
 ## 多环境开发
 ![[Pasted image 20260819103230.png]]![[Pasted image 20260819103259.png]]
+
+## Maven与SpringBoot多环境兼容问题
+![[Pasted image 20260819104353.png]]![[Pasted image 20260819104418.png]]![[Pasted image 20260819104428.png]]![[Pasted image 20260819104434.png]]
