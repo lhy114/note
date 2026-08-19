@@ -70,4 +70,5 @@ public interface UserMapper {
 ## 标准数据层CRUD功能
 ### CRUD
 ![[Pasted image 20260819114054.png]]
-### 分页查询
+### 分页查询（既然你的分页查询是limit，那么MP实现的思路就是拦截到SQL语句，然后进行增强就行了，因此这里是定义的一个拦截器）
+![[Pasted image 20260819115256.png]]![[Pasted image 20260819115314.png]]![[Pasted image 20260819115319.png]]
