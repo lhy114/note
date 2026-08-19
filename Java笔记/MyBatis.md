@@ -67,7 +67,7 @@ public interface UserMapper {
 |复杂自定义 SQL|完全可控|同样支持|
 |适用场景|需要极致 SQL 控制|追求开发效率、CRUD 为主的业务|
 
-## 标准数据层CRUD功能
+## 标准数据层CRUD功能《看文档就行了》
 ### CRUD
 ![[Pasted image 20260819114054.png]]
 ### 分页查询（既然你的分页查询是limit，那么MP实现的思路就是拦截到SQL语句，然后进行增强就行了，因此这里是定义的一个拦截器）
@@ -173,4 +173,9 @@ long total = result.getTotal();
 ### null的处理
 ![[Pasted image 20260819121628.png]]
 
-### 查询投影![[Pasted image 20260819141810.png]]
+### 查询投影
+
+![[Pasted image 20260819141810.png]]![[Pasted image 20260819142204.png]]![[Pasted image 20260819142210.png]]
+
+### 字段映射和表明映射
+![[Pasted image 20260819142358.png]]
