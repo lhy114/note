@@ -38,4 +38,6 @@
 ![[Pasted image 20260818172355.png]]
 
 # 私服
-![[Pasted image 20260818172839.png]]![[Pasted image 20260818173852.png]]![[Pasted image 20260818174309.png]]![[Pasted image 20260818174330.png]]![[Pasted image 20260818174338.png]]
+![[Pasted image 20260818172839.png]]![[Pasted image 20260818173852.png]]![[Pasted image 20260818174309.png]]![[Pasted image 20260818174330.png]]![[Pasted image 20260818174338.png]]![[Pasted image 20260819101043.png]]
+
+spring-boot 排除tom-cat然后倒入jetty服务器
