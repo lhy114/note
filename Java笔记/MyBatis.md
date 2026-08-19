@@ -178,4 +178,6 @@ long total = result.getTotal();
 ![[Pasted image 20260819141810.png]]![[Pasted image 20260819142204.png]]![[Pasted image 20260819142210.png]]
 
 ### 字段映射和表明映射
-![[Pasted image 20260819142358.png]]
+![[Pasted image 20260819142358.png]]![[Pasted image 20260819142445.png]]![[Pasted image 20260819142536.png]]![[Pasted image 20260819142558.png]]
+
+## id生成策略
