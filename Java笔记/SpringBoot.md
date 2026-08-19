@@ -19,3 +19,14 @@
 
 ## 自定义starter
 ![[Pasted image 20260815231316.png]]![[Pasted image 20260815231459.png]]
+
+
+# yaml的三种读取方式
+## 方法一用 value
+![[Pasted image 20260819102803.png]]
+
+## 方法二，用environment
+![[Pasted image 20260819102835.png]]
+
+## 方法三， 用自定义对象
+![[Pasted image 20260819102905.png]]![[Pasted image 20260819102910.png]]
