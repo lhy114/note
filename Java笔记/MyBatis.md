@@ -66,3 +66,6 @@ public interface UserMapper {
 |逻辑删除/乐观锁|需自己实现|内置支持|
 |复杂自定义 SQL|完全可控|同样支持|
 |适用场景|需要极致 SQL 控制|追求开发效率、CRUD 为主的业务|
+
+## 标准数据层CRUD功能
+![[Pasted image 20260819114054.png]]
