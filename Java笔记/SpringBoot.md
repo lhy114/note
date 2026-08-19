@@ -30,3 +30,5 @@
 
 ## 方法三， 用自定义对象
 ![[Pasted image 20260819102905.png]]![[Pasted image 20260819102910.png]]
+## 多环境开发
+![[Pasted image 20260819103230.png]]![[Pasted image 20260819103259.png]]
