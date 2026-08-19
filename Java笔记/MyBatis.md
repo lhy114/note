@@ -237,4 +237,4 @@ private Long id;
 查询到之后version会+1，如果别人同时拿到，由于version改变了，因此update无法实现
 
 ## 代码生成器
-![[Pasted image 20260819145545.png]]
+![[Pasted image 20260819145545.png]]![[Pasted image 20260819150238.png]]![[Pasted image 20260819150247.png]]![[Pasted image 20260819150301.png]]![[Pasted image 20260819150329.png]]![[Pasted image 20260819150336.png]]
