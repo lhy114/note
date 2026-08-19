@@ -68,4 +68,6 @@ public interface UserMapper {
 |适用场景|需要极致 SQL 控制|追求开发效率、CRUD 为主的业务|
 
 ## 标准数据层CRUD功能
+### CRUD
 ![[Pasted image 20260819114054.png]]
+### 分页查询
