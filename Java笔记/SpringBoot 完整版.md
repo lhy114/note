@@ -72,3 +72,6 @@
 
 ### 日志利用 sli4j和lombok
 ![[Pasted image 20260820171453.png]]![[Pasted image 20260820171608.png]]![[Pasted image 20260820172130.png]]
+
+### 记录日志文件
+![[Pasted image 20260820172749.png]]
