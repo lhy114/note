@@ -8,3 +8,4 @@
 ## POM.xml
 ![[Pasted image 20260820110141.png]]
 这里通过依赖继承的方法是的Spring-boot对包的依赖很简单
+![[Pasted image 20260820110923.png]]
