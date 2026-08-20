@@ -70,5 +70,5 @@
 ### 利用maven控制springboot环境
 ![[Pasted image 20260820170750.png]]![[Pasted image 20260820170810.png]]
 
-### 日志 利用 sl4j
-![[Pasted image 20260820171453.png]]![[Pasted image 20260820171608.png]]
+### 日志利用 sli4j和lombok
+![[Pasted image 20260820171453.png]]![[Pasted image 20260820171608.png]]![[Pasted image 20260820172130.png]]
