@@ -18,5 +18,8 @@
 
 ## 基础配置
 ### 文件格式（常用的是yml  ）
+如果文件提示消失查看这个视频 https://www.bilibili.com/video/BV15b4y1a7yG?spm_id_from=333.788.player.switch&vd_source=43668b2556859a05028a20161f3f22c6&p=20
+
 **文件的优先级为：** properties > yml > yaml. 不同配置文件中相同配置按照加载优先级相互覆盖，不同配置文件中不同配置全部保留
 ![[Pasted image 20260820113327.png]]
+
