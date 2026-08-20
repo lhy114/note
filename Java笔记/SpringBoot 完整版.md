@@ -47,6 +47,7 @@
 ![[Pasted image 20260820162042.png]]
 
 ### 打包之后的文件夹（使用maven插件）
-会导入源代码、依赖的jar
-
+会导入源代码、依赖的jar包，以及spring启动以来的文件
 ![[Pasted image 20260820162416.png]]
+
+![[Pasted image 20260820162528.png]]
