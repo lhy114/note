@@ -66,3 +66,8 @@
 
 ### 多环境配置
 ![[Pasted image 20260820165839.png]]![[Pasted image 20260820170016.png]]![[Pasted image 20260820170432.png]]
+
+### 利用maven控制springboot环境
+![[Pasted image 20260820170750.png]]![[Pasted image 20260820170810.png]]
+
+### 日志
