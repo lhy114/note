@@ -53,3 +53,7 @@
 ![[Pasted image 20260820162528.png]]
 
 ### 临时属性配置
+![[Pasted image 20260820164044.png]]
+![[Pasted image 20260820164527.png]]
+### 属性加载顺序
+![[Pasted image 20260820164117.png]]
