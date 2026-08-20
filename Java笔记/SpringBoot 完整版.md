@@ -28,3 +28,9 @@
 ![[Pasted image 20260820114807.png]]![[Pasted image 20260820114933.png]]![[Pasted image 20260820115032.png]]![[Pasted image 20260820115332.png]]
 
 记忆点：封装一个对象，你肯定首先要交给spring进行管理，那么此时就要用component进行注解，然后给出配置文件，所以此时需要configurationproperties
+
+## 整合第三方技术
+我个人认为的技术：
+1. 导入对应的pom坐标
+2. 配置相关属性
+3. 交给Spring进行管理，如果这个技术没有提供
