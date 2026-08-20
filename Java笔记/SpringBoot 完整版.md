@@ -57,3 +57,6 @@
 ![[Pasted image 20260820164527.png]]
 ### 属性加载顺序
 ![[Pasted image 20260820164117.png]]
+
+### 配置文件分类
+![[Pasted image 20260820164949.png]]
