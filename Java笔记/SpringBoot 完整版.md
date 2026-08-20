@@ -23,3 +23,6 @@
 **文件的优先级为：** properties > yml > yaml. 不同配置文件中相同配置按照加载优先级相互覆盖，不同配置文件中不同配置全部保留
 ![[Pasted image 20260820113327.png]]
 
+### yaml的数据读取
+
+![[Pasted image 20260820114807.png]]![[Pasted image 20260820114933.png]]![[Pasted image 20260820115032.png]]
