@@ -94,3 +94,6 @@
 这里要强调的是enable注解的作用，它主要是将指定的configuration注解的类放到spring容器中进行统一管理。因此，如果你在configuration的类上面加了一个component或者已经声明他是一个bean对象了，此时就会出现bean不唯一的冲突。
 
 ### 宽松绑定
+![[Pasted image 20260821102956.png]]
+注意@Value注解不行
+![[Pasted image 20260821103203.png]]
