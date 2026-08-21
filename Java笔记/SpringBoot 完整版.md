@@ -97,3 +97,5 @@
 ![[Pasted image 20260821102956.png]]
 注意@Value注解不行
 ![[Pasted image 20260821103203.png]]
+
+### 常用ji liang
