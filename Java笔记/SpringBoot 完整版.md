@@ -116,3 +116,4 @@ JSR303是一个规范接口，hibernate是对应的实现类
 ### Web环境模拟测试
 ![[Pasted image 20260821115043.png]]
 
+![[Pasted image 20260821115529.png]]
