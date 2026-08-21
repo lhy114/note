@@ -110,3 +110,4 @@ JSR303是一个规范接口，hibernate是对应的实现类
 ![[Pasted image 20260821112849.png]]![[Pasted image 20260821112920.png]]
 
 ### 测试的时候加入一个临时的Bean
+![[Pasted image 20260821113213.png]]
