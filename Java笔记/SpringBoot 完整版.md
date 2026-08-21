@@ -98,4 +98,5 @@
 注意@Value注解不行
 ![[Pasted image 20260821103203.png]]
 
-### 常用ji liang
+### 常用计量单位
+![[Pasted image 20260821103952.png]]
