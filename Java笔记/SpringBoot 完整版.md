@@ -86,3 +86,6 @@
 ![[Pasted image 20260821101147.png]]![[Pasted image 20260821101155.png]]
 
 ## 配置高级
+### 第三方bean的绑定
+![[Pasted image 20260821102200.png]]
+
