@@ -100,3 +100,8 @@
 
 ### 常用计量单位
 ![[Pasted image 20260821103952.png]]
+
+### 对Bean数据进行校验
+JSR303是一个规范接口，hibernate是对应的实现类
+![[Pasted image 20260821104609.png]]
+![[Pasted image 20260821104655.png]]![[Pasted image 20260821104701.png]]
