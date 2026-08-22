@@ -279,3 +279,7 @@ public RedisTemplate<String, String> redisTemplate(RedisConnectionFactory factor
 
 
 #### Ehcache
+![[Pasted image 20260822202639.png]]![[Pasted image 20260822202654.png]]![[Pasted image 20260822202704.png]]
+
+
+#### Red
