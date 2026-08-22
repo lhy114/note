@@ -422,3 +422,8 @@ String json = mapper.writeValueAsString(user);
 #### j2tcache(多级缓存)
 ![[Pasted image 20260822213900.png]]
 
+配置麻烦
+![[Pasted image 20260822214853.png]]
+
+
+### 任务
