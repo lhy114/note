@@ -244,7 +244,7 @@ public RedisTemplate<String, String> redisTemplate(RedisConnectionFactory factor
 主要针对临时存储或者永久性存储,主要针对的是修改频率很高的场景
 ![[Pasted image 20260822143739.png]]
 
-#### ES(同理看ES文档)
+#### ES(同理看ES文档,没听懂)
 ![[Pasted image 20260822144253.png]]
 
 索引:id建立索引,然后id索引查询对应的数据
@@ -255,3 +255,6 @@ public RedisTemplate<String, String> redisTemplate(RedisConnectionFactory factor
 
 这里注意spring官方给的是一个低版本的,如果需要高版本的,需要手工导入
 ![[Pasted image 20260822151217.png]]![[Pasted image 20260822151239.png]]![[Pasted image 20260822151301.png]]
+
+## 整合第三方技术
+### 缓存
