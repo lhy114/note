@@ -199,6 +199,8 @@ try (Connection conn = DriverManager.getConnection(url, "root", "123456");
 ### NoSQL
 #### Redis(请参考Redis学习笔记)
 ![[Pasted image 20260822113919.png]]
-
+![[Pasted image 20260822115122.png]]![[Pasted image 20260822115114.png]]
+![[Pasted image 20260822115143.png]]
+![[Pasted image 20260822115203.png]]
 #### Mongo
 #### ES
