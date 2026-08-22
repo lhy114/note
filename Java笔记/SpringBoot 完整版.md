@@ -244,7 +244,7 @@ public RedisTemplate<String, String> redisTemplate(RedisConnectionFactory factor
 主要针对临时存储或者永久性存储,主要针对的是修改频率很高的场景
 ![[Pasted image 20260822143739.png]]
 
-#### ES
+#### ES(同理看ES文档)
 ![[Pasted image 20260822144253.png]]
 
 索引:id建立索引,然后id索引查询对应的数据
