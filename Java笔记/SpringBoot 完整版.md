@@ -316,5 +316,10 @@ public RedisTemplate<String, String> redisTemplate(RedisConnectionFactory factor
 - 用户信息等副本数据共享
 
 ![[Pasted image 20260822204043.png]]![[Pasted image 20260822204048.png]]
-#### memcache
+#### memcache(硬编码)
 ![[Pasted image 20260822204310.png]]
+![[Pasted image 20260822204918.png]]![[Pasted image 20260822204930.png]]
+
+#### jetcache(底层的cache)
+![[Pasted image 20260822205119.png]]
+![[Pasted image 20260822205152.png]]
