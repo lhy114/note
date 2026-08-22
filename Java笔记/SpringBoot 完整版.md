@@ -197,7 +197,7 @@ try (Connection conn = DriverManager.getConnection(url, "root", "123456");
 ![[Pasted image 20260822113528.png]]
 
 ### NoSQL
-#### Redis
+#### Redis(请参考Redis学习笔记)
 ![[Pasted image 20260822113919.png]]
 
 #### Mongo
