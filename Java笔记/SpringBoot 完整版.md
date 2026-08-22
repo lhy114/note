@@ -197,11 +197,45 @@ try (Connection conn = DriverManager.getConnection(url, "root", "123456");
 ![[Pasted image 20260822113528.png]]
 
 ### NoSQL
-#### Redis(请参考Redis学习笔记)
+#### Redis(请参考Redis学习笔记,有一个实验请你在Redis的时候做一下)
 ![[Pasted image 20260822113919.png]]
 ![[Pasted image 20260822115122.png]]![[Pasted image 20260822115114.png]]
 ![[Pasted image 20260822115143.png]]
 ![[Pasted image 20260822115203.png]]
 ![[Pasted image 20260822115947.png]]
+
+在spring-boot里面,如果我要通过RedisTemplate进行操作(假设不指定范性,默认为object),那么进行的put、get等操作,通过redis-cli是查不到的; 然后给出的资料说的是利用StringRedisTemplate就行了,因为redis-cli是以字符串的形式操作的,所以我想问的是,能不能用RedisTemplate<String, String>代替StringRedisTemplate呢?
+
+能，但有个前提：**只写 `RedisTemplate<String, String>` 是不够的，必须把序列化器也配成 `StringRedisSerializer`**。
+
+原因就是刚才说的：泛型 `<String, String>` 只影响 Java 编译期，不改变运行时行为。如果你只是这样写：
+
+```
+@Autowired
+private RedisTemplate<String, String> redisTemplate;
+```
+
+默认情况下它的序列化器还是 `JdkSerializationRedisSerializer`，写入 Redis 时字符串照样会被 Java 序列化成二进制，key 会带 `\xac\xed` 前缀，redis-cli 里依然查不到。
+
+要让 `RedisTemplate<String, String>` 真正替代 `StringRedisTemplate`，需要这样配置：
+
+```
+@Bean
+public RedisTemplate<String, String> redisTemplate(RedisConnectionFactory factory) {
+    RedisTemplate<String, String> template = new RedisTemplate<>();
+    template.setConnectionFactory(factory);
+
+    StringRedisSerializer serializer = new StringRedisSerializer();
+    template.setKeySerializer(serializer);
+    template.setValueSerializer(serializer);
+    template.setHashKeySerializer(serializer);
+    template.setHashValueSerializer(serializer);
+
+    template.afterPropertiesSet();
+    return template;
+}
+```
+
+
 #### Mongo
 #### ES
