@@ -240,4 +240,6 @@ public RedisTemplate<String, String> redisTemplate(RedisConnectionFactory factor
 ![[Pasted image 20260822121040.png]]
 
 #### Mongodb
+![[Pasted image 20260822142014.png]]
+
 #### ES
