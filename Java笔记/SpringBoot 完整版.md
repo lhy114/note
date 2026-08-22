@@ -345,6 +345,72 @@ transient： 关键字，可以让我们想要的属性不会被序列化到文�
 
 ![[Pasted image 20260802110459.png]]![[Pasted image 20260802114504.png]]
 
+可以，这两者本质上就是"二进制对象流"和"文本格式"两种思路。
 
+**JDK 序列化**
+
+Java 自带的机制，靠 `ObjectOutputStream` 把对象连同它的**类信息、字段结构、继承关系**一起写成一串二进制字节：
+
+```
+public class User implements Serializable { ... }
+
+ObjectOutputStream out = new ObjectOutputStream(...);
+out.writeObject(user);
+```
+
+- 必须实现 `Serializable` 接口。
+- 输出是二进制，人类不可读。
+- 只有 Java 能反序列化，而且要求两端有**同一个类、同一个 `serialVersionUID`**。
+- 反序列化时能还原出对象的精确类型，不需要额外类型信息。
+- 序列化内容包含类元数据，体积大、速度偏慢。
+- 有历史安全漏洞，反序列化不可信数据可能被利用执行代码。
+
+**JSON 序列化**
+
+把对象的字段转成文本结构，靠反射读取 getter/字段：
+
+```
+ObjectMapper mapper = new ObjectMapper();
+String json = mapper.writeValueAsString(user);
+// {"name":"张三","age":20}
+```
+
+- 不需要实现 `Serializable`。
+- 输出是可读文本，redis-cli、日志、浏览器里都能直接看。
+- 跨语言通用，Java 序列化出来，Python、Node.js、Go 都能解析。
+- 类型信息默认不保留，读回来通常变成 `LinkedHashMap`，需要知道目标类型才能转回对象；也可以像 `GenericJackson2JsonRedisSerializer` 那样在 JSON 里写入 `@class` 类型标记。
+- 体积更小、解析更快（多数场景下优于 JDK）。
+- 字段增减通常不影响兼容性，多字段少字段都能容忍。
+
+**对比表**
+
+|对比项|JDK 序列化|JSON 序列化|
+|---|---|---|
+|是否需要 Serializable|必须|不需要|
+|存储格式|二进制|文本|
+|可读性|乱码|可读|
+|跨语言|仅 Java|通用|
+|类型还原|自动还原精确类型|默认丢失，需类型标记|
+|体积|大|小|
+|性能|慢|快（多数场景）|
+|类变更兼容性|差，依赖 serialVersionUID|好，字段级兼容|
+|安全性|反序列化风险高|相对安全|
+|依赖|JDK 自带|需要 Jackson/fastjson|
+|适用场景|Java 内部临时存储|缓存、接口传输、跨系统|
+
+**在 Redis 里的表现**
+
+|1|JDK 序列化|JSON 序列化|
+|---|---|---|
+|redis-cli 看 key|`\xAC\xED\x00\x05...` 乱码|可读|
+|其他语言读取|读不了|可以|
+|对象类型|直接还原|需要带类型信息或用 Hash 字段|
+
+**实际选型建议**
+
+- 内部 Java 服务、快速原型、默认配置：JDK 能跑，但不推荐。
+- Redis 缓存、消息传输、跨服务调用：优先 JSON。
+- 追求极致体积和性能：选 Protobuf、Kryo、MessagePack，而不是 JDK。
+- 和 Redis 配合时，用 `GenericJackson2JsonRedisSerializer` 最省心：Redis 里可读，又能保留类型信息还原成对象。
 
 #### j2tcache
