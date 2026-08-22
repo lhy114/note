@@ -191,3 +191,4 @@ try (Connection conn = DriverManager.getConnection(url, "root", "123456");
 ![[Pasted image 20260822111548.png]]![[Pasted image 20260822112259.png]]
 
 ### Spring内置数据库
+![[Pasted image 20260822113454.png]]![[Pasted image 20260822113517.png]]![[Pasted image 20260822113528.png]]
