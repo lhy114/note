@@ -262,4 +262,4 @@ public RedisTemplate<String, String> redisTemplate(RedisConnectionFactory factor
 ![[Pasted image 20260822165630.png]]
 
 #### Spring的缓存
-![[Pasted image 20260822172043.png]]![[Pasted image 20260822172051.png]]![[Pasted image 20260822172055.png]]
+![[Pasted image 20260822172043.png]]![[Pasted image 20260822172051.png]]![[Pasted image 20260822172055.png]]![[Pasted image 20260822200504.png]]
