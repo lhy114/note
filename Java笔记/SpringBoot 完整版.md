@@ -323,3 +323,10 @@ public RedisTemplate<String, String> redisTemplate(RedisConnectionFactory factor
 #### jetcache(底层的cache)
 ![[Pasted image 20260822205119.png]]
 ![[Pasted image 20260822205152.png]]
+![[Pasted image 20260822210933.png]]![[Pasted image 20260822210948.png]]
+红色必须配置
+
+![[Pasted image 20260822211023.png]]
+
+注意local要设置keyConvertor,因为一般来说都是用string类型进行匹配. 注意toString方法一般是在测试中进行,我们要把它转换json就行了,采用的是阿里的技术.
+![[Pasted image 20260822211354.png]]![[Pasted image 20260822211403.png]]
