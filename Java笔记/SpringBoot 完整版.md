@@ -245,3 +245,9 @@ public RedisTemplate<String, String> redisTemplate(RedisConnectionFactory factor
 ![[Pasted image 20260822143739.png]]
 
 #### ES
+![[Pasted image 20260822144253.png]]
+
+索引:id建立索引,然后id索引查询对应的数据
+倒排索引:通过数据建立一个到id的索引
+文档:ES首先通过倒排索引(查询的字段)找到对应的id关键字,然后通过id关键字找到对应的数据(注意这里的数据一般不是Mysql存储的对应id的全部信息).
+如果此时用户要获得全部信息,那么查询mysql数据库,得到完整的信息
