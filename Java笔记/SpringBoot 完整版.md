@@ -181,5 +181,10 @@ try (Connection conn = DriverManager.getConnection(url, "root", "123456");
 你可以看到,我们需要通过- `DriverManager.getConnection()` 每次都新建一条 TCP 连接，还要做认证，非常贵。然后 打开、关闭 `Connection`、`Statement`、`ResultSet` 全靠手动，漏了`close()` 就会把连接和资源耗尽。
 
 因此为了解决这样复杂连接过程,**人们希望有一个统一管理的东西来解决数据库连接的问题**, 因此提出了datasource(我tm不知道为什么要翻译成数据库连接池).`DataSource` / 连接池：提前准备一批连接放在池子里，要用就借，用完还回去。TCP 连接、认证握手都只做一次，后续复用，性能差距非常大。
-
 ![[Pasted image 20260822110543.png]]
+
+#### Spring 内部的数据源
+![[Pasted image 20260822111338.png]]
+![[Pasted image 20260822111416.png]]
+
+#### Spring内部的chi ji
