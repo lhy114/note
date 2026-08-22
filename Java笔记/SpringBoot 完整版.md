@@ -329,6 +329,20 @@ public RedisTemplate<String, String> redisTemplate(RedisConnectionFactory factor
 ![[Pasted image 20260822211023.png]]
 
 注意local要设置keyConvertor,因为一般来说都是用string类型进行匹配. 注意toString方法一般是在测试中进行,我们要把它转换json就行了,采用的是阿里的技术.
+
+
+
 ![[Pasted image 20260822211354.png]]![[Pasted image 20260822211403.png]]![[Pasted image 20260822211417.png]]![[Pasted image 20260822211424.png]]
+序列化流/对象操作输出流，将java对象写到本地文件中，注意这个类一定要实现serializable接口,只有实现了serializable接口，我们才能够将对象进行序列化
+
+反序列化流/对象操作输入流，将java对象读入到程序中来。 
+
+**一些小细节**，当我们实现了javabean类对象的序列化对象之后，如果后期业务有需求改变javabean类，那么此时反序列化进行匹配的时候，由于版本号发生了改变，因此此时java就会抛出异常。所以我们在实际过程中需要固定版本号
+
+transient： 关键字，可以让我们想要的属性不会被序列化到文件中
+
+![[Pasted image 20260802110459.png]]![[Pasted image 20260802114504.png]]
+
+
 
 #### j2tcache
