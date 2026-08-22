@@ -328,7 +328,9 @@ public RedisTemplate<String, String> redisTemplate(RedisConnectionFactory factor
 
 ![[Pasted image 20260822211023.png]]
 
-注意local要设置keyConvertor,因为一般来说都是用string类型进行匹配. 注意toString方法一般是在测试中进行,我们要把它转换json就行了,采用的是阿里的技术.
+注意local要设置keyConvertor,因为一般来说都是用string类型进行匹配. 注意toString方法一般是在测试中进行,我们要把它转换json就行了,采用的是阿里的技术. 
+
+**这里我需要强调一下redis的问题**:由于redis不支持序列化存储,因此我们在存储的过程中需要将其序列化(java对象写入到文件中).常见的方法有两种一个是jdk自带的序列化,需要实现serializable接口;另外一个是json对象,这里第一个keyConvertor就这样实现的. 同理valueEncode:、valueDecode 则用的是jdk序列化?
 
 
 
