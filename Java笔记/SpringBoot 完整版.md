@@ -187,4 +187,5 @@ try (Connection conn = DriverManager.getConnection(url, "root", "123456");
 ![[Pasted image 20260822111338.png]]
 ![[Pasted image 20260822111416.png]]
 
-#### Spring内部的chi ji
+#### Spring内部的持久化层----jdbc template
+![[Pasted image 20260822111548.png]]
