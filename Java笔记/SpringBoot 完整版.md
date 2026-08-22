@@ -419,5 +419,6 @@ String json = mapper.writeValueAsString(user);
 ![[Pasted image 20260822213804.png]]
 ![[Pasted image 20260822213825.png]]
 
-#### j2tcache
+#### j2tcache(多级缓存)
 ![[Pasted image 20260822213900.png]]
+
