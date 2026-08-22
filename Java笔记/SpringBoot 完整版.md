@@ -314,3 +314,7 @@ public RedisTemplate<String, String> redisTemplate(RedisConnectionFactory factor
 - 共享配置缓存
 - 秒杀、活动数据预热
 - 用户信息等副本数据共享
+
+![[Pasted image 20260822204043.png]]![[Pasted image 20260822204048.png]]
+#### memcache
+![[Pasted image 20260822204310.png]]
