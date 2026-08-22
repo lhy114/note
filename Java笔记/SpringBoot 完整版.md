@@ -263,3 +263,19 @@ public RedisTemplate<String, String> redisTemplate(RedisConnectionFactory factor
 
 #### Spring的缓存
 ![[Pasted image 20260822172043.png]]![[Pasted image 20260822172051.png]]![[Pasted image 20260822172055.png]]![[Pasted image 20260822200504.png]]
+
+**`@Cacheable`：先查缓存，命中就不执行方法**
+
+- 请求进来先按 `value` + `key` 找缓存。
+- 有缓存：直接返回缓存里的值，方法体不执行，所以不会走 SQL。
+- 没缓存：执行方法，把返回值写进缓存，下次就能命中。
+- 典型用法：查询方法，比如你现在的 `getById`。
+
+**`@CachePut`：每次都执行方法，执行完再写缓存**
+
+- 不判断缓存是否命中，方法体每次都执行。
+- 执行完把返回值写入缓存，覆盖旧值。
+- 典型用法：更新操作后主动刷新缓存，保证缓存里的数据是最新的。
+
+
+#### Ehcache
