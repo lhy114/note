@@ -242,4 +242,6 @@ public RedisTemplate<String, String> redisTemplate(RedisConnectionFactory factor
 #### Mongodb(参考Mongodb文档)
 ![[Pasted image 20260822142014.png]]
 主要针对临时存储或者永久性存储,主要针对的是修改频率很高的场景
+![[Pasted image 20260822143739.png]]
+
 #### ES
