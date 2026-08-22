@@ -320,7 +320,7 @@ public RedisTemplate<String, String> redisTemplate(RedisConnectionFactory factor
 ![[Pasted image 20260822204310.png]]
 ![[Pasted image 20260822204918.png]]![[Pasted image 20260822204930.png]]
 
-#### jetcache(底层的cache)
+#### jetcache(底层的cache) 重点
 ![[Pasted image 20260822205119.png]]
 ![[Pasted image 20260822205152.png]]
 ![[Pasted image 20260822210933.png]]![[Pasted image 20260822210948.png]]
@@ -413,4 +413,11 @@ String json = mapper.writeValueAsString(user);
 - 追求极致体积和性能：选 Protobuf、Kryo、MessagePack，而不是 JDK。
 - 和 Redis 配合时，用 `GenericJackson2JsonRedisSerializer` 最省心：Redis 里可读，又能保留类型信息还原成对象。
 
+![[Pasted image 20260822213730.png]]
+![[Pasted image 20260822213750.png]]
+![[Pasted image 20260822213740.png]]
+![[Pasted image 20260822213804.png]]
+![[Pasted image 20260822213825.png]]
+
 #### j2tcache
+![[Pasted image 20260822213900.png]]
