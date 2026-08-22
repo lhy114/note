@@ -161,4 +161,25 @@ JSR303是一个规范接口，hibernate是对应的实现类
 
 
 ## 数据层
-这里
+这里我们首先回顾一下传统的数据层操作方式: MySql----MySql Driver----JDBC----Java
+**JDBC**：Java 标准库里的接口，定义在 `java.sql` / `javax.sql` 包里。它只是“规范”，自己不连数据库。它规定了 `Connection`、`Statement`、`ResultSet`、`DataSource` 这些接口长什么样。
+
+
+```
+原始的调用方法
+String url = "jdbc:mysql://localhost:3306/shop";
+try (Connection conn = DriverManager.getConnection(url, "root", "123456");
+     PreparedStatement ps = conn.prepareStatement("select * from user where id = ?")) {
+    ps.setInt(1, 1);
+    try (ResultSet rs = ps.executeQuery()) {
+        while (rs.next()) {
+            System.out.println(rs.getString("name"));
+        }
+    }
+}
+```
+你可以看到,我们需要通过- `DriverManager.getConnection()` 每次都新建一条 TCP 连接，还要做认证，非常贵。然后 打开、关闭 `Connection`、`Statement`、`ResultSet` 全靠手动，漏了`close()` 就会把连接和资源耗尽。
+
+因此为了解决这样复杂连接过程,**人们希望有一个统一管理的东西来解决数据库连接的问题**, 因此提出了datasource(我tm不知道为什么要翻译成数据库连接池).`DataSource` / 连接池：提前准备一批连接放在池子里，要用就借，用完还回去。TCP 连接、认证握手都只做一次，后续复用，性能差距非常大。
+
+![[Pasted image 20260822110543.png]]
