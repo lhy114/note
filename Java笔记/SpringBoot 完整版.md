@@ -260,3 +260,6 @@ public RedisTemplate<String, String> redisTemplate(RedisConnectionFactory factor
 ### 缓存
 这里想要提及到一点,就是cache可以做临时的数据存储,也就是我要生产一个短信
 ![[Pasted image 20260822165630.png]]
+
+#### Spring的缓存
+![[Pasted image 20260822172043.png]]![[Pasted image 20260822172051.png]]![[Pasted image 20260822172055.png]]
