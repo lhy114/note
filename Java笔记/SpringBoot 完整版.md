@@ -426,10 +426,13 @@ String json = mapper.writeValueAsString(user);
 ![[Pasted image 20260822214853.png]]
 
 
-### 任务
+### 任务(这里貌似用的的是多线程技术)
 #### Quartz
 ![[Pasted image 20260823090635.png]]
 ![[Pasted image 20260823091323.png]]![[Pasted image 20260823091329.png]]![[Pasted image 20260823091338.png]]
 
 #### task
-![[Pasted image 20260823091546.png]]![[Pasted image 20260823091552.png]]
+![[Pasted image 20260823091546.png]]![[Pasted image 20260823091552.png]]![[Pasted image 20260823091622.png]]
+
+### JavaMail
+![[Pasted image 20260823092014.png]]
