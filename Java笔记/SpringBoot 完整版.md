@@ -436,7 +436,7 @@ String json = mapper.writeValueAsString(user);
 
 ### JavaMail
 ![[Pasted image 20260823092014.png]]![[Pasted image 20260823092501.png]]![[Pasted image 20260823092506.png]]![[Pasted image 20260823092523.png]]![[Pasted image 20260823092529.png]]
-### 消息
+### 消息(重点,但是这里只是一个简单步骤)
 ![[Pasted image 20260823103609.png]]
 #### JMS
 ![[Pasted image 20260823103826.png]]
@@ -449,3 +449,4 @@ String json = mapper.writeValueAsString(user);
 
 
 #### ActiveMQ
+![[Pasted image 20260823105841.png]]![[Pasted image 20260823105849.png]]![[Pasted image 20260823105907.png]]![[Pasted image 20260823105914.png]]
