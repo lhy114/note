@@ -459,3 +459,4 @@ String json = mapper.writeValueAsString(user);
 ![[Pasted image 20260823113558.png]]![[Pasted image 20260823113954.png]]
 
 ### Spring Boot Admin
+![[Pasted image 20260823115024.png]]![[Pasted image 20260823115045.png]]![[Pasted image 20260823115057.png]]
