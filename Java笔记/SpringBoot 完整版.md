@@ -447,3 +447,5 @@ String json = mapper.writeValueAsString(user);
 #### MQTT
 ![[Pasted image 20260823104051.png]]
 
+
+#### ActiveMQ
