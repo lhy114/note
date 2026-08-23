@@ -456,4 +456,6 @@ String json = mapper.writeValueAsString(user);
 #### kafka
 
 ### 监控
-![[Pasted image 20260823113558.png]]
+![[Pasted image 20260823113558.png]]![[Pasted image 20260823113954.png]]
+
+### Spring Boot Admin
