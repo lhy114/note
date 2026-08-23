@@ -462,4 +462,9 @@ String json = mapper.writeValueAsString(user);
 ![[Pasted image 20260823115024.png]]![[Pasted image 20260823115045.png]]![[Pasted image 20260823115057.png]]
 
 #### 监控原理
-![[Pasted image 20260823133701.png]]
+![[Pasted image 20260823133701.png]]![[Pasted image 20260823134118.png]]
+
+#### info指标
+![[Pasted image 20260823134416.png]]![[Pasted image 20260823134424.png]]
+
+#### health指标()
