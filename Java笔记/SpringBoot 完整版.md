@@ -442,3 +442,8 @@ String json = mapper.writeValueAsString(user);
 ![[Pasted image 20260823103826.png]]
 
 #### AMQP
+![[Pasted image 20260823104019.png]]
+
+#### MQTT
+![[Pasted image 20260823104051.png]]
+
