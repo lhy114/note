@@ -467,4 +467,8 @@ String json = mapper.writeValueAsString(user);
 #### info指标
 ![[Pasted image 20260823134416.png]]![[Pasted image 20260823134424.png]]
 
-#### health指标()
+#### health指标
+![[Pasted image 20260823134749.png]]
+
+#### metric指标
+![[Pasted image 20260823135017.png]]
