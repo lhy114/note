@@ -455,5 +455,5 @@ String json = mapper.writeValueAsString(user);
 #### RocketMQ
 #### kafka
 
-
 ### 监控
+![[Pasted image 20260823113558.png]]
