@@ -428,3 +428,5 @@ String json = mapper.writeValueAsString(user);
 
 ### 任务
 #### Quartz
+##### 相关概念
+![[Pasted image 20260823090635.png]]
