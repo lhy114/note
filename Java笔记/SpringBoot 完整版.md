@@ -450,3 +450,5 @@ String json = mapper.writeValueAsString(user);
 
 #### ActiveMQ
 ![[Pasted image 20260823105841.png]]![[Pasted image 20260823105849.png]]![[Pasted image 20260823105907.png]]![[Pasted image 20260823105914.png]]
+
+#### RabbitMQ
