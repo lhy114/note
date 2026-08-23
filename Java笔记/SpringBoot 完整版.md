@@ -435,4 +435,4 @@ String json = mapper.writeValueAsString(user);
 ![[Pasted image 20260823091546.png]]![[Pasted image 20260823091552.png]]![[Pasted image 20260823091622.png]]
 
 ### JavaMail
-![[Pasted image 20260823092014.png]]
+![[Pasted image 20260823092014.png]]![[Pasted image 20260823092501.png]]![[Pasted image 20260823092506.png]]![[Pasted image 20260823092523.png]]![[Pasted image 20260823092529.png]]
