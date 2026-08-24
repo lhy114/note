@@ -17,3 +17,8 @@ brew services stop redis     # 停止
 brew services list           # 查看状态
 
 #### Redis的数据结构
+![[Pasted image 20260824142435.png]]
+这里就要像一个问题,如果说我们存储的数据是一个对象怎么半呢? 这个时候jdk提供了一个 **序列化** 以及 第三方库的**toJSON** .
+
+
+#### 通用命名
