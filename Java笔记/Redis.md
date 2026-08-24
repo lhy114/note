@@ -22,3 +22,8 @@ brew services list           # 查看状态
 
 
 #### 通用命名
+![[Pasted image 20260824143548.png]]
+expire:-1 表示永远, -2 过期被删除了.
+
+#### String
+![[Pasted image 20260824143724.png]]
