@@ -15,3 +15,5 @@ redis-cli                    # 进入命令行客户端
 brew services start redis    # 启动
 brew services stop redis     # 停止
 brew services list           # 查看状态
+
+#### Redis的数据结构
