@@ -61,7 +61,12 @@ expire:-1 表示永远, -2 过期被删除了.
 Spring 默认是lettuce客户端
 ![[Pasted image 20260825111603.png]]![[Pasted image 20260825111809.png]]![[Pasted image 20260825111856.png]]![[Pasted image 20260825112005.png]]![[Pasted image 20260825112015.png]]
 
-##### 序列化方式
+##### 默认序列化方式
 ![[Pasted image 20260825112550.png]]
 
-![[Pasted image 20260825112738.png]]
+![[Pasted image 20260825112738.png]]![[Pasted image 20260825113112.png]]
+反序列化的时候,能自动同字节码文件获得对应的类型
+
+##### StringRedisTemplate
+![[Pasted image 20260825113240.png]]
+![[Pasted image 20260825113333.png]]
