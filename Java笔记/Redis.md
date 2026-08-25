@@ -60,3 +60,8 @@ expire:-1 表示永远, -2 过期被删除了.
 #### Spring Data Redis
 Spring 默认是lettuce客户端
 ![[Pasted image 20260825111603.png]]![[Pasted image 20260825111809.png]]![[Pasted image 20260825111856.png]]![[Pasted image 20260825112005.png]]![[Pasted image 20260825112015.png]]
+
+##### 序列化方式
+![[Pasted image 20260825112550.png]]
+
+![[Pasted image 20260825112738.png]]
