@@ -69,4 +69,5 @@ Spring 默认是lettuce客户端
 
 ##### StringRedisTemplate
 ![[Pasted image 20260825113240.png]]
-![[Pasted image 20260825113333.png]]
+![[Pasted image 20260825113333.png]]![[Pasted image 20260825113429.png]]![[Pasted image 20260825113631.png]]
+
