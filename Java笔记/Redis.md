@@ -56,3 +56,6 @@ expire:-1 表示永远, -2 过期被删除了.
 ![[Pasted image 20260825105619.png]]
 ##### jedis连接池
 ![[Pasted image 20260825105603.png]]
+
+#### Spring Data Redis
+![[Pasted image 20260825111603.png]]![[Pasted image 20260825111809.png]]
