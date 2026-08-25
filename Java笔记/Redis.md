@@ -44,3 +44,7 @@ expire:-1 表示永远, -2 过期被删除了.
 #### Set类型
 ![[Pasted image 20260825101041.png]]
 ![[Pasted image 20260825101411.png]]
+
+#### SortedSet
+![[Pasted image 20260825101715.png]]![[Pasted image 20260825101845.png]]
+注意：所有的排名默认都是升序，如果要降序则在命令的Z后面添加REV即可
