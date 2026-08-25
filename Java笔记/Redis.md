@@ -28,6 +28,11 @@ expire:-1 表示永远, -2 过期被删除了.
 #### String
 ![[Pasted image 20260824143724.png]]
 ![[Pasted image 20260825094826.png]]
-
 #### key的层级结构
 ![[Pasted image 20260825095517.png]]
+
+
+#### Hash类型
+我的理解就是json是一个字符串,如果你要进行修改
+![[Pasted image 20260825095810.png]]
+![[Pasted image 20260825095824.png]]
