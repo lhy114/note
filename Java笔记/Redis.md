@@ -52,3 +52,7 @@ expire:-1 表示永远, -2 过期被删除了.
 ### Redis客户端
 ![[Pasted image 20260825102702.png]]
 #### jedis
+![[Pasted image 20260825105633.png]]
+![[Pasted image 20260825105619.png]]
+##### jedis连接池
+![[Pasted image 20260825105603.png]]
