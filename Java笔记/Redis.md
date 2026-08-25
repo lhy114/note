@@ -58,4 +58,5 @@ expire:-1 表示永远, -2 过期被删除了.
 ![[Pasted image 20260825105603.png]]
 
 #### Spring Data Redis
-![[Pasted image 20260825111603.png]]![[Pasted image 20260825111809.png]]
+Spring 默认是lettuce客户端
+![[Pasted image 20260825111603.png]]![[Pasted image 20260825111809.png]]![[Pasted image 20260825111856.png]]![[Pasted image 20260825112005.png]]![[Pasted image 20260825112015.png]]
