@@ -42,4 +42,5 @@ expire:-1 表示永远, -2 过期被删除了.
 ![[Pasted image 20260825100613.png]]
 
 #### Set类型
-![[Pasted image 20260825101041.png]] 
+![[Pasted image 20260825101041.png]]
+![[Pasted image 20260825101411.png]]
