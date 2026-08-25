@@ -33,6 +33,9 @@ expire:-1 表示永远, -2 过期被删除了.
 
 
 #### Hash类型
-我的理解就是json是一个字符串,如果你要进行修改
+我的理解就是json是一个字符串,如果你要进行修改很麻烦,那么既然json类似于一个hashmap的结构,为什么我们不把value在分为一个hashmap呢
 ![[Pasted image 20260825095810.png]]
 ![[Pasted image 20260825095824.png]]
+
+#### LIst 类型
+![[Pasted image 20260825100422.png]]
