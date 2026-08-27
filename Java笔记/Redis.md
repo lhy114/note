@@ -74,4 +74,4 @@ Spring 默认是lettuce客户端
 
 # Redis作为缓存
 ## 替换策略
-![[Pasted image 20260827115146.png]]![[Pasted image 20260827115226.png]]![[Pasted image 20260827115344.png]]
+![[Pasted image 20260827115146.png]]![[Pasted image 20260827115226.png]]![[Pasted image 20260827115344.png]]![[Pasted image 20260827115707.png]]
