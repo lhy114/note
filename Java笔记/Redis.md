@@ -87,3 +87,5 @@ Spring 默认是lettuce客户端
 ![[Pasted image 20260827120148.png]]
 ## 缓存穿透
 ![[Pasted image 20260827144949.png]]![[Pasted image 20260827145037.png]]![[Pasted image 20260827145444.png]]
+
+## 缓存雪崩
