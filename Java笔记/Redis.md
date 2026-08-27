@@ -74,4 +74,7 @@ Spring 默认是lettuce客户端
 
 # Redis作为缓存
 ## 替换策略
-![[Pasted image 20260827115146.png]]![[Pasted image 20260827115226.png]]![[Pasted image 20260827115344.png]]![[Pasted image 20260827115707.png]]![[Pasted image 20260827120129.png]]![[Pasted image 20260827120148.png]]
+![[Pasted image 20260827115146.png]]![[Pasted image 20260827115226.png]]![[Pasted image 20260827115344.png]]![[Pasted image 20260827115707.png]]![[Pasted image 20260827120129.png]]
+
+缓存一致性无法做到绝对一致，只能选择一个概率更低、恢复成本更低的方案. 这里为什么第二个比较好, 第一个方案结束之后, DB里面是:new, redis里面是: old; 但是第二个呢
+![[Pasted image 20260827120148.png]]
