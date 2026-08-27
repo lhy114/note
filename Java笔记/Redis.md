@@ -95,6 +95,8 @@ Spring 默认是lettuce客户端
 ![[Pasted image 20260827152528.png]]
 ### 互斥锁
 ![[Pasted image 20260827152546.png]]
+![[Pasted image 20260827152732.png]]
+
 
 ### 逻辑锁
 
