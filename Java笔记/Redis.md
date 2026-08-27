@@ -92,3 +92,10 @@ Spring 默认是lettuce客户端
 ![[Pasted image 20260827151657.png]]
 
 ## 缓存击穿
+![[Pasted image 20260827152528.png]]
+### 互斥锁
+![[Pasted image 20260827152546.png]]
+
+### 逻辑锁
+
+![[Pasted image 20260827152552.png]]![[Pasted image 20260827152600.png]]
