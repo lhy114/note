@@ -105,8 +105,9 @@ Spring 默认是lettuce客户端
 ![[Pasted image 20260827152600.png]]
 
 
-# 秒杀问题
-## 全局ID生成器
+# Redis 作为一个高性能的原子计数器。
+## 秒杀问题
+### 全局ID生成器
 ![[Pasted image 20260827201731.png]]![[Pasted image 20260827201943.png]]
 这不就是雪花算法吗?
 ![[Pasted image 20260819143242.png]]雪花算法（Snowflake）是用来**生成全局唯一、趋势递增的分布式 ID** 的，典型用途就是分布式系统里的主键。
