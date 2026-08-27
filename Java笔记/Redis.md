@@ -103,3 +103,6 @@ Spring 默认是lettuce客户端
 ![[Pasted image 20260827152552.png]]
 ![[Pasted image 20260827163049.png]]
 ![[Pasted image 20260827152600.png]]
+
+
+## 缓存工具封装
