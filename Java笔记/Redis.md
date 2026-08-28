@@ -213,4 +213,6 @@ Java8 提供的一个对AtomicLong改进后的一个类，LongAdder
 ![[Pasted image 20260828140719.png]]![[Pasted image 20260828140923.png]]
 
 ### 分布式锁
-![[Pasted image 20260828141303.png]]
+![[Pasted image 20260828141303.png]]![[Pasted image 20260828141709.png]]
+
+#### 基于redis实现互斥锁
