@@ -247,4 +247,10 @@ Java8 提供的一个对AtomicLong改进后的一个类，LongAdder
 ![[Pasted image 20260828161007.png]]![[Pasted image 20260828161616.png]]
 
 ### Redisson
+#### Redisson入门
 ![[Pasted image 20260828165207.png]]
+#### Redisson可重入锁的原理
+
+![[Pasted image 20260828165952.png]]
+
+原始的redis表结构,由于key-value一一对应,所以导致
