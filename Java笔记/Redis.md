@@ -300,3 +300,8 @@ A+B+C+D+E 全部成功
 而是：
 
 > **Redisson MultiLock 选择了“全部锁实例成功才算成功”的语义。**
+
+
+
+### 秒杀业务的优化(涉及到队列了)
+![[Pasted image 20260828194109.png]]![[Pasted image 20260828194419.png]]
