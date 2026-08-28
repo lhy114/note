@@ -150,3 +150,6 @@ Spring 默认是lettuce客户端
 ### 秒杀下单
 ![[Pasted image 20260828102848.png]]
 #### 超卖问题
+![[Pasted image 20260828111534.png]]![[Pasted image 20260828111838.png]]
+
+那么
