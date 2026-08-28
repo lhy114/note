@@ -250,7 +250,7 @@ Java8 提供的一个对AtomicLong改进后的一个类，LongAdder
 #### Redisson入门
 ![[Pasted image 20260828165207.png]]
 #### Redisson可重入锁的原理
-
+可重入锁 = 同一个线程已经拿到锁之后，可以再次拿这把锁，而不会把自己锁死。
 ![[Pasted image 20260828165952.png]]
 
-原始的redis表结构,由于key-value一一对应,所以导致
+原始的redis表结构,由于key-value一一对应,所以当method1获得锁之后, 调用method2获得所以,由于发现method1的这个锁(利用的是redis的setnx命令)发现无法获得,此时就会失败,导致死锁的情况. **key:用户id value:为对应的线程值**
