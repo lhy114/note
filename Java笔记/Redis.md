@@ -304,4 +304,6 @@ A+B+C+D+E 全部成功
 
 
 ### 秒杀业务的优化(涉及到队列了)
-![[Pasted image 20260828194109.png]]![[Pasted image 20260828194419.png]]
+** 重心就是将判断的操作 ** 放到redis里面,然后对于数据库的相关内容放到了mysql进行实现.
+
+![[Pasted image 20260828194109.png]]![[Pasted image 20260828194419.png]]![[Pasted image 20260828195942.png]]
