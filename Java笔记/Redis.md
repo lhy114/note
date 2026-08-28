@@ -241,3 +241,7 @@ Java8 提供的一个对AtomicLong改进后的一个类，LongAdder
 
 #### lua脚本
 ![[Pasted image 20260828144742.png]]![[Pasted image 20260828145111.png]]![[Pasted image 20260828145543.png]]
+
+
+#### 分布式锁优化
+![[Pasted image 20260828161007.png]]
