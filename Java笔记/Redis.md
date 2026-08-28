@@ -245,3 +245,6 @@ Java8 提供的一个对AtomicLong改进后的一个类，LongAdder
 
 #### 分布式锁优化
 ![[Pasted image 20260828161007.png]]![[Pasted image 20260828161616.png]]
+
+### Redisson
+![[Pasted image 20260828165207.png]]
