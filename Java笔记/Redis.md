@@ -255,5 +255,9 @@ Java8 提供的一个对AtomicLong改进后的一个类，LongAdder
 
 原始的redis表结构,由于key-value一一对应,所以当method1获得锁之后, 调用method2获得所以,由于发现method1的这个锁(利用的是redis的setnx命令)发现无法获得,此时就会失败,导致死锁的情况. **key:用户id value:为对应的线程值**
 
+因此既然缺点是在redis的表结构这里,那么我记录一下调用的次数就行了,解锁的时候减去次数不就行了吗,因此 我们想到hash结构:
+**key:用户的id,或者锁的id**  **value: field:首先跟前面一样代表的是当前线程的id值, value:代表的次数**
 
-![[Pasted image 20260828170849.png]]![[Pasted image 20260828171020.png]]
+
+![[Pasted image 20260828170849.png]]![[Pasted image 20260828171020.png]]![[Pasted image 20260828171057.png]]
+这里的Redisson就使用的lua脚本进行实现的.
