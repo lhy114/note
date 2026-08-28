@@ -261,3 +261,7 @@ Java8 提供的一个对AtomicLong改进后的一个类，LongAdder
 
 ![[Pasted image 20260828170849.png]]![[Pasted image 20260828171020.png]]![[Pasted image 20260828171057.png]]
 这里的Redisson就使用的lua脚本进行实现的.
+
+#### Redisson剩下的原理(后面的redis学习完了,在尝试看一看,不是特别重要的)
+![[Pasted image 20260828172721.png]]![[Pasted image 20260828172827.png]]
+
