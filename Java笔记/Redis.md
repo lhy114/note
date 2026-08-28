@@ -211,3 +211,6 @@ Java8 提供的一个对AtomicLong改进后的一个类，LongAdder
 
 #### 并发问题(一人一单的并发问题)
 ![[Pasted image 20260828140719.png]]![[Pasted image 20260828140923.png]]
+
+### 分布式锁
+![[Pasted image 20260828141303.png]]
