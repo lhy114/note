@@ -254,3 +254,6 @@ Java8 提供的一个对AtomicLong改进后的一个类，LongAdder
 ![[Pasted image 20260828165952.png]]
 
 原始的redis表结构,由于key-value一一对应,所以当method1获得锁之后, 调用method2获得所以,由于发现method1的这个锁(利用的是redis的setnx命令)发现无法获得,此时就会失败,导致死锁的情况. **key:用户id value:为对应的线程值**
+
+
+![[Pasted image 20260828170849.png]]![[Pasted image 20260828171020.png]]
