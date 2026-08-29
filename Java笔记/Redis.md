@@ -324,4 +324,4 @@ A+B+C+D+E 全部成功
 #### 基于Stream的消息队列
 ![[Pasted image 20260829094432.png]]![[Pasted image 20260829094705.png]] ![[Pasted image 20260829094739.png]]![[Pasted image 20260829094814.png]]![[Pasted image 20260829094853.png]]
 #### 基于Stream的消息队列-消费者组
-![[Pasted image 20260829095033.png]]
+![[Pasted image 20260829095033.png]]![[Pasted image 20260829095218.png]]![[Pasted image 20260829095443.png]]
