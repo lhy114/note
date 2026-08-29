@@ -325,3 +325,4 @@ A+B+C+D+E 全部成功
 ![[Pasted image 20260829094432.png]]![[Pasted image 20260829094705.png]] ![[Pasted image 20260829094739.png]]![[Pasted image 20260829094814.png]]![[Pasted image 20260829094853.png]]
 #### 基于Stream的消息队列-消费者组
 ![[Pasted image 20260829095033.png]]![[Pasted image 20260829095218.png]]![[Pasted image 20260829095443.png]]
+先用>处理哪些没有消费的数据,然后进行ack确认, 如果说我们中途服务宕机了,此时我们就要用 0 来获取padding-list里面的数据,重新处理,然后ack确认
