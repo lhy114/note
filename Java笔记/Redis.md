@@ -362,4 +362,4 @@ A+B+C+D+E 全部成功
 | 滚动分页             | cursor/游标    |
 | Redis List       | 更适合 index    |
 | Redis Sorted Set | 非常适合 cursor  |
-List 的核心定位是“有序列表 + 下标访问”，而滚动分页希望的是“根据上一条数据确定下一次查询起点”。Sorted Set 提供了 score 这个天然的排序游标，因此非常适合实现滚动分页。
+滚动分页的核心是“游标”，即记录上一页最后一条数据的位置，而不是记录页码。Redis List 虽然可以通过 LRANGE + index 实现分页，但本质仍然是基于索引的分页；Sorted Set 具有 score 排序和范围查询能力，可以直接把上一页最后一条数据的 score 作为下一次查询的游标，因此更适合实现滚动分页。
