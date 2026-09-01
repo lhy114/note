@@ -381,3 +381,5 @@ Timeline：不做内容筛选，简单的按照内容发布时间排序，常用
 ### 附近商家搜索,GEO数据结构
 其实就是一个ZSet结构(sorted set), key:{为member}, score:为经纬度通过二进制算法转换的为的分数
 ![[Pasted image 20260901172130.png]]
+
+### 签到,BitMap用法
