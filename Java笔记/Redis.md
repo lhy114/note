@@ -328,3 +328,11 @@ A+B+C+D+E 全部成功
 ![[Pasted image 20260829095033.png]]![[Pasted image 20260829095218.png]]![[Pasted image 20260829095443.png]]
 先用>处理哪些没有消费的数据,然后进行ack确认, 如果说我们中途服务宕机了,此时我们就要用 0 来获取padding-list里面的数据,重新处理,然后ack确认
 ![[Pasted image 20260829100434.png]]![[Pasted image 20260829100625.png]]
+
+
+### 关注推送,Feed流
+![[Pasted image 20260901135940.png]]![[Pasted image 20260901140116.png]]
+
+#### 拉模式
+![[Pasted image 20260901140238.png]]
+被关注的人,发送一条消息到发件箱里面进行
