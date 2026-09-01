@@ -383,3 +383,4 @@ Timeline：不做内容筛选，简单的按照内容发布时间排序，常用
 ![[Pasted image 20260901172130.png]]
 
 ### 签到,BitMap用法
+![[Pasted image 20260901191216.png]]![[Pasted image 20260901191349.png]]
