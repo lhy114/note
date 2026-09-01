@@ -376,3 +376,7 @@ Timeline：不做内容筛选，简单的按照内容发布时间排序，常用
 | Redis List       | 更适合 index    |
 | Redis Sorted Set | 非常适合 cursor  |
 滚动分页的核心是“游标”，即记录上一页最后一条数据的位置，而不是记录页码。Redis List 虽然可以通过 LRANGE + index 实现分页，但本质仍然是基于索引的分页；Sorted Set 具有 score 排序和范围查询能力，可以直接把上一页最后一条数据的 score 作为下一次查询的游标，因此更适合实现滚动分页。
+
+
+### GEO数据结构
+![[Pasted image 20260901172130.png]]
