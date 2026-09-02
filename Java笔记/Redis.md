@@ -519,3 +519,4 @@ Bitmap 为 0：一定不存在；Bitmap 为 1：可能存在，因此还需要�
 ## Lua+Ngnix+Redis 缓存
 ### OpenResty
 ![[Pasted image 20260902170656.png]]
+ ![[Pasted image 20260902171306.png]]
