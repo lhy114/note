@@ -514,3 +514,8 @@ Bitmap 为 0：一定不存在；Bitmap 为 1：可能存在，因此还需要�
 
 ## JVM进程缓存(基于caffeine)
 ![[Pasted image 20260902162756.png]]![[Pasted image 20260902163150.png]]
+
+
+## Lua+Ngnix+Redis 缓存
+### OpenResty
+![[Pasted image 20260902170656.png]]
