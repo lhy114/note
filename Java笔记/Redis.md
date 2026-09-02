@@ -487,3 +487,7 @@ Bitmap 为 0：一定不存在；Bitmap 为 1：可能存在，因此还需要�
 
 ## Redis 哨兵模式
 ### 哨兵
+![[Pasted image 20260902144042.png]]
+![[Pasted image 20260902144147.png]]
+![[Pasted image 20260902144312.png]]
+![[Pasted image 20260902144408.png]]
