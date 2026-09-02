@@ -450,3 +450,4 @@ Bitmap 为 0：一定不存在；Bitmap 为 1：可能存在，因此还需要�
 ## Redis持久化
 ### RDB
 ![[Pasted image 20260902113209.png]]
+![[Pasted image 20260902113514.png]]
