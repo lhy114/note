@@ -458,3 +458,9 @@ Bitmap 为 0：一定不存在；Bitmap 为 1：可能存在，因此还需要�
 
 ### AOF 持久化
 ![[Pasted image 20260902114711.png]]
+![[Pasted image 20260902115142.png]]
+
+### 总结
+![[Pasted image 20260902115243.png]]
+
+
