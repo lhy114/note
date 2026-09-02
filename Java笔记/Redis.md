@@ -512,4 +512,4 @@ Bitmap 为 0：一定不存在；Bitmap 为 1：可能存在，因此还需要�
 ## 多级缓存方案
 ![[Pasted image 20260902161718.png]]
 
-## JVM进程huan c
+## JVM进程缓存
