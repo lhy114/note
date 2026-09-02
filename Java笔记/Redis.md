@@ -508,3 +508,8 @@ Bitmap 为 0：一定不存在；Bitmap 为 1：可能存在，因此还需要�
 ![[Pasted image 20260902154626.png]]![[Pasted image 20260902154904.png]]
 
 # Redis 多级缓存
+![[Pasted image 20260902161354.png]]
+## 多级缓存方案
+![[Pasted image 20260902161718.png]]
+
+## JVM进程huan c
