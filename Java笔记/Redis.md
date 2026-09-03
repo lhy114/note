@@ -529,4 +529,7 @@ OpenResty 不仅能做反向代理，还能在网关这一层执行逻辑，并�
 
 ![[Pasted image 20260903101140.png]]![[Pasted image 20260903101308.png]]![[Pasted image 20260903103432.png]]
 
-  
+
+### Tomcat集群的负载均衡
+![[Pasted image 20260903105034.png]]
+这里要注意,如果采用默认的方法,采取的是轮训的方法访问tomcat,那么
