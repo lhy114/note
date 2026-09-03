@@ -550,3 +550,10 @@ OpenResty 不仅能做反向代理，还能在网关这一层执行逻辑，并�
 ![[Pasted image 20260903110750.png]]
 
 ### 缓存同步
+#### 数据同步策略
+![[Pasted image 20260903111304.png]]
+![[Pasted image 20260903111453.png]]
+![[Pasted image 20260903111517.png]]
+#### Canal
+![[Pasted image 20260903111631.png]]
+![[Pasted image 20260903111648.png]]
