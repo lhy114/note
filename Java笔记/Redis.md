@@ -544,3 +544,4 @@ OpenResty 不仅能做反向代理，还能在网关这一层执行逻辑，并�
 #### openResty查询Redis模块
 ![[Pasted image 20260903110005.png]]![[Pasted image 20260903110120.png]]
 
+ ![[Pasted image 20260903110359.png]]
