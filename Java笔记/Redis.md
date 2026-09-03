@@ -545,3 +545,8 @@ OpenResty 不仅能做反向代理，还能在网关这一层执行逻辑，并�
 ![[Pasted image 20260903110005.png]]![[Pasted image 20260903110120.png]]
 
  ![[Pasted image 20260903110359.png]]
+
+### nginx  本地缓存
+![[Pasted image 20260903110750.png]]
+
+### 缓存同步
