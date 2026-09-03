@@ -525,4 +525,4 @@ Bitmap 为 0：一定不存在；Bitmap 为 1：可能存在，因此还需要�
 ![[Pasted image 20260903100714.png]]
 
 ### nginx内部发送http请求
-![[Pasted image 20260903101140.png]]![[Pasted image 20260903101308.png]]
+![[Pasted image 20260903101140.png]]![[Pasted image 20260903101308.png]]![[Pasted image 20260903103432.png]]
