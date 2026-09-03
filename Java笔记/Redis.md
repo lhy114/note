@@ -541,3 +541,6 @@ OpenResty 不仅能做反向代理，还能在网关这一层执行逻辑，并�
 ![[Pasted image 20260903105452.png]]
 在创建Bean的时候就会初始化了
 
+#### openResty查询Redis模块
+![[Pasted image 20260903110005.png]]![[Pasted image 20260903110120.png]]
+
