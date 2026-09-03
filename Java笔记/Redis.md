@@ -520,3 +520,6 @@ Bitmap 为 0：一定不存在；Bitmap 为 1：可能存在，因此还需要�
 ### OpenResty
 ![[Pasted image 20260902170656.png]]
  ![[Pasted image 20260902171306.png]]![[Pasted image 20260902171544.png]] 
+ 
+### OpenResty请求参数
+![[Pasted image 20260903100714.png]]
