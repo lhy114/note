@@ -572,4 +572,6 @@ OpenResty 不仅能做反向代理，还能在网关这一层执行逻辑，并�
  ![[Pasted image 20260904150108.png]]
 ## 批处理优化
 ![[Pasted image 20260904150609.png]]
-![[Pasted image 20260904150646.png]]
+![[Pasted image 20260904150646.png]]![[Pasted image 20260904150920.png]]
+
+![[Pasted image 20260904151144.png]]
