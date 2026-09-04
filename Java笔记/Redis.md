@@ -577,3 +577,4 @@ OpenResty 不仅能做反向代理，还能在网关这一层执行逻辑，并�
 ![[Pasted image 20260904151144.png]]![[Pasted image 20260904151320.png]]Redis Cluster 的问题本质不是“批处理”三个字，而是“一次 Redis 请求涉及多个 key，而这些 key 可能分布在不同节点”。 但是Redis他不会自动将你的一次请求转换到不同redis节点上(也就是说一次请求只能对应一个节点), spring他已经实现了slot方法
 
 ## 服务端优化
+![[Pasted image 20260904152916.png]]![[Pasted image 20260904152924.png]]![[Pasted image 20260904153027.png]]![[Pasted image 20260904153257.png]]
