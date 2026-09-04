@@ -561,3 +561,7 @@ OpenResty 不仅能做反向代理，还能在网关这一层执行逻辑，并�
 
 ![[Pasted image 20260903112405.png]]
 
+
+# Redis 实践
+## 键值设计
+![[Pasted image 20260904143521.png]]
