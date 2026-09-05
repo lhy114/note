@@ -622,3 +622,5 @@ redis呢, 取了一个巧妙的方法,他保存了一个sizemask的值, 大小�
 
 ### ZipList
 ![[Pasted image 20260905114956.png]]
+![[Pasted image 20260905115029.png]]
+ ![[Pasted image 20260905115454.png]]
