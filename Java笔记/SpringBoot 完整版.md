@@ -485,21 +485,26 @@ String json = mapper.writeValueAsString(user);
 
 
 ## 自动配置
-### xml方式声明Bean
+### Bean的加载
+#### xml方式声明Bean
 ![[Pasted image 20260905164259.png]]
-### xml+注解方式
+#### xml+注解方式
 ![[Pasted image 20260905164838.png]]
 ![[Pasted image 20260905164852.png]]
 
 这里也可以用configuration
 
-### 注解方式声明配置类
+#### 注解方式声明配置类
 ![[Pasted image 20260905165219.png]]
 
 
-### FactoryBean
+#### FactoryBean
 你写了一个类并不一定是一个Bean对象的, 如果你是实现了一个FactoryBean接口的类, 那么这个类其实返回的是它创建的这个对象
 ![[Pasted image 20260905165656.png]]
 
 SpringBoot 里面还是book对象, 没有对应的BookFactoryBean对象
 
+#### 导入原始配置文件
+![[Pasted image 20260905170056.png]]
+
+#### configuration注解
