@@ -665,3 +665,6 @@ abcdef + （重复前面的内容若干次）
 ![[Pasted image 20260905151832.png]]
 ![[Pasted image 20260905152005.png]]
 ![[Pasted image 20260905152106.png]]![[Pasted image 20260905152112.png]]
+
+#### List
+![[Pasted image 20260905152459.png]]
