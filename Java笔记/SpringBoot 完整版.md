@@ -603,4 +603,5 @@ B里面的 A         ← 另一个A
 #### 上下文对象在容器初始化完毕之后注入Bean
 ![[Pasted image 20260905172234.png]]
 
-#### 
+#### ImportSelector 动态的加载Bean
+![[Pasted image 20260905172920.png]]![[Pasted image 20260905172942.png]]
