@@ -497,4 +497,9 @@ String json = mapper.writeValueAsString(user);
 ![[Pasted image 20260905165219.png]]
 
 
-### 
+### FactoryBean
+你写了一个类并不一定是一个Bean对象的, 如果你是实现了一个FactoryBean接口的类, 那么这个类其实返回的是它创建的这个对象
+![[Pasted image 20260905165656.png]]
+
+SpringBoot 里面还是book对象, 没有对应的BookFactoryBean对象
+
