@@ -614,3 +614,10 @@ redis呢, 取了一个巧妙的方法,他保存了一个sizemask的值, 大小�
 ![[Pasted image 20260905105929.png]]
 
 ![[Pasted image 20260905110252.png]]![[Pasted image 20260905110405.png]]
+![[Pasted image 20260905110843.png]]
+简而言之, 由于reshape之后, hash索引发生变化,因此全部元素需要重新计算, 所以要两个hashtable,一次记录原来数据, 然后在新的table更具新的索引重新建立
+
+![[Pasted image 20260905111309.png]]
+这里有一个问题,如果数据过多,我们要重新计算
+
+ 
