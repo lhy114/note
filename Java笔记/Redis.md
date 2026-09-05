@@ -584,7 +584,7 @@ OpenResty 不仅能做反向代理，还能在网关这一层执行逻辑，并�
 
 
 # Redis 原理篇
-## 数据结构
+## 数据结构 《重点》
 ### 动态字符串SDS
 ![[Pasted image 20260905101731.png]]
 ![[Pasted image 20260905102309.png]]
@@ -684,5 +684,5 @@ abcdef + （重复前面的内容若干次）
 ![[Pasted image 20260905160640.png]]
 ![[Pasted image 20260905160720.png]]
 
-### Hash
+#### Hash
 ![[Pasted image 20260905160943.png]] ![[Pasted image 20260905161051.png]]

@@ -479,4 +479,7 @@ String json = mapper.writeValueAsString(user);
 
 
 # 原理篇
+
+**临时小记**:
 `@Transactional` 不负责“自动发现调用”，它依赖 Spring AOP 代理；只有调用经过 Spring 代理，事务才会被正确开启。
+
