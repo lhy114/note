@@ -606,3 +606,6 @@ B里面的 A         ← 另一个A
 #### ImportSelector 动态的加载Bean
 ![[Pasted image 20260905172920.png]]![[Pasted image 20260905172942.png]]
 
+####  ImportBeanDefinitionRegistrar
+ ![[Pasted image 20260905173958.png]]
+#### 
