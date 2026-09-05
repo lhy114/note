@@ -511,3 +511,87 @@ SpringBoot 里面还是book对象, 没有对应的BookFactoryBean对象
 ![[Pasted image 20260905170635.png]]
 
 如果这里是true, spring会通过CGLB生成一个代理对象, 如果我们通过SpringConfig.book()调用这个方法,然后这个代理对象能够保障你在配置文件里面生成的Bean是一个单例的, 能够交给Spring进行管理
+
+`proxyBeanMethods = true` 保证的是：当 `@Configuration` 配置类内部通过 `@Bean` 方法互相调用时，调用结果仍然会从 Spring 容器中获取，从而保证引用的是容器中的同一个 Bean。
+
+```
+@Configuration(proxyBeanMethods = true)
+public class Config {
+
+    @Bean
+    public A a() {
+        return new A();
+    }
+
+    @Bean
+    public B b() {
+        return new B(a());
+    }
+}
+```
+
+`true`：
+
+```
+Spring启动
+   ↓
+创建 A
+   ↓
+放入Spring容器
+
+创建 B
+   ↓
+调用 a()
+   ↓
+代理拦截
+   ↓
+从Spring容器拿已经存在的A
+   ↓
+new B(A)
+```
+
+所以：
+
+```
+容器里的 A
+     ↑
+     │
+B 持有的 A
+```
+
+是**同一个对象**。
+
+---
+
+而 `false`：
+
+```
+Spring启动
+   ↓
+创建 A
+   ↓
+放入Spring容器
+
+创建 B
+   ↓
+调用 a()
+   ↓
+普通Java方法调用
+   ↓
+new A()
+   ↓
+new B(A)
+```
+
+于是：
+
+```
+Spring容器里的 A  ← 一个A
+
+B里面的 A         ← 另一个A
+```
+
+可能就是两个不同对象。
+
+
+#### 
