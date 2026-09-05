@@ -487,4 +487,10 @@ String json = mapper.writeValueAsString(user);
 ## 自动配置
 ### xml方式声明Bean
 ![[Pasted image 20260905164259.png]]
-### 使用注解声明Bean
+### xml+注解方式
+![[Pasted image 20260905164838.png]]
+![[Pasted image 20260905164852.png]]
+
+这里也可以用configuration
+
+### 
