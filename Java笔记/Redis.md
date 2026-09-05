@@ -630,3 +630,23 @@ redis呢, 取了一个巧妙的方法,他保存了一个sizemask的值, 大小�
 
 ### QuickList
 ![[Pasted image 20260905143956.png]]
+![[Pasted image 20260905144115.png]]
+![[Pasted image 20260905144202.png]]
+![[Pasted image 20260905144431.png]]
+LZF 是一种快速的无损压缩算法，通过寻找重复数据并用引用替代重复内容，降低数据存储空间，同时保持较快的压缩/解压速度。
+
+假设原始数据：
+
+```
+abcdefabcdefabcdefabcdef
+```
+
+里面有大量重复内容。
+
+LZF 不需要把这些内容完整保存多遍，而是类似这样记录：
+
+```
+abcdef + （重复前面的内容若干次）
+```
+
+![[Pasted image 20260905144447.png]]![[Pasted image 20260905144531.png]]
