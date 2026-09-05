@@ -653,3 +653,6 @@ abcdef + （重复前面的内容若干次）
 
 ### SkipList
 ![[Pasted image 20260905145801.png]]
+![[Pasted image 20260905150651.png]]![[Pasted image 20260905150746.png]]
+
+### RedisObject
