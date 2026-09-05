@@ -659,3 +659,9 @@ abcdef + （重复前面的内容若干次）
 ![[Pasted image 20260905151434.png]]
 ![[Pasted image 20260905151442.png]]
 ![[Pasted image 20260905151559.png]]
+
+### 五种数据类型
+#### String
+![[Pasted image 20260905151832.png]]
+![[Pasted image 20260905152005.png]]
+![[Pasted image 20260905152106.png]]![[Pasted image 20260905152112.png]]
