@@ -675,3 +675,7 @@ abcdef + （重复前面的内容若干次）
 ![[Pasted image 20260905154305.png]]![[Pasted image 20260905154423.png]]
 
 #### ZSet
+![[Pasted image 20260905155646.png]]
+![[Pasted image 20260905155719.png]]
+简单来说,skiplist解决score的排序问题, dict解决key的唯一性
+
