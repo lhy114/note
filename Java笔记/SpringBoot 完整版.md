@@ -493,4 +493,8 @@ String json = mapper.writeValueAsString(user);
 
 这里也可以用configuration
 
+### 注解方式声明配置类
+![[Pasted image 20260905165219.png]]
+
+
 ### 
