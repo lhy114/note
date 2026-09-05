@@ -486,6 +486,7 @@ String json = mapper.writeValueAsString(user);
 
 ## 自动配置
 ### Bean的加载
+![[Pasted image 20260905174551.png]]
 #### xml方式声明Bean
 ![[Pasted image 20260905164259.png]]
 #### xml+注解方式
@@ -608,4 +609,6 @@ B里面的 A         ← 另一个A
 
 ####  ImportBeanDefinitionRegistrar
  ![[Pasted image 20260905173958.png]]
-#### 
+#### BeanDefinitionRegistryPostProcessor
+![[Pasted image 20260905174516.png]]
+
