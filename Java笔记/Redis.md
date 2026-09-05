@@ -626,3 +626,7 @@ redis呢, 取了一个巧妙的方法,他保存了一个sizemask的值, 大小�
  ![[Pasted image 20260905115454.png]]![[Pasted image 20260905115533.png]]   ![[Pasted image 20260905142532.png]]
   ![[Pasted image 20260905143129.png]]
   这里我要说明一下,由于我们常用的类型也就是,int、short、float、double等, 最多就8个字节、4个、2个字节就能够表示,因此长度和编码的方式比较确定, 因此我们直接将编码固定下来就行了.
+![[Pasted image 20260905143618.png]]![[Pasted image 20260905143701.png]]
+
+### QuickList
+![[Pasted image 20260905143956.png]]
