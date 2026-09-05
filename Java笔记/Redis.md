@@ -656,3 +656,6 @@ abcdef + （重复前面的内容若干次）
 ![[Pasted image 20260905150651.png]]![[Pasted image 20260905150746.png]]
 
 ### RedisObject
+![[Pasted image 20260905151434.png]]
+![[Pasted image 20260905151442.png]]
+![[Pasted image 20260905151559.png]]
