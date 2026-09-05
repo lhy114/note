@@ -508,3 +508,6 @@ SpringBoot 里面还是book对象, 没有对应的BookFactoryBean对象
 ![[Pasted image 20260905170056.png]]
 
 #### configuration注解
+![[Pasted image 20260905170635.png]]
+
+如果这里是true, spring会通过CGLB生成一个代理对象, 如果我们通过SpringConfig.book()调用这个方法,然后这个代理对象能够保障你在配置文件里面生成的Bean是一个单例的, 能够交给Spring进行管理
