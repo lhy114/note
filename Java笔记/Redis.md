@@ -651,7 +651,7 @@ abcdef + （重复前面的内容若干次）
 
 ![[Pasted image 20260905144447.png]]![[Pasted image 20260905144531.png]]
 
-### SkipList
+### SkipList《注意这里是升序排列》
 ![[Pasted image 20260905145801.png]]
 ![[Pasted image 20260905150651.png]]![[Pasted image 20260905150746.png]]
 
@@ -672,3 +672,6 @@ abcdef + （重复前面的内容若干次）
 
 #### Set
 ![[Pasted image 20260905154124.png]]
+![[Pasted image 20260905154305.png]]![[Pasted image 20260905154423.png]]
+
+#### ZSet
