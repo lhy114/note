@@ -612,3 +612,4 @@ B里面的 A         ← 另一个A
 #### BeanDefinitionRegistryPostProcessor
 ![[Pasted image 20260905174516.png]]
 
+
