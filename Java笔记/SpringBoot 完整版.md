@@ -620,3 +620,4 @@ B里面的 A         ← 另一个A
 ![[Pasted image 20260907170137.png]]![[Pasted image 20260907170208.png]]![[Pasted image 20260907170225.png]]![[Pasted image 20260907170233.png]]
 
 ### 自动配置原理
+![[Pasted image 20260907170717.png]]
