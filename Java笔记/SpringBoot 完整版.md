@@ -613,3 +613,6 @@ B里面的 A         ← 另一个A
 ![[Pasted image 20260905174516.png]]
 
 
+#### Bean的加载与控制
+可以用springboot 里面的condition等注解控制
+
