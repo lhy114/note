@@ -815,3 +815,6 @@ listen socket
 ![[Pasted image 20260907123702.png]]
 
 redis最大的瓶颈就是在IO过程中, 也就是读和写的影响, 收到网络IO的影响
+
+### RESP 协议
+![[Pasted image 20260907151715.png]]
