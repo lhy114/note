@@ -720,4 +720,7 @@ abcdef + （重复前面的内容若干次）
 ![[Pasted image 20260907111117.png]]
 
 #### epoll
- 
+ ![[Pasted image 20260907111912.png]]
+
+![[Pasted image 20260907112131.png]]
+
