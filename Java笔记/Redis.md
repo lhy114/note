@@ -827,5 +827,8 @@ redis最大的瓶颈就是在IO过程中, 也就是读和写的影响, 收到网
 ![[Pasted image 20260907153719.png]]
 
 ### 过期策略
+![[Pasted image 20260907153937.png]]
+![[Pasted image 20260907154205.png]]
+![[Pasted image 20260907154301.png]]
 
 ### 淘汰策略
