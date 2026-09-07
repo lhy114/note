@@ -690,3 +690,12 @@ abcdef + （重复前面的内容若干次）
 ## Redis网络模型
 ## 用户空间和内核空间
 ![[Pasted image 20260907103933.png]]
+
+## IO 模型
+### 阻塞IO
+![[Pasted image 20260907104421.png]]
+
+### 非阻塞IO
+![[Pasted image 20260907104617.png]]
+
+### IO多路复用
