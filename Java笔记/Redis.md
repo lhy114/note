@@ -705,6 +705,8 @@ abcdef + （重复前面的内容若干次）
 ![[Pasted image 20260907105451.png]]
 
 #### select
+![[Pasted image 20260907110140.png]]
+
 
 #### poll
 #### epoll
