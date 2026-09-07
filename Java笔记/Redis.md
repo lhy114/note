@@ -699,3 +699,12 @@ abcdef + （重复前面的内容若干次）
 ![[Pasted image 20260907104617.png]]
 
 ### IO多路复用
+![[Pasted image 20260907105258.png]]
+其中第一个阶段也是阻塞的, 与前面的IO阻塞就是, select 是监听多个FD, 但是recvfrom只能处理一个.
+
+![[Pasted image 20260907105451.png]]
+
+#### select
+
+#### poll
+#### epoll
