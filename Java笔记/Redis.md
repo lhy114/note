@@ -688,3 +688,5 @@ abcdef + （重复前面的内容若干次）
 ![[Pasted image 20260905160943.png]] ![[Pasted image 20260905161051.png]]
 
 ## Redis网络模型
+## 用户空间和内核空间
+![[Pasted image 20260907103933.png]]
