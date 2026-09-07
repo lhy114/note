@@ -621,4 +621,4 @@ B里面的 A         ← 另一个A
 
 ### 自动配置原理
 ![[Pasted image 20260907170717.png]]
-![[Pasted image 20260907172740.png]]
+![[Pasted image 20260907172740.png]]![[Pasted image 20260907173129.png]]
