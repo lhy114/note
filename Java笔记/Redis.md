@@ -688,23 +688,23 @@ abcdef + （重复前面的内容若干次）
 ![[Pasted image 20260905160943.png]] ![[Pasted image 20260905161051.png]]
 
 ## Redis网络模型
-## 用户空间和内核空间
+### 用户空间和内核空间
 ![[Pasted image 20260907103933.png]]
 
-## IO 模型
-### 阻塞IO
+### IO 模型
+#### 阻塞IO
 ![[Pasted image 20260907104421.png]]
 
-### 非阻塞IO
+#### 非阻塞IO
 ![[Pasted image 20260907104617.png]]
 
-### IO多路复用
+#### IO多路复用 《重点》
 ![[Pasted image 20260907105258.png]]
-其中第一个阶段也是阻塞的, 与前面的IO阻塞就是, select 是监听多个FD, 但是recvfrom只能处理一个.
+其中**第一个阶段也是阻塞的**, 与前面的IO阻塞就是, select 是监听多个FD, 但是recvfrom只能处理一个.
 
 ![[Pasted image 20260907105451.png]]
 
-#### select
+##### select
 ![[Pasted image 20260907110140.png]]
 ![[Pasted image 20260907110200.png]]
 1.1 首先创建rfds
@@ -799,3 +799,9 @@ listen socket
 ![[Pasted image 20260907115412.png]]
 
 ### 信号驱动IO
+![[Pasted image 20260907115638.png]]
+
+### 异步IO
+![[Pasted image 20260907115829.png]]![[Pasted image 20260907115926.png]]
+
+## 
