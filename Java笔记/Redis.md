@@ -811,3 +811,7 @@ listen socket
 ![[Pasted image 20260907120939.png]]![[Pasted image 20260907122929.png]]
 
 注意这里的客户端写处理器实在before sleep的时候就已经创建了![[Pasted image 20260907123554.png]]
+`beforeSleep()` 是 Redis 事件循环在进入下一次 IO 多路复用等待（如 `epoll_wait`）之前执行的“准备/收尾工作”。
+![[Pasted image 20260907123702.png]]
+
+redis最大的瓶颈就是在IO过程中, 也就是读和写的影响, 收到网络IO的影响
