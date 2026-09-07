@@ -616,3 +616,7 @@ B里面的 A         ← 另一个A
 #### Bean的加载与控制
 可以用springboot 里面的condition等注解控制
 
+#### bean依赖的属性配置
+![[Pasted image 20260907170137.png]]![[Pasted image 20260907170208.png]]![[Pasted image 20260907170225.png]]![[Pasted image 20260907170233.png]]
+
+### 自动配置原理
