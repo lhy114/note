@@ -816,10 +816,16 @@ listen socket
 
 redis最大的瓶颈就是在IO过程中, 也就是读和写的影响, 收到网络IO的影响
 
-### RESP 协议
+## RESP 协议
 ![[Pasted image 20260907151715.png]]
 
 ![[Pasted image 20260907152300.png]]
 
 
-### Redisnei cun
+## Redis内存策略
+![[Pasted image 20260907153552.png]]
+![[Pasted image 20260907153719.png]]
+
+### 过期策略
+
+### 淘汰策略
