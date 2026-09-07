@@ -819,3 +819,5 @@ redis最大的瓶颈就是在IO过程中, 也就是读和写的影响, 收到网
 ### RESP 协议
 ![[Pasted image 20260907151715.png]]
 
+![[Pasted image 20260907152300.png]]
+
