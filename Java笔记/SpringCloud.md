@@ -211,4 +211,8 @@ public Order getOrder(@PathVariable("id") Long id) {
 
 
 ### 隔离和降级
-#### 
+![[Pasted image 20260909153355.png]]
+#### Feign整合Sentinel
+![[Pasted image 20260909153522.png]]
+ ![[Pasted image 20260909153606.png]]
+ ![[Pasted image 20260909153621.png]]
