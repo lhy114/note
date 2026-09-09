@@ -302,4 +302,4 @@ Feign 是远程调用组件，Sentinel 是流量治理组件；Feign 负责调�
 #### Seata架构
 ![[Pasted image 20260909174057.png]]![[Pasted image 20260909174143.png]]
 
-##### 部署
+##### 部署TC服务端
