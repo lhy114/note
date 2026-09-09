@@ -228,3 +228,10 @@ public Order getOrder(@PathVariable("id") Long id) {
 
 
 #### 熔断降级
+![[Pasted image 20260909155854.png]]
+
+#### 熔断策略-慢调用
+![[Pasted image 20260909160011.png]]
+
+#### 熔断策略-异常比例、异常数
+![[Pasted image 20260909160247.png]]
