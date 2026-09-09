@@ -279,7 +279,7 @@ Feign 是远程调用的发起方，FallbackFactory 本质上就是给这个“�
 
 Feign 是远程调用组件，Sentinel 是流量治理组件；Feign 负责调用，Sentinel 负责决定这个调用是否应该被允许
 
-### 规则持久化
+### 规则推送
 ![[Pasted image 20260909163621.png]]
 
 #### 原始模式, 保存在内存中
