@@ -197,3 +197,5 @@ Nginx 当然可以完成 Gateway 的路由功能，两者并不是能力上的�
 ![[Pasted image 20260909151934.png]]
 
 #### 热点参数限流
+![[Pasted image 20260909152149.png]]![[Pasted image 20260909152232.png]]![[Pasted image 20260909152316.png]]
+
