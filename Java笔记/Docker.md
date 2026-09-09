@@ -7,4 +7,11 @@
 
 ![[Pasted image 20260909094455.png]]
 
-![[Pasted image 20260909095129.png]]
+![[Pasted image 20260909095129.png]]![[Pasted image 20260909100137.png]]
+
+start stop是关闭这个容器, pause和unpause是挂起
+
+![[Pasted image 20260909100450.png]]
+
+这里建议要运行这个程序直接去dockerhub去查看一个案例就行了, 不要自己手动写
+
