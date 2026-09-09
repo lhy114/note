@@ -297,3 +297,9 @@ Feign 是远程调用组件，Sentinel 是流量治理组件；Feign 负责调�
 ![[Pasted image 20260909172800.png]]![[Pasted image 20260909172843.png]]![[Pasted image 20260909172905.png]]![[Pasted image 20260909173020.png]]![[Pasted image 20260909173204.png]]
 
 #### BASE 理论
+![[Pasted image 20260909173656.png]]![[Pasted image 20260909173727.png]]
+
+#### Seata架构
+![[Pasted image 20260909174057.png]]![[Pasted image 20260909174143.png]]
+
+##### 部署
