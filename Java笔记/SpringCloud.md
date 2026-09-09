@@ -242,6 +242,8 @@ FallbackFactory 处理的是 Feign 调用失败后的“降级逻辑”；BlockE
 **注意默认是default值**, 这里要得到看请求头是否含有这个值, 因此我们需要重写这个方法来进行隔离
 ![[Pasted image 20260909160729.png]]![[Pasted image 20260909160743.png]]
 
+![[Pasted image 20260909163302.png]]
+![[Pasted image 20260909163335.png]]
 
 |1|BlockExceptionHandler|FallbackFactory|
 |---|---|---|
@@ -273,4 +275,6 @@ FallbackFactory 处理的是 Feign 调用失败后的“降级逻辑”；BlockE
      正常返回    FallbackFactory
 ```
 
-eign 是远程调用的发起方，FallbackFactory 本质上就是给这个“远程调用”准备兜底方案的；而 BlockExceptionHandler 是 Sentinel 资源层面的统一异常处理，两者不是一个维度的东西。
+eFign 是远程调用的发起方，FallbackFactory 本质上就是给这个“远程调用”准备兜底方案的；而 BlockExceptionHandler 是 Sentinel 资源层面的统一异常处理，两者不是一个维度的东西。
+
+Feign 是远程调用组件，Sentinel 是流量治理组件；Feign 负责调用，Sentinel 负责决定这个调用是否应该被允许
