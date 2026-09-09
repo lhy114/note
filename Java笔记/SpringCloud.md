@@ -217,3 +217,9 @@ public Order getOrder(@PathVariable("id") Long id) {
  ![[Pasted image 20260909153606.png]]
  ![[Pasted image 20260909153621.png]]
 
+#### 线程隔离
+![[Pasted image 20260909155106.png]]
+![[Pasted image 20260909155248.png]]
+
+
+这里的
