@@ -15,3 +15,6 @@ start stop是关闭这个容器, pause和unpause是挂起
 
 这里建议要运行这个程序直接去dockerhub去查看一个案例就行了, 不要自己手动写
 
+
+
+![[Pasted image 20260909100823.png]]
