@@ -237,6 +237,40 @@ public Order getOrder(@PathVariable("id") Long id) {
 ![[Pasted image 20260909160247.png]]
 
 ### 授权规则
+FallbackFactory 处理的是 Feign 调用失败后的“降级逻辑”；BlockExceptionHandler 处理的是 Sentinel 规则触发后的“流控/熔断异常”。
+
 **注意默认是default值**, 这里要得到看请求头是否含有这个值, 因此我们需要重写这个方法来进行隔离
 ![[Pasted image 20260909160729.png]]![[Pasted image 20260909160743.png]]
 
+
+|1|BlockExceptionHandler|FallbackFactory|
+|---|---|---|
+|属于谁|Sentinel|OpenFeign|
+|处理什么|Sentinel 的 BlockException|Feign 调用失败|
+|触发原因|流控、熔断、热点参数等 Sentinel 规则|服务不可用、网络异常、超时、500 等|
+|位置|Sentinel 资源执行层|Feign 客户端调用层|
+|关注点|Sentinel 为什么不让我执行|远程调用为什么失败|
+|典型场景|QPS 超限|服务宕机/超时|
+|作用|返回 Sentinel 降级结果|返回 Feign fallback 结果|
+```
+                         请求
+                          │
+                          ↓
+                    Sentinel资源
+                          │
+              ┌───────────┴───────────┐
+              │                       │
+        Sentinel放行               Sentinel拦截
+              │                       │
+              ↓                       ↓
+            Feign                BlockException
+              │                       │
+       ┌──────┴──────┐                ↓
+       │             │       BlockExceptionHandler
+    调用成功       调用失败
+       │             │
+       ↓             ↓
+     正常返回    FallbackFactory
+```
+
+eign 是远程调用的发起方，FallbackFactory 本质上就是给这个“远程调用”准备兜底方案的；而 BlockExceptionHandler 是 Sentinel 资源层面的统一异常处理，两者不是一个维度的东西。
