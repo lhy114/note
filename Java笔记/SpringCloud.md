@@ -292,3 +292,6 @@ Feign 是远程调用组件，Sentinel 是流量治理组件；Feign 负责调�
 
 ## 分布式事务
 ![[Pasted image 20260909172611.png]]
+### 理论定理
+#### CAP定理
+![[Pasted image 20260909172800.png]]![[Pasted image 20260909172843.png]]![[Pasted image 20260909172905.png]]![[Pasted image 20260909173020.png]]
