@@ -175,6 +175,21 @@ Nginx 当然可以完成 Gateway 的路由功能，两者并不是能力上的�
 
 ![[Pasted image 20260909150442.png]]
 
-### 流控mo shi
+#### 流控模式
+##### 直接
+![[Pasted image 20260909150800.png]]
+##### 关联
+![[Pasted image 20260909150852.png]]![[Pasted image 20260909151044.png]]
 
-![[Pasted image 20260909150800.png]]![[Pasted image 20260909150852.png]]![[Pasted image 20260909151044.png]]
+##### 链路
+![[Pasted image 20260909151338.png]]
+![[Pasted image 20260909151522.png]]
+
+#### 流控效果
+![[Pasted image 20260909151556.png]]
+
+##### 快速失败
+略
+##### warm up
+
+##### 排队等待
