@@ -197,5 +197,18 @@ Nginx 当然可以完成 Gateway 的路由功能，两者并不是能力上的�
 ![[Pasted image 20260909151934.png]]
 
 #### 热点参数限流
-![[Pasted image 20260909152149.png]]![[Pasted image 20260909152232.png]]![[Pasted image 20260909152316.png]]
+![[Pasted image 20260909152149.png]]
+**注意: 这里的参数索引是指代你访问的controller 那一个方法里面的参数, 而不是指代的请求路径那一个id**
+```
+@GetMapping("/orders/{id}")
+public Order getOrder(@PathVariable("id") Long id) {
+    ...
+}
 
+代表的是第0个参数, 也就是id, 那么此时就是对多有的query访问都是限流的
+```
+![[Pasted image 20260909152232.png]]![[Pasted image 20260909152316.png]]
+
+
+### 隔离和降级
+#### 
