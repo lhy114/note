@@ -34,7 +34,7 @@
 ### 饥饿加载
 ![[Pasted image 20260908112615.png]]
 ‘
-## nacos
+## Nacos
 ### 注册和发现, 略
 ### Nacos 服务分级存储模型
 ![[Pasted image 20260908113802.png]]
