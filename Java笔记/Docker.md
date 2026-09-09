@@ -19,4 +19,4 @@ start stop是关闭这个容器, pause和unpause是挂起
 
 ![[Pasted image 20260909100823.png]]![[Pasted image 20260909102029.png]]
 
-![[Pasted image 20260909102239.png]]![[Pasted image 20260909102341.png]]
+![[Pasted image 20260909102239.png]]![[Pasted image 20260909102341.png]]![[Pasted image 20260909104010.png]]
