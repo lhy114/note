@@ -235,3 +235,8 @@ public Order getOrder(@PathVariable("id") Long id) {
 
 #### 熔断策略-异常比例、异常数
 ![[Pasted image 20260909160247.png]]
+
+### 授权规则
+**注意默认是default值**, 这里要得到看请求头是否含有这个值, 因此我们需要chong x
+![[Pasted image 20260909160729.png]]![[Pasted image 20260909160743.png]]
+
