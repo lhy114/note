@@ -322,3 +322,7 @@ Feign 是远程调用组件，Sentinel 是流量治理组件；Feign 负责调�
 ##### TCC 模式
 ![[Pasted image 20260910102232.png]]
 
+![[Pasted image 20260910102535.png]]
+
+![[Pasted image 20260910102640.png]]
+![[Pasted image 20260910103008.png]]
