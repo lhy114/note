@@ -24,5 +24,10 @@
 
 ### 多生产者模式 略
 
-### 同步消息和异步消息
+### 同步消息、异步消息、单向消息、延时消息
+![[Pasted image 20260910170023.png]]
 
+![[Pasted image 20260910170011.png]]![[Pasted image 20260910170040.png]]
+
+实现的借口分别为
+![[Pasted image 20260910170148.png]]![[Pasted image 20260910170157.png]]![[Pasted image 20260910170202.png]]
