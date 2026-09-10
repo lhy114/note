@@ -308,4 +308,10 @@ Feign 是远程调用组件，Sentinel 是流量治理组件；Feign 负责调�
 ##### XA模式
 ![[Pasted image 20260910095320.png]]
 ![[Pasted image 20260910095411.png]]
-![[Pasted image 20260910095805.png]]
+![[Pasted image 20260910095805.png]]![[Pasted image 20260910100055.png]]
+
+##### AT 模式
+![[Pasted image 20260910100257.png]]
+![[Pasted image 20260910100425.png]]
+
+如果此时
