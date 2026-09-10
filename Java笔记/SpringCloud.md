@@ -332,3 +332,4 @@ Feign 是远程调用组件，Sentinel 是流量治理组件；Feign 负责调�
 ![[Pasted image 20260910104749.png]]![[Pasted image 20260910104916.png]]
 
 #### 高可用
+![[Pasted image 20260910105215.png]]
