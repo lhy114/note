@@ -11,3 +11,7 @@
 ### 缺点
 ![[Pasted image 20260910114734.png]]
 
+
+## RocketMQ
+![[Pasted image 20260910114952.png]]
+
