@@ -301,9 +301,11 @@ Feign 是远程调用组件，Sentinel 是流量治理组件；Feign 负责调�
 
 #### Seata架构
 ![[Pasted image 20260909174057.png]]![[Pasted image 20260909174143.png]]
-
+其中，TC 为单独部署的 **Server** 服务端，TM 和 RM 为嵌入到应用中的 **Client** 客户端。
 ##### 部署TC服务端
 参考文档就行了
 
 ##### XA模式
 ![[Pasted image 20260910095320.png]]
+![[Pasted image 20260910095411.png]]
+![[Pasted image 20260910095805.png]]
