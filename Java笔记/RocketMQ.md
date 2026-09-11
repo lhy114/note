@@ -140,6 +140,6 @@ Thread C：处理③ ─────────→ 完成
 ## 高级特性
 ![[Pasted image 20260911135537.png]]
 
-这里我想要讲解一下为什么会多了2和6,这两步骤. 首先假设我们的producer向brokerfa song
+这里我想要讲解一下为什么会多了2和6,这两步骤. 首先假设我们的producer向broker发送了一个消息, 此时broker接受到消息之后,按道理来说应该发送一个ack给producer, 但是此时我们的broker宕机了, 此时broker再次选择重启, 那么
 
 ![[Pasted image 20260911135458.png]]
