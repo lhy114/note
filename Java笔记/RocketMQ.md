@@ -138,3 +138,8 @@ Thread C：处理③ ─────────→ 完成
 ![[Pasted image 20260910115908.png]]
 
 ## 高级特性
+![[Pasted image 20260911135537.png]]
+
+这里我想要讲解一下为什么会多了2和6,这两步骤. 首先假设我们的producer向brokerfa song
+
+![[Pasted image 20260911135458.png]]
