@@ -46,3 +46,6 @@
 ![[Pasted image 20260910173512.png]]
 这里记着要需要给 `broker.conf` 增加 `enablePropertyFilter=true`，然后重启常驻 Broker。
 ![[Pasted image 20260910173601.png]]![[Pasted image 20260910173612.png]]
+
+
+### 消息的顺序
