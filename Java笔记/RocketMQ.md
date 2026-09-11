@@ -108,3 +108,15 @@ Thread C：处理③ ─────────→ 完成
 ```
 
 因此除了保障你要存放的在一个queue里面, 还要保障并发的问题
+
+
+生产端：syncSendOrderly + 相同 hashKey
+消费端：consumeMode = ConsumeMode.ORDERLY
+
+|内容|作用|
+|---|---|
+|`RocketMQHeaders.KEYS`|业务查询、排查、追踪|
+|`hashKey`|选择消息队列，决定同 key 是否进同一个队列|
+|`consumeMode = ORDERLY`|决定同一个队列是否串行消费|
+
+### 事务消息
