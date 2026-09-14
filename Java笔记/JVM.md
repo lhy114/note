@@ -173,3 +173,5 @@ OutOfMemoryError: PermGen space
 于是 JDK 8 做了一个重要改变：
 
 > **HotSpot 移除了 PermGen，使用 Metaspace（元空间）来存放类元数据。**
+
+### 方法区内存溢出
