@@ -81,4 +81,20 @@ Program Counter Register:
 
 ## 方法区
 
-![[Pasted image 20260914115612.png]]
+![[Pasted image 20260914115612.png]]![[Pasted image 20260914115839.png]]
+
+```
+                 JVM 规范中的逻辑概念
+                         │
+                       方法区
+                         │
+          ┌──────────────┴──────────────┐
+          │                             │
+      JDK 7及以前                    JDK 8+
+          │                             │
+      PermGen 永久代                 Metaspace 元空间
+          │                             │
+      JVM堆内存的一部分？             Native Memory
+      （准确说：JVM管理的区域）        （本地内存）
+```
+
