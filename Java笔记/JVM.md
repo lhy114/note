@@ -205,4 +205,7 @@ String s4 = s1 + s2， 经过反编译之后的结果，我们可以看到他是
 ![[Pasted image 20260914183556.png]]
 此时s3 == s5 为true
 
-![[Pasted image 20260914183824.png]]
+![[Pasted image 20260914183824.png]]![[Pasted image 20260914184311.png]]
+哦，对了值了返回的是串池的对象，所以第一个s2 == x为true
+
+![[Pasted image 20260914184505.png]]
