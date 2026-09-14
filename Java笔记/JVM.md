@@ -334,3 +334,28 @@ GC 负责发现 DirectByteBuffer 不再使用；Cleaner 负责触发清理动作
 
 ![[Pasted image 20260914192718.png]]
 ![[Pasted image 20260914192923.png]]
+
+```
+ByteBuffer.allocateDirect()
+        ↓
+创建 DirectByteBuffer（Java对象，在堆中）
+        ↓
+Unsafe.allocateMemory()
+        ↓
+申请 Direct Memory（堆外内存）
+
+
+DirectByteBuffer
+      ↓
+不再被任何强引用指向
+      ↓
+GC发现它不可达
+      ↓
+Cleaner / PhantomReference 机制发现它可以清理
+      ↓
+Cleaner执行 cleanup()
+      ↓
+Unsafe.freeMemory(address)
+      ↓
+Direct Memory 被释放
+```
