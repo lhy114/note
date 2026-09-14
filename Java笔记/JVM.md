@@ -228,4 +228,108 @@ String s4 = s1 + s2， 经过反编译之后的结果，我们可以看到他是
 
 第一幅图，是我们传统读取文件的一个过程， 磁盘文件首先要写入到系统缓冲区之后，然后通过java的字节缓冲区才能完成后续的读或者写操作，这就是的对于同一分文件，两个缓冲区都会存有对应的数据， 这就造成了内存的紧张（相当于系统一份文件，jvm里面一份文件， 本来你只需要拷贝一次， 但是实际做了两次传输）。 因此我们不如就直接使用直接缓冲区， 减少了一次传输过程
 
+### 直接内存回收
 **直接内存的回收是通过**
+
+直接内存（Direct Memory）和堆内存最大的区别就在这里：
+
+> **直接内存不属于 JVM 堆，所以不能直接依赖普通的 GC 来回收。**
+
+但它又不是“完全不会自动回收”。Java 有一套机制会在**对应的 Java 对象不可达后，由 GC 触发间接回收直接内存**。
+
+以最典型的 `ByteBuffer.allocateDirect()` 为例：
+
+```
+ByteBuffer buffer = ByteBuffer.allocateDirect(1024);
+```
+
+大概是：
+
+```
+        JVM 堆
+┌──────────────────────┐
+│ DirectByteBuffer对象  │
+│                      │
+│ 记录着直接内存地址 ───────┼──────┐
+└──────────────────────┘      │
+                              ↓
+                     直接内存（Native Memory）
+                     ┌────────────────┐
+                     │   1024 bytes   │
+                     └────────────────┘
+```
+
+这里实际上存在**两个东西**：
+
+```
+① DirectByteBuffer Java对象
+        ↓
+     在堆中
+
+② 真正的数据
+        ↓
+     在直接内存中
+```
+
+---
+
+### 那么怎么回收？
+
+假设：
+
+```
+ByteBuffer buffer = ByteBuffer.allocateDirect(1024);
+```
+
+后来：
+
+```
+buffer = null;
+```
+
+此时：
+
+```
+堆：
+DirectByteBuffer对象
+       ↓
+   不可达
+```
+
+GC 发现这个 `DirectByteBuffer` 对象已经没有引用了。
+
+但是：
+
+> GC 不能简单地把它占用的直接内存当成堆对象一起清理。
+
+所以 `DirectByteBuffer` 内部关联了一个 **Cleaner**，用于在对象被回收的过程中释放对应的 Native Memory。
+
+可以粗略理解成：
+
+```
+DirectByteBuffer
+       ↓
+    Cleaner
+       ↓
+释放 Direct Memory
+```
+
+因此整体过程是：
+
+```
+DirectByteBuffer
+       ↓
+Java对象变成不可达
+       ↓
+GC发现它
+       ↓
+Cleaner执行清理
+       ↓
+释放Native Memory
+
+
+GC 负责发现 DirectByteBuffer 不再使用；Cleaner 负责触发清理动作；底层通过 Unsafe 等机制真正释放 Native Memory。
+
+```
+
+![[Pasted image 20260914192718.png]]
