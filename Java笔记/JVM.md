@@ -175,3 +175,5 @@ OutOfMemoryError: PermGen space
 > **HotSpot 移除了 PermGen，使用 Metaspace（元空间）来存放类元数据。**
 
 ### 方法区内存溢出
+![[Pasted image 20260914121416.png]]
+
