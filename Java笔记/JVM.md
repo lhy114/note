@@ -218,3 +218,8 @@ String s4 = s1 + s2， 经过反编译之后的结果，我们可以看到他是
 有垃圾回收机制
 
 #### StringTable 性能调优
+![[Pasted image 20260914190903.png]]
+
+
+## 直接内存
+![[Pasted image 20260914191104.png]]
