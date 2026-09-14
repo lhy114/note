@@ -180,7 +180,8 @@ OutOfMemoryError: PermGen space
 ## 常量池
 ![[Pasted image 20260914181344.png]]
 
-### StringTable 串池
+### StringTable 
+#### 基础性质
 
 `intern()` 是 Java `String` 提供的一个方法，核心作用可以一句话记：
 
@@ -209,3 +210,5 @@ String s4 = s1 + s2， 经过反编译之后的结果，我们可以看到他是
 哦，对了值了返回的是串池的对象，所以第一个s2 == x为true
 
 ![[Pasted image 20260914184505.png]]
+
+#### String T
