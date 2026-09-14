@@ -98,3 +98,78 @@ Program Counter Register:
       （准确说：JVM管理的区域）        （本地内存）
 ```
 
+### 什么是永久代
+PermGen 全称：
+> **Permanent Generation，永久代**
+
+它是 HotSpot JVM 在 **JDK 7 及以前**用于实现方法区的一块内存区域。
+
+之所以叫“永久代”，是因为这里面主要放的是一些**生命周期与类加载器相关的数据**，例如：
+
+```
+类的元数据
+├── 类的信息
+├── 方法的信息
+├── 字段的信息
+├── 方法字节码相关信息
+├── 常量池相关信息
+└── ...
+```
+
+这些东西不像普通 Java 对象那样随着一次方法调用结束就消失。
+
+例如：
+
+```
+public class User {
+    private String name;
+
+    public void sayHello() {
+        System.out.println("hello");
+    }
+}
+```
+
+当 JVM 加载 `User.class` 时，需要保存关于 `User` 这个类的大量信息。
+
+这些类元数据在早期 HotSpot 中主要放在：
+
+```
+PermGen（永久代）
+```
+
+因此它被称为 **Permanent Generation**。
+
+### 为什么不用永久代了
+这里是理解 JDK 8 变化的关键。
+
+永久代有一个比较明显的问题：
+
+> **大小不好控制，而且容易出现 `OutOfMemoryError: PermGen space`。**
+
+例如：
+
+```
+PermGen
+容量：固定/受限
+       ↓
+加载大量 Class
+       ↓
+PermGen 不够
+       ↓
+OutOfMemoryError: PermGen space
+```
+
+尤其是：
+
+- 大量动态生成 Class
+- 大量使用动态代理
+- 热部署
+- 应用服务器
+- 大量第三方框架
+
+都可能导致类元数据不断增加。
+
+于是 JDK 8 做了一个重要改变：
+
+> **HotSpot 移除了 PermGen，使用 Metaspace（元空间）来存放类元数据。**
