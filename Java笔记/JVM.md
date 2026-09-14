@@ -215,3 +215,6 @@ String s4 = s1 + s2， 经过反编译之后的结果，我们可以看到他是
 ![[Pasted image 20260914185209.png]]
 
 #### StringTable 垃圾回收
+有垃圾回收机制
+
+#### StringTable 性能调优
