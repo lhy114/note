@@ -211,4 +211,7 @@ String s4 = s1 + s2， 经过反编译之后的结果，我们可以看到他是
 
 ![[Pasted image 20260914184505.png]]
 
-#### String T
+#### String Table的位置
+![[Pasted image 20260914185209.png]]
+
+#### StringTable 垃圾回收
