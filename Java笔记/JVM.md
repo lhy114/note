@@ -8,3 +8,10 @@
 ![[Pasted image 20260914095813.png]]
 
 
+![[Pasted image 20260914100404.png]]
+
+
+# 内存结构
+## 程序计数器(PC Register)
+Program Counter Register
+
