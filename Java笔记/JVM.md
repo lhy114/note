@@ -203,3 +203,6 @@ System.out.println(s2 == "hello");  // true
 String s4 = s1 + s2， 经过反编译之后的结果，我们可以看到他是经历了一个new String("ab")， 而这个对象是在堆内存里面所以 s3 == s4 为false
 
 ![[Pasted image 20260914183556.png]]
+此时s3 == s5 为true
+
+![[Pasted image 20260914183824.png]]
