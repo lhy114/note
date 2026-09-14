@@ -81,3 +81,4 @@ Program Counter Register:
 
 ## 方法区
 
+![[Pasted image 20260914115612.png]]
