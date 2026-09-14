@@ -179,3 +179,18 @@ OutOfMemoryError: PermGen space
 
 ## 常量池
 ![[Pasted image 20260914181344.png]]
+
+### StringTable 串池
+
+`intern()` 是 Java `String` 提供的一个方法，核心作用可以一句话记：
+
+> **让一个字符串对象去“字符串常量池（String Pool / StringTable）”中寻找对应的字符串，并返回池中的那个引用。**
+
+先看最典型的例子：
+
+```
+String s1 = new String("hello");
+String s2 = s1.intern();
+
+System.out.println(s2 == "hello");  // true
+```
