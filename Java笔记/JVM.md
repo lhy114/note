@@ -177,3 +177,4 @@ OutOfMemoryError: PermGen space
 ### 方法区内存溢出
 ![[Pasted image 20260914121416.png]]
 
+## 常量池
