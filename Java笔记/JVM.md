@@ -194,3 +194,6 @@ String s2 = s1.intern();
 
 System.out.println(s2 == "hello");  // true
 ```
+
+
+![[Pasted image 20260914182335.png]]
