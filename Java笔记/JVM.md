@@ -333,3 +333,4 @@ GC 负责发现 DirectByteBuffer 不再使用；Cleaner 负责触发清理动作
 ```
 
 ![[Pasted image 20260914192718.png]]
+![[Pasted image 20260914192923.png]]
