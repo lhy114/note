@@ -178,3 +178,4 @@ OutOfMemoryError: PermGen space
 ![[Pasted image 20260914121416.png]]
 
 ## 常量池
+![[Pasted image 20260914181344.png]]
