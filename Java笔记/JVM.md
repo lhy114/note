@@ -38,3 +38,9 @@ Program Counter Register:
 ![[Pasted image 20260914103028.png]]
 
 ![[Pasted image 20260914102838.png]]
+
+问题辨析:
+1. 垃圾回收是否涉及栈内存?
+	答: 
+2. 栈内存分配越大越好吗?
+3. 方法内的局部变量是否线程安全?
