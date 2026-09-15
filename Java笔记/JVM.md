@@ -800,18 +800,20 @@ OOM 通常是当前线程抛出异常，但是内存不足也会影响其他线�
 ![[Pasted image 20260915113954.png]]
 
 ## 垃圾回收器
-### 串行
+### 串行（Serial GC）
+Serial GC 的所有 GC 工作基本都由单个 GC 线程完成。
+
 1. 单线程
 2. 堆内存较小，适合个人电脑
 ![[Pasted image 20260915184214.png]]
-### 吞吐量优先
+### 吞吐量优先 （Parallel GC / Parallel Old）
 1. 多线程
 2. 堆内存较大，多核cpu
 3. 让单位时间内， STW的时间最短
 ![[Pasted image 20260915184237.png]]
 这里的时候，用户线程是暂停的
 
-### 响应时间优先
+### 响应时间优先 （CMS / G1） concurrent mark sweep
 1. 多线程
 2. 堆内存较大，多核cpu
 3. 尽可能让单次 STW 的时间最短
