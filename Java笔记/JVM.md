@@ -414,4 +414,7 @@ GC Root → user → User对象
 6. 初始的一些依赖库的加载，例如Object
 
 
-### 五种引用
+### 四种引用
+![[Pasted image 20260915101405.png]]
+
+![[Pasted image 20260915101440.png]]
