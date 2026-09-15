@@ -461,3 +461,83 @@ User对象
 ![[Pasted image 20260915102155.png]]
 
 它的回收规则是：如果一个对象只通过软引用可达，**那么 JVM 在内存不足、需要回收空间时**，可以回收这个对象。
+
+```
+1. User user = new User();
+SoftReference<User> softRef = new SoftReference<>(user);
+
+此时有两个引用， 一个强引用；另外一个是弱引用
+
+GC Root
+   │
+   │ 强引用
+   ↓
+ user
+   │
+   ↓
+ User对象
+ 
+ 和
+ 
+ GC Root
+   │
+   │ 强引用
+   ↓
+softRef
+   │
+   │ 软引用
+   ↓
+ User对象
+
+2. user = null;
+此时就只有一个软引用了，那么User对象被回收的情况是
+
+User对象
+   ↓
+只剩软引用
+   ↓
+发生GC
+   ↓
+JVM发现内存压力较大
+   ↓
+可以清除软引用指向的User
+   ↓
+User对象最终被回收
+```
+
+#### 弱引用
+
+```
+User user = new User();
+WeakReference<User> weakRef = new WeakReference<>(user);
+
+GC Root
+   |
+   | 强引用
+   ↓
+ user
+   |
+   ↓
+ User对象
+ 
+ GC Root
+   |
+   ↓
+weakRef
+   |
+   | 弱引用
+   ↓
+User对象
+
+执行user = null
+GC Root
+   |
+   ↓
+weakRef
+   |
+   | 弱引用
+   ↓
+User对象
+
+
+```
