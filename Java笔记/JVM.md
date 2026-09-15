@@ -875,3 +875,6 @@ CMS 因此逐渐被 G1 替代。Oracle 也明确将 G1 定位为 CMS 的长期�
 
 ### G1
 ![[Pasted image 20260915190740.png]]
+
+#### G1 垃圾回收阶段
+![[Pasted image 20260915191028.png]]
