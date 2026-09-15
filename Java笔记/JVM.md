@@ -543,3 +543,87 @@ User对象
 ```
 
 #### 虚引用
+前三种引用：
+```
+强引用：
+    可以通过引用访问对象
+
+软引用：
+    可以通过 get() 获取对象
+
+弱引用：
+    可以通过 get() 获取对象
+```
+
+例如：
+
+```
+weakRef.get();
+```
+
+可以得到对象。
+
+但是虚引用：
+
+```
+PhantomReference<User> phantomRef =
+        new PhantomReference<>(user, queue);
+```
+
+调用：
+
+```
+phantomRef.get();
+```
+
+永远返回：
+
+```
+null
+```
+
+也就是说：
+
+```
+虚引用 ─────→ User对象
+
+但是：
+phantomRef.get() = null
+```
+
+
+```
+User user = new User();
+ReferenceQueue<User> queue = new ReferenceQueue<>();
+PhantomReference<User> ref = new PhantomReference<>(user, queue);
+
+此时的引用为
+GC Root
+
+user
+ |
+ ↓
+User对象
+
+
+ref
+ |
+ ↓
+虚引用
+ |
+ ↓
+User对象
+
+然后你现在将user = null， 此时User没有了强引用，只剩下了虚引用了，GC执行发现对象不可达。
+
+User对象
+    ↓
+准备回收
+    ↓
+phantomRef 放入 ReferenceQueue
+    ↓
+程序收到通知
+
+Reference<? extends User> r = queue.poll();
+```
+
