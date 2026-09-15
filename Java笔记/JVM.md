@@ -443,3 +443,21 @@ GC Root
 
 #### 软引用
 
+```
+SoftReference<User> ref = new SoftReference<>(new User());
+```
+
+此时整个可达性链路变成了：
+```
+GC Root
+   ↓
+  ref
+   ↓
+软引用
+   ↓
+User对象
+```
+
+![[Pasted image 20260915102155.png]]
+
+它的回收规则是：如果一个对象只通过软引用可达，**那么 JVM 在内存不足、需要回收空间时**，可以回收这个对象。
