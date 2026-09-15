@@ -1268,4 +1268,123 @@ Initial Mark
 
 一起完成。
 
-#### Root Region Scan
+##### Root Region Scan
+主要扫描：
+
+> Survivor Region 中可能引用 Old Region 的对象。
+
+为什么？
+
+假设：
+
+```
+Survivor
+   │
+   │ 引用
+   ↓
+Old Region
+```
+
+这个引用关系必须被记录。
+
+否则后面的并发标记可能不知道：
+
+```
+Old Region中的对象
+```
+
+其实还活着。
+
+---
+
+这个阶段：
+
+> **不能被下一次 Young GC 打断。**
+
+所以 G1 要尽快完成它。
+
+##### 并发标记 concurrent mark
+
+主要扫描：
+
+> Survivor Region 中可能引用 Old Region 的对象。
+
+为什么？
+
+假设：
+
+```
+Survivor
+   │
+   │ 引用
+   ↓
+Old Region
+```
+
+这个引用关系必须被记录。
+
+否则后面的并发标记可能不知道：
+
+```
+Old Region中的对象
+```
+
+其实还活着。
+
+---
+
+这个阶段：
+
+> **不能被下一次 Young GC 打断。**
+
+所以 G1 要尽快完成它。
+
+##### Remark
+Concurrent Mark 完成以后：
+
+> **Remark（最终标记/重新标记）**
+
+这一步：
+
+> **STW。**
+
+为什么需要 Remark？
+
+因为：
+
+```
+Concurrent Mark
+```
+
+期间：
+
+```
+业务线程还在修改引用
+```
+
+所以前面的标记结果可能存在：
+
+```
+遗漏
+```
+
+Remark就是：
+
+> **把并发标记期间发生的引用变化进行最终处理，完成标记结果的修正。**
+
+因此：
+
+```
+Concurrent Mark
+       ↓
+业务线程继续运行
+       ↓
+Remark
+       ↓
+STW
+       ↓
+最终确定哪些对象活着
+```
+
+
+##### cleanup
