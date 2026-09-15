@@ -627,3 +627,8 @@ phantomRef 放入 ReferenceQueue
 Reference<? extends User> r = queue.poll();
 ```
 
+![[Pasted image 20260915110208.png]]
+
+回到这个Cleaner是如何回收直接内存的， 我们知道直接内存是有一个Cleaner 虚引用到一个ByteBuffer对象， 然后这个ByteBuffer对象就会申请一个直接内存， 当这个ByteBuffer对象不可达的时候，此时就会被GC所回收，但是你就会注意到，这个直接内存没有无法被管理回收
+![[Pasted image 20260915110415.png]]
+那么，此时我们的虚引用对象Cleaner就会进入引用队列中去，然后通过一个线程就会监听到这个队列有了一个Cleaner对象，此时就会调用这个对象的cleaner方法， 通过unsafe对象的free释放这个直接内存
