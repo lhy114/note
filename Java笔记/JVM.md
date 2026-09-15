@@ -368,3 +368,5 @@ Direct Memory 被释放
 ![[Pasted image 20260915093721.png]]
 
 ### 可达性分析算法
+**可达性分析算法（Reachability Analysis）是 Java 垃圾回收判断“一个对象是否还能被使用”的核心思想。它不数“有多少个引用”，而是判断“从 GC Roots 出发，能不能找到这个对象”。**
+
