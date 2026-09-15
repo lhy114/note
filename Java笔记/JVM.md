@@ -1144,23 +1144,128 @@ Eden：
 
 > **触发 Young GC。**
 
----
 
-## Young GC 是 STW
+**然后对于每一个GC来说，它采用的是之前的复制算法，避免CMS带来的碎片化**
 
-首先：
+假设：
+
+```
+Eden：
+
+R1：
+[A][垃圾][B][垃圾][C]
+
+R2：
+[垃圾][D][垃圾][E]
+```
+
+GC扫描这些 Region。
+
+发现：
+
+```
+A、B、C、D、E
+```
+
+仍然存活。
+
+那么它不会在原来的 Eden Region 里继续留着。
+
+而是：
+
+> **复制到新的 Survivor / Old Region。**
+
+例如：
+
+```
+R1 Eden
+[A][垃圾][B][垃圾][C]
+       ↓
+       ↓ Copy
+       ↓
+
+R8 Survivor
+[A][B][C]
+
+R9 Survivor
+[D][E]
+```
+
+然后：
+
+```
+R1
+R2
+```
+
+直接变成：
+
+```
+Free
+```
+
+
+#### 并发标记
+##### 初始标记：initial mark
+第一阶段：
+
+> **Initial Mark（初始标记）**
+
+它做什么？
+
+主要是：
+
+> 找到 GC Roots 直接关联的对象，并标记它们。
+
+例如：
+
+```
+GC Root
+  │
+  ↓
+Object A
+  │
+  ↓
+Object B
+```
+
+这些对象都是：
+
+```
+存活对象
+```
+
+需要记录下来。
 
 ```
 业务线程
-████████████████
+████████████
 
        ↓
 
-Stop The World
+STW
 
        ↓
 
-GC线程开始工作
+Initial Mark
+
+       ↓
+
+业务线程恢复
 ```
 
-所有 Java 应用线程暂停。
+但是它通常很快。
+
+而且在 G1 中，Initial Mark 往往会**搭载在一次 Young GC 上完成**。
+
+也就是说：
+
+```
+Young GC
+   +
+Initial Mark
+```
+
+一起完成。
+
+#### Root Region Scan
