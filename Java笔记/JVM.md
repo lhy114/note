@@ -800,6 +800,8 @@ OOM 通常是当前线程抛出异常，但是内存不足也会影响其他线�
 ![[Pasted image 20260915113954.png]]
 
 ## 垃圾回收器
+https://docs.oracle.com/javase/8/docs/technotes/guides/vm/gctuning/
+
 ### 串行（Serial GC）
 Serial GC 的所有 GC 工作基本都由单个 GC 线程完成。
 
@@ -1124,3 +1126,6 @@ incoming
 
 ### 动态调整阈值
 ![[Pasted image 20260916094543.png]]
+
+
+## GC调优
