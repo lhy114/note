@@ -1135,6 +1135,7 @@ incoming
 ## 类文件结构
 ![[Pasted image 20260916103345.png]]
 
+
 ### 魔数和版本
 ![[Pasted image 20260916103525.png]]![[Pasted image 20260916103601.png]]
 ### 常量池
@@ -1159,4 +1160,4 @@ incoming
 ### 成员变量
 ![[Pasted image 20260916110942.png]]
 
-### Method信息
+### Method信息和附加属性
