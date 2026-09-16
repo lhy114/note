@@ -1138,11 +1138,25 @@ incoming
 ### 魔数和版本
 ![[Pasted image 20260916103525.png]]![[Pasted image 20260916103601.png]]
 ### 常量池
-一般保存的就是我们的类的信息、字段名、属性、方法、参数等看另外一个二进制文档就知道了
 [[二进制文档]]
+常量池保存的是类定义过程中需要反复引用的“名字、类型、常量和符号引用”。完整的字段声明、方法声明、访问权限和字节码，则由类文件的其他区域保存，并通过常量池索引连接起来。
+
+| 类别   | 示例                                          | 作用                    |
+| ---- | ------------------------------------------- | --------------------- |
+| 字面量  | `"Hello World"`、`123`、`3.14`                | 程序中的常量                |
+| 名称   | `java/lang/System`、`main`                   | 类名、字段名、方法名            |
+| 描述符  | `()V`、`(Ljava/lang/String;)V`               | 参数类型和返回值类型            |
+| 类和接口 | `Class -> Utf8`                             | 指向具体类名                |
+| 字段引用 | `Fieldref -> Class + NameAndType`           | 例如 `System.out`       |
+| 方法引用 | `Methodref -> Class + NameAndType`          | 例如 `println(String)`  |
+| 动态机制 | `MethodHandle`、`MethodType`、`InvokeDynamic` | `invokedynamic` 等高级机制 |
+| 模块信息 | `Module`、`Package`                          | Java 模块系统使用           |
+
 ![[Pasted image 20260916110924.png]]
 ### 访问标识和继承信息
 ![[Pasted image 20260916110905.png]]
 
 ### 成员变量
 ![[Pasted image 20260916110942.png]]
+
+### Method信息
