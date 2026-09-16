@@ -645,3 +645,40 @@ SELECT * FROM tb_user WHERE name = '小明';  -- 3 个分片都查一遍，合�
 #### 双主双从
 ![[Pasted image 20260808150828.png]]
 ![[Pasted image 20260808151031.png]]![[Pasted image 20260808151116.png]]
+
+
+# 登陆过程的简化流程
+```
+TCP/连接通道建立
+MySQL -> 客户端：握手包
+    包含：随机数 nonce、认证插件 caching_sha2_password
+
+客户端 -> MySQL：登录请求
+    包含：username=root
+    包含：database=mall
+    包含：authResponse=scramble
+    不包含：明文密码
+
+MySQL：查找账号 root@localhost 的认证缓存
+
+缓存命中：
+    MySQL 用缓存数据验证 scramble
+    正确 -> OK，登录完成
+
+缓存未命中：
+    MySQL -> 客户端：要求完整认证
+    客户端获取 MySQL 公钥
+    客户端用公钥加密密码
+    客户端 -> MySQL：RSA 加密结果
+    MySQL 用私钥解密并验证
+    验证成功 -> 写入缓存 -> OK
+```
+
+方式一：客户端本地配置公钥
+serverRSAPublicKeyFile=/path/public_key.pem
+
+方式二：连接过程中向 MySQL 申请
+allowPublicKeyRetrieval=true
+
+方式三：使用 TLS 连接
+sslMode=REQUIRED / VERIFY_IDENTITY
