@@ -1115,3 +1115,12 @@ R15
 ![[Pasted image 20260916094109.png]]
 
 ### G1 类卸载
+![[Pasted image 20260916094226.png]]
+
+### G1 回收巨型对象
+![[Pasted image 20260916094413.png]]
+
+incoming
+
+### 动态调整阈值
+![[Pasted image 20260916094543.png]]
