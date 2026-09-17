@@ -1369,3 +1369,5 @@ dup是赋值，pop static方法不用通过对象调用，可以直接通过类�
 
 finally会将要执行的代码块放在try、catch块后面，注意如果exception、try抓不到的范围，finally也要进行执行，因此finally有三块
 ![[Pasted image 20260917105113.png]]
+
+![[Pasted image 20260917105320.png]]
