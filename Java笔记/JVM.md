@@ -1185,7 +1185,7 @@ incoming
 
 ### 条件判断
 ![[Pasted image 20260917094719.png]]![[Pasted image 20260917094736.png]]
-
+### 后续内容
 
 ![[Pasted image 20260917095428.png]]
 
@@ -1319,3 +1319,49 @@ Java 虚拟机栈是线程私有的，每调用一次 Java 方法，就会创建
 
 dup是赋值，pop static方法不用通过对象调用，可以直接通过类名调用
 ![[Pasted image 20260917104018.png]]
+
+- `invokevirtual`
+    
+    - 普通类实例方法
+    - 使用 vtable 做动态分派
+- `invokeinterface`
+    
+    - 接口方法
+    - HotSpot 通常通过 itable 或相关优化机制处理
+- `invokespecial`
+    
+    - 构造方法、私有方法、`super` 调用
+    - 不做基于实际类型的动态分派
+- `invokestatic`
+    
+    - 静态方法
+    - 没有接收者，不经过 vtable
+- `invokedynamic`
+    
+    - Lambda、字符串拼接等
+    - 通过调用点和方法句柄机制处理，不是直接用 vtable
+- **`final`、`private`、`static` 方法**
+
+- `static` 方法不参与对象多态，不需要 vtable 分派
+- `private` 方法不能被继承和重写，通常走非虚调用
+- `final` 方法不能被重写，JVM 和 JIT 往往可以确定目标，减少或绕过 vtable 查找
+- `final` 方法也可能在 vtable 中占位，但运行时可进行去虚拟化优化
+
+
+**和普通方法表、itable 的区别**
+- **方法表**
+    - 保存类中所有方法的元数据
+    - 范围更全
+- **vtable**
+    - 主要服务于类继承体系中的虚方法分派
+    - 重点是重写后仍使用相同槽位
+- **itable**
+    - 服务于接口方法分派
+    - 因为一个类可以实现多个接口，接口布局不像单继承 vtable 那么直接
+
+
+![[Pasted image 20260917104429.png]]
+
+异常表
+![[Pasted image 20260917104454.png]]
+
