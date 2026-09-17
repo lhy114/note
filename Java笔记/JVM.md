@@ -1371,3 +1371,22 @@ finally会将要执行的代码块放在try、catch块后面，注意如果excep
 ![[Pasted image 20260917105113.png]]
 
 ![[Pasted image 20260917105320.png]]
+
+```
+public class test {  
+  
+    public static void main(String[] args) {  
+        System.out.println(test());  
+    }  
+  
+    public static int test(){  
+        int i = 10;  
+        try {  
+            return i;  
+        }finally {  
+            i = 20;  
+        }  
+    }  
+}
+```
+![[Pasted image 20260917105936.png]]
