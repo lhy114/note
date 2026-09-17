@@ -1181,3 +1181,7 @@ incoming
 ![[Pasted image 20260916110942.png]]
 
 ### Method信息和附加属性
+
+
+### 条件判断
+![[Pasted image 20260917094719.png]]![[Pasted image 20260917094736.png]]
