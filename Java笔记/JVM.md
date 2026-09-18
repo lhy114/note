@@ -1439,3 +1439,6 @@ synthetic bridge 不可见，不会违反重写的规则
 2. 准备： 为static变量分配空间，设置默认值
 ![[Pasted image 20260918134533.png]]
 3. 解析：将常量池中的符号引用解析为直接引用
+
+### 初始化
+![[Pasted image 20260918135058.png]]![[Pasted image 20260918135105.png]]
