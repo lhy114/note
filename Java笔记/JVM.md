@@ -1532,3 +1532,5 @@ TCCL：
 
 ## 运行期优化
 ![[Pasted image 20260918161308.png]]
+
+# JMM（java 内存模型）
