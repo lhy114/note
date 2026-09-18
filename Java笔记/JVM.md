@@ -1411,3 +1411,5 @@ public class test {
 ### 泛型擦除
 ![[Pasted image 20260918125121.png]]
 
+### 可变参数
+ ![[Pasted image 20260918125754.png]]
