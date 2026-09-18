@@ -1430,3 +1430,6 @@ synthetic bridge 不可见，不会违反重写的规则
 
 
 ## 类加载
+### 加载
+
+![[Pasted image 20260918133602.png]]
