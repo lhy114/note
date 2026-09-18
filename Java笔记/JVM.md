@@ -1397,3 +1397,17 @@ public class test {
 
 为什么要有两份引用
 **核心原因：`monitorenter` 会消耗掉操作数栈上的引用**，第一次消耗slot1的引用，`monitorenter` 需要从操作数栈顶部弹出一个对象引用，并给这个对象加锁。 那么你在解锁的时候就必须要要有一个对象引用执行monitorexit
+
+
+## 编译期处理
+![[Pasted image 20260918124831.png]]
+
+### 默认构造器
+![[Pasted image 20260918124852.png]]
+
+### 自动拆箱机制
+![[Pasted image 20260918124932.png]]
+
+### 泛型擦除
+![[Pasted image 20260918125121.png]]
+
