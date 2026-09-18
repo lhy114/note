@@ -1494,3 +1494,20 @@ Application ClassLoader
 |`ClassLoader.loadClass`|通常不会初始化|当前 ClassLoader|类加载、框架、插件、热部署
 
 线程上下文类加载器
+
+```
+应用代码
+  -> DriverManager.getConnection(...)
+  -> DriverManager 使用 ServiceLoader
+  -> ServiceLoader 获取线程上下文类加载器
+  -> 通常是 Application ClassLoader
+  -> 查找 META-INF/services/java.sql.Driver
+  -> 加载 MySQL Driver
+  -> JVM 初始化 MySQL Driver
+  -> 执行静态代码块
+  -> DriverManager.registerDriver(...)
+  -> DriverManager 保存 MySQL Driver
+  -> DriverManager 使用 MySQL Driver 建立连接
+```
+
+老版本靠应用代码 `Class.forName` 主动触发驱动加载，驱动的静态代码块再注册自己。JDBC 4 以后，`DriverManager` 用 `ServiceLoader` 自动发现驱动；由于它在父加载器世界里，看不到应用 jar，于是通过线程上下文类加载器拿到应用类加载器，再由应用类加载器加载 MySQL 驱动。驱动加载后仍然由自己的静态代码块调用 `DriverManager.registerDriver` 完成注册。
