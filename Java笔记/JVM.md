@@ -1511,3 +1511,21 @@ Application ClassLoader
 ```
 
 老版本靠应用代码 `Class.forName` 主动触发驱动加载，驱动的静态代码块再注册自己。JDBC 4 以后，`DriverManager` 用 `ServiceLoader` 自动发现驱动；由于它在父加载器世界里，看不到应用 jar，于是通过线程上下文类加载器拿到应用类加载器，再由应用类加载器加载 MySQL 驱动。驱动加载后仍然由自己的静态代码块调用 `DriverManager.registerDriver` 完成注册。
+
+JDK：
+  提供 Driver 接口
+  提供 DriverManager
+  提供 ServiceLoader
+  负责发起自动发现
+
+驱动：
+  实现 Driver 接口
+  提供 META-INF/services/java.sql.Driver
+  提供驱动类
+  执行 registerDriver
+  实现真正的 connect 逻辑
+
+TCCL：
+  告诉 ServiceLoader 去哪个类加载器范围找驱动
+
+![[Pasted image 20260918160118.png]]
