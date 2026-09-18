@@ -1429,7 +1429,7 @@ synthetic bridge 不可见，不会违反重写的规则
 
 
 
-## 类加载
+## 类加载阶段
 ### 加载
 ![[Pasted image 20260918133602.png]]![[Pasted image 20260918134025.png]]
 
@@ -1460,3 +1460,10 @@ _java_mirror：
 
 Class 对象隐藏字段：
   指向对应的 InstanceKlass
+
+
+
+## 类加载器
+![[Pasted image 20260918150711.png]]
+
+### 启动类加载器
