@@ -1465,5 +1465,24 @@ Class 对象隐藏字段：
 
 ## 类加载器
 ![[Pasted image 20260918150711.png]]
+JDK 9 及以后大致是：
+
+```
+Bootstrap ClassLoader
+        ^
+        |
+Platform ClassLoader
+        ^
+        |
+Application ClassLoader
+```
+
+
+双亲委派：先让父加载器尝试加载，父加载器加载不了，子加载器再自己加载。
+1. 先检查这个类是不是已经加载过
+2. 如果没有，委托父加载器加载
+3. 父加载器再委托它自己的父加载器
+4. 一直到 Bootstrap ClassLoader
+5. **如果父加载器都加载不了，当前加载器才调用 findClass 自己加载**
 
 ### 启动类加载器
