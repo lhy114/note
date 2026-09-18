@@ -1485,4 +1485,3 @@ Application ClassLoader
 4. 一直到 Bootstrap ClassLoader
 5. **如果父加载器都加载不了，当前加载器才调用 findClass 自己加载**
 
-### 启动类加载器
