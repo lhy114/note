@@ -1447,3 +1447,16 @@ synthetic bridge 不可见，不会违反重写的规则
 
 
 `InstanceKlass` 位于 Metaspace，是 HotSpot 使用 C++ 实现的类运行时元数据，JVM 正是依靠它来创建对象、调用方法、做类型检查和 GC。`java.lang.Class` 对象通常被称为 Java mirror，位于 Java 堆，是 Java 层能够访问和操作该类的一个对象。`InstanceKlass` 通过 `_java_mirror` 指向 `Class` 对象，`Class` 对象又通过隐藏字段关联回 `InstanceKlass`. `Class` 对象不是 JVM 理解类的必需品，而是 Java 代码、反射和 JNI 访问类的入口。
+
+
+InstanceKlass：
+  JVM 真正使用的类元数据，在 Metaspace
+
+java.lang.Class：
+  Java 世界使用的类代表对象，在 Java 堆
+
+_java_mirror：
+  InstanceKlass 指向 Class 对象的引用
+
+Class 对象隐藏字段：
+  指向对应的 InstanceKlass
