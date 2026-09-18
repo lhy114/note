@@ -1416,7 +1416,7 @@ public class test {
 #### foreach循环
 ![[Pasted image 20260918125854.png]]
 
-### switch 字符串、枚举、
+### switch 字符串、枚举、try-catch、方法重写
 ![[Pasted image 20260918130326.png]]
 
 ![[Pasted image 20260918130336.png]]
