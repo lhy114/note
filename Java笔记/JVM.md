@@ -1485,3 +1485,9 @@ Application ClassLoader
 4. 一直到 Bootstrap ClassLoader
 5. **如果父加载器都加载不了，当前加载器才调用 findClass 自己加载**
 
+|方法|是否初始化|谁来加载|常见用途|
+|---|---|---|---|
+|`Class.forName`|默认会初始化|调用者类加载器，或显式指定|反射、JDBC 驱动注册|
+|`ClassLoader.loadClass`|通常不会初始化|当前 ClassLoader|类加载、框架、插件、热部署
+
+线程上下文类加载器
