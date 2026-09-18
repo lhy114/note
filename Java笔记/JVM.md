@@ -1413,12 +1413,20 @@ public class test {
 
 ### 可变参数
  ![[Pasted image 20260918125754.png]]
-#### foreach循环
+### foreach循环
 ![[Pasted image 20260918125854.png]]
 
-### switch 字符串、枚举、try-catch、方法重写
+### switch 字符串、枚举、try-catch、方法重写、匿名内部类
+
 ![[Pasted image 20260918130326.png]]
 
 ![[Pasted image 20260918130336.png]]
 
-![[Pasted image 20260918130354.png]]![[Pasted image 20260918130405.png]]
+![[Pasted image 20260918130354.png]]![[Pasted image 20260918130405.png]]![[Pasted image 20260918131411.png]]
+![[Pasted image 20260918131441.png]]
+synthetic bridge 不可见，不会违反重写的规则
+![[Pasted image 20260918131521.png]]
+
+
+
+## 类加载
