@@ -1433,7 +1433,7 @@ synthetic bridge 不可见，不会违反重写的规则
 ### 加载
 ![[Pasted image 20260918133602.png]]![[Pasted image 20260918134025.png]]
 
-
+![[Pasted image 20260918143540.png]]
 
 ### 链接
 链接的目的，就是将已经加载的类接入到JVM运行时
