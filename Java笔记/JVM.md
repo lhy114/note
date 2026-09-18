@@ -1431,5 +1431,9 @@ synthetic bridge 不可见，不会违反重写的规则
 
 ## 类加载
 ### 加载
+![[Pasted image 20260918133602.png]]![[Pasted image 20260918134025.png]]
 
-![[Pasted image 20260918133602.png]]
+### 链接
+1. 验证： 验证类是否符合JVM规范，安全性检查
+2. 准备： 为static变量分配空间，设置默认值
+![[Pasted image 20260918134317.png]]
