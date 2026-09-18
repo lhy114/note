@@ -1413,3 +1413,7 @@ public class test {
 
 ### 可变参数
  ![[Pasted image 20260918125754.png]]
+#### foreach循环
+![[Pasted image 20260918125854.png]]
+
+### switch 字符串
