@@ -8,4 +8,4 @@
 ![[Pasted image 20260921100751.png]]
 
 ## 同步和异步
-![[Pasted image 20260921101131.png]]
+![[Pasted image 20260921101131.png]]![[Pasted image 20260921101730.png]]
