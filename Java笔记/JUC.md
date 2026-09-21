@@ -19,3 +19,47 @@
 
 ### 上下文切换
 ![[Pasted image 20260921112318.png]]
+
+## park线程
+![[Pasted image 20260921160018.png]]
+
+```
+Thread t = new Thread(() -> {
+
+    System.out.println("开始");
+
+    LockSupport.park();
+
+    System.out.println("继续执行");
+});
+
+t.start();
+
+Thread.sleep(1000);
+
+LockSupport.unpark(t);
+
+线程 t
+
+开始
+ ↓
+park()
+ ↓
+WAITING
+ ↓
+等待
+ ↓
+            main线程
+                │
+                │ unpark(t)
+                ↓
+        唤醒线程 t
+                │
+                ↓
+             RUNNABLE
+                │
+                ↓
+           继续执行
+```
+
+![[Pasted image 20260921160303.png]]
