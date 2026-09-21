@@ -63,3 +63,31 @@ WAITING
 ```
 
 ![[Pasted image 20260921160303.png]]
+
+```
+                    park()
+                      │
+          ┌───────────┴───────────┐
+          │                       │
+     interrupt=true          interrupt=false
+          │                       │
+          ▼                       ▼
+      直接返回              看 permit
+                                  │
+                           ┌──────┴──────┐
+                           │             │
+                       有 permit       无 permit
+                           │             │
+                           ▼             ▼
+                       直接返回         等待
+```
+
+## 守护线程与主线程
+![[Pasted image 20260921160557.png]]
+
+## 状态
+### 五种状态
+![[Pasted image 20260921160630.png]]
+
+### 六种状态
+![[Pasted image 20260921160652.png]]
