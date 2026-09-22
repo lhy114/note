@@ -93,5 +93,9 @@ WAITING
 ![[Pasted image 20260921160652.png]]
 
 # 并发之共享模型
+## 临界区和竞态条件
+![[Pasted image 20260922101444.png]]
 
+![[Pasted image 20260922101535.png]]![[Pasted image 20260922101549.png]]
 
+## synchronized 对象锁
