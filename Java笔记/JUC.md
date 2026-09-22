@@ -99,3 +99,4 @@ WAITING
 ![[Pasted image 20260922101535.png]]![[Pasted image 20260922101549.png]]
 
 ## synchronized 对象锁
+![[Pasted image 20260922103216.png]]
