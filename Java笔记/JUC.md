@@ -100,3 +100,6 @@ WAITING
 
 ## synchronized 对象锁
 ![[Pasted image 20260922103216.png]]
+
+## 变量的线程安全分析
+![[Pasted image 20260922105223.png]]
