@@ -143,3 +143,6 @@ WAITING
  ![[Pasted image 20260923105215.png]]
 ## 批量重偏向
 ![[Pasted image 20260923105757.png]]
+
+## wait / notify
+![[Pasted image 20260923114932.png]]
