@@ -103,3 +103,7 @@ WAITING
 
 ## 变量的线程安全分析
 ![[Pasted image 20260922105223.png]]
+
+## Monitor
+### 对象头
+![[Pasted image 20260923095201.png]]
