@@ -106,4 +106,8 @@ WAITING
 
 ## Monitor
 ### 对象头
-![[Pasted image 20260923095201.png]]
+![[Pasted image 20260923095201.png]]![[Pasted image 20260923095216.png]]
+
+这里在说明一下 klass word一般是描述这个类的方法、变量等信息[[JVM#类加载阶段]]
+
+### Monitor(锁)
