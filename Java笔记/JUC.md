@@ -146,7 +146,7 @@ WAITING
 
 ## wait / notify
 ![[Pasted image 20260923114932.png]]![[Pasted image 20260923115959.png]]
-这里起始想要说明的是，你要调用wait和notify方法，你必须要 **获得锁对象**，简单来说，至少要在synchronized这段代码里面才能调用
+这里起始想要说明的是，你要调用**wait和notify方法**，你必须要 **获得锁对象**，简单来说，至少要在synchronized这段代码里面才能调用
 
 ### sleep和wait的区别
 ![[Pasted image 20260923120151.png]]
