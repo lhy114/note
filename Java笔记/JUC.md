@@ -152,3 +152,10 @@ WAITING
 ![[Pasted image 20260923120151.png]]
 但是他们的状态都是TIME_WAITING
 
+![[Pasted image 20260923121516.png]]
+
+## 模式
+### 同步模式之保护性暂停
+![[Pasted image 20260923121652.png]]
+
+### 异步模式之生产者/消费者
