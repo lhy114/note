@@ -134,3 +134,8 @@ WAITING
 ![[Pasted image 20260923102251.png]]![[Pasted image 20260923103359.png]]
 
 ## 自旋优化
+![[Pasted image 20260923103651.png]]
+![[Pasted image 20260923103628.png]]
+
+## 偏向锁
+![[Pasted image 20260923103944.png]]
