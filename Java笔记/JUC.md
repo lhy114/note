@@ -111,3 +111,6 @@ WAITING
 这里在说明一下 klass word一般是描述这个类的方法、变量等信息[[JVM#类加载阶段]]
 
 ### Monitor(锁)
+![[Pasted image 20260923100011.png]]![[Pasted image 20260923100025.png]]
+
+这里就说明了，obj相当于一个房间，当synchronized一个对象的时候，首先会更具这个对象的对象头里面的markword字段，查询关联的monitor，这个monitor会记录当前这个锁的拥有者，entrylist代表的是当前被阻塞的队列有哪些
