@@ -150,3 +150,5 @@ WAITING
 
 ### sleep和wait的区别
 ![[Pasted image 20260923120151.png]]
+但是他们的状态都是TIME_WAITING
+
