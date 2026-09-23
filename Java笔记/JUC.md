@@ -140,4 +140,4 @@ WAITING
 ## 偏向锁
 ![[Pasted image 20260923103944.png]]
 ![[Pasted image 20260923104118.png]]
- 
+ ![[Pasted image 20260923105215.png]]
