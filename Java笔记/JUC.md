@@ -173,3 +173,7 @@ join就是这样实现的
 ![[Pasted image 20260924091731.png]]
 
 ![[Pasted image 20260924091810.png]]![[Pasted image 20260924091819.png]]![[Pasted image 20260924091838.png]]![[Pasted image 20260924091850.png]]
+
+## 线程的活跃性
+### 死锁
+![[Pasted image 20260924093417.png]]
