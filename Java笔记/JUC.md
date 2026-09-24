@@ -186,5 +186,8 @@ join就是这样实现的
 
 ## ReentrantLock
 ![[Pasted image 20260924095719.png]]
-
+![[Pasted image 20260924095846.png]]
 ### 可重入
+![[Pasted image 20260924095949.png]]
+
+### 可打断
