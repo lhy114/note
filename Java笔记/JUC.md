@@ -180,3 +180,11 @@ join就是这样实现的
 
 ### 活锁
 ![[Pasted image 20260924094804.png]]
+
+### 饥饿问题
+![[Pasted image 20260924095349.png]]
+
+## ReentrantLock
+![[Pasted image 20260924095719.png]]
+
+### 可重入
