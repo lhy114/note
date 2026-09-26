@@ -235,3 +235,5 @@ public class Test17 {
 
 解决：
 ![[Pasted image 20260926090551.png]]![[Pasted image 20260926091041.png]]
+
+“`synchronized` 提供的是 Java 层面的同步语义，而这个语义最终需要 JVM/JIT 和底层硬件来实现。因此，`synchronized` 本身并不是在物理意义上禁止缓存，而是规定了哪些缓存、寄存器复用和代码优化不能影响程序所观察到的结果。”
