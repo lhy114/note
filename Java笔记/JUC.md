@@ -267,3 +267,10 @@ volatile 写 instance
    ↓
 对象正式“发布”
 ```
+
+`volatile` 不是为了单纯消灭“指令重排序”，而是为了保证 `instance` 的安全发布，使其他线程即使观察到这个引用，也不会观察到一个尚未正确初始化的对象。
+
+## happens-before 规则
+![[Pasted image 20260926112206.png]]
+![[Pasted image 20260926112230.png]]
+![[Pasted image 20260926112309.png]]![[Pasted image 20260926112332.png]]
