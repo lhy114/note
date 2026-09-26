@@ -245,5 +245,6 @@ public class Test17 {
 ## volatile 原理
 ![[Pasted image 20260926101611.png]]![[Pasted image 20260926101707.png]]![[Pasted image 20260926101831.png]]
 
-## double check locking
+## double check locking问题
+请详细看  https://www.bilibili.com/video/BV16J411h7Rd/?spm_id_from=333.788.player.switch&vd_source=43668b2556859a05028a20161f3f22c6&p=150
 ![[Pasted image 20260926103709.png]]
