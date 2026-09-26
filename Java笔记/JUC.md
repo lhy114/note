@@ -273,4 +273,9 @@ volatile 写 instance
 ## happens-before 规则
 ![[Pasted image 20260926112206.png]]
 ![[Pasted image 20260926112230.png]]
-![[Pasted image 20260926112309.png]]![[Pasted image 20260926112332.png]] ![[Pasted image 20260926112512.png]]![[Pasted image 20260926112816.png]]
+![[Pasted image 20260926112309.png]]![[Pasted image 20260926112332.png]] ![[Pasted image 20260926112512.png]]![[Pasted image 20260926112816.png]]![[Pasted image 20260926112919.png]]
+
+问题1. 为了避免其子类不规范的覆盖方法，从而导致破坏了单例性
+问题2：反序列化的时候如果没有readResolve，那么会重新创建一个对象，此时就不在是单例模式了。
+问题3：为了避免其他的人来构建方法，不能通过反射来进行创建实实力，因为能够反射能够获得构造方法
+问题4：能够bao
