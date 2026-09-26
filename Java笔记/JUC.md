@@ -207,3 +207,31 @@ reentrantlock默认是不公平锁，可以修改为公平锁
 ## 可见性
 定义：一个数据被A线程进行修改，但是B线程任然读取的是旧值。
 案例：线程A和线程B共享一个静态变量flag，线程B通过while 读取这个flag变量，此时一段时间后线程A读取并修改这个变量flag，B此时读不到新值，因为对应的flag值由于受到JIT的优化，将其缓存到CPU缓存中，线程直接从CPU缓存读取，而不是堆里面
+
+```
+public class Test17 {  
+  
+    static boolean flag = true;  
+  
+    static void main() {  
+        new Thread(()->{  
+            System.out.println("线程运行");  
+            while(flag){  
+                //....  
+            }  
+            System.out.println("线程停止");  
+        }).start();  
+  
+        try {  
+            Thread.sleep(1000);  
+        } catch (InterruptedException e) {  
+            throw new RuntimeException(e);  
+        }  
+  
+        flag = false;  
+    }  
+}
+```
+
+解决：
+![[Pasted image 20260926090551.png]]
