@@ -270,6 +270,21 @@ volatile 写 instance
 
 `volatile` 不是为了单纯消灭“指令重排序”，而是为了保证 `instance` 的安全发布，使其他线程即使观察到这个引用，也不会观察到一个尚未正确初始化的对象。
 
+
+另外一个方法：这里利用的JVM对 `<clinit>`（类初始化方法）的线程安全保证，实现了懒加载 + 单例。
+```
+public final class Singleton1 {  
+    private Singleton1() {}  
+  
+    private static class LazyHolder {  
+        private static final Singleton1 INSTANCE = new Singleton1();  
+    }  
+  
+    public static Singleton1 getInstance() {  
+        return LazyHolder.INSTANCE;  
+    }  
+}
+```
 ## happens-before 规则
 ![[Pasted image 20260926112206.png]]
 ![[Pasted image 20260926112230.png]]
