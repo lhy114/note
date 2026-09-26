@@ -200,3 +200,8 @@ reentrantlock默认是不公平锁，可以修改为公平锁
 ![[Pasted image 20260925154546.png]]
 
 
+
+
+# 共享模型之内存
+![[Pasted image 20260926085615.png]]
+## 可见性
