@@ -241,3 +241,6 @@ public class Test17 {
 ## 有序性
 ![[Pasted image 20260926100338.png]]
 ![[Pasted image 20260926100659.png]]![[Pasted image 20260926101101.png]]
+
+## volatile 原理
+![[Pasted image 20260926101611.png]]
