@@ -306,3 +306,6 @@ CAS：compare and swap
 ## 原子引用
 atomicReference 就没有讲解了，但是会出现ABA问题
 ![[Pasted image 20260927110452.png]]![[Pasted image 20260927110759.png]]
+
+## 原子数组
+![[Pasted image 20260927113737.png]]
