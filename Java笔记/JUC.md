@@ -302,3 +302,7 @@ CAS：compare and swap
 ![[Pasted image 20260927103231.png]]![[Pasted image 20260927103450.png]]![[Pasted image 20260927103731.png]]![[Pasted image 20260927104047.png]]
 ## 原子整数
 ![[Pasted image 20260927104243.png]]
+
+## 原子引用
+atomicReference 就没有讲解了，但是会出现ABA问题
+![[Pasted image 20260927110452.png]]![[Pasted image 20260927110759.png]]
