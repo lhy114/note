@@ -313,3 +313,5 @@ atomicReference 就没有讲解了，但是会出现ABA问题
 ## 字段更新器
 ![[Pasted image 20260927114347.png]]
 
+![[Pasted image 20260927115156.png]]
+
