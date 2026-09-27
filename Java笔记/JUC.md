@@ -299,4 +299,6 @@ public final class Singleton1 {
 # 共享模型之无锁
 ## CAS于volatile
 CAS：compare and swap
-![[Pasted image 20260927103231.png]]![[Pasted image 20260927103450.png]]![[Pasted image 20260927103731.png]]
+![[Pasted image 20260927103231.png]]![[Pasted image 20260927103450.png]]![[Pasted image 20260927103731.png]]![[Pasted image 20260927104047.png]]
+## 原子整数
+![[Pasted image 20260927104243.png]]
