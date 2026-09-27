@@ -297,3 +297,5 @@ public final class Singleton1 {
 问题5：如果是用静态成员变量，我们实现的饿汉式加载，但是如果我们采用的是静态方法，我们能够通过DCL实现懒汉式加载。
 
 # 共享模型之无锁
+## CAS于volatile
+CAS：compare and swap
