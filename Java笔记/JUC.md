@@ -315,3 +315,4 @@ atomicReference 就没有讲解了，但是会出现ABA问题
 
 ![[Pasted image 20260927115156.png]]
 
+# 共享模型之不可变
