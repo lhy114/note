@@ -323,4 +323,4 @@ atomicReference 就没有讲解了，但是会出现ABA问题
 对于string类型来说，为了避免你修改创建的对象发生对应的并发问题，以及修改不可变类，string的substr这类的方法，其实是new 了一个新的char数组，或者从一个字符串里面进行的拷贝。
 
 ## 享元模式
-![[Pasted image 20260930135924.png]]![[Pasted image 20260930140059.png]]
+![[Pasted image 20260930135924.png]]![[Pasted image 20260930140059.png]]![[Pasted image 20260930140416.png]]
