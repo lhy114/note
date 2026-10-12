@@ -340,5 +340,4 @@ atomicReference 就没有讲解了，但是会出现ABA问题
 ![[Pasted image 20261012102932.png]]![[Pasted image 20261012104701.png]]
 
 ### 拒绝策略
-
 ![[Pasted image 20261012105919.png]]
