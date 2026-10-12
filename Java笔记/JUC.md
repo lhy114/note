@@ -333,3 +333,8 @@ atomicReference 就没有讲解了，但是会出现ABA问题
 读屏障：
 ① 限制读操作的重排序
 ② 配合缓存/内存系统，保证后续读取能观察到规定的内存状态![[Pasted image 20260930144548.png]]
+
+
+# 线程池
+## ThreadPoolExecutor
+![[Pasted image 20261012102932.png]]
