@@ -347,3 +347,9 @@ atomicReference 就没有讲解了，但是会出现ABA问题
 
 ## 饥饿
 ![[Pasted image 20261013103835.png]]
+![[Pasted image 20261013104805.png]]
+
+## 任务调度线程池
+### Timer
+![[Pasted image 20261013104922.png]]
+
