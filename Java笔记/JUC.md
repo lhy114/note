@@ -341,3 +341,9 @@ atomicReference 就没有讲解了，但是会出现ABA问题
 
 ### 拒绝策略
 ![[Pasted image 20261012105919.png]]
+
+## 工作线程
+![[Pasted image 20261013103618.png]]
+
+## 饥饿
+![[Pasted image 20261013103835.png]]
