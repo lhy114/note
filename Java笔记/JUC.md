@@ -353,3 +353,10 @@ atomicReference 就没有讲解了，但是会出现ABA问题
 ### Timer
 ![[Pasted image 20261013104922.png]]
 
+
+### ScheduledThreadPoolExecutor
+![[Pasted image 20261013105846.png]]
+
+![[Pasted image 20261013110033.png]]
+
+这里要注意他不会主动处理异常，你要手动加上去
