@@ -369,3 +369,5 @@ atomicReference 就没有讲解了，但是会出现ABA问题
 
 ## aqs
 ![[Pasted image 20261013113317.png]]
+
+## ReentranLock 原理
