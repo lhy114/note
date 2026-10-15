@@ -377,6 +377,14 @@ atomicReference 就没有讲解了，但是会出现ABA问题
 ![[Pasted image 20261013111426.png]]![[Pasted image 20261013111544.png]]
 
 ## Fork/join
+
+|方法|作用|
+|---|---|
+|`fork()`|异步提交子任务，让它有机会由其他工作线程执行|
+|`join()`|等待任务完成并获取结果|
+|`compute()`|定义任务具体怎么执行、怎么拆分|
+|`invoke()`|提交任务并等待最终结果|
+
 ![[Pasted image 20261013112133.png]]
 
 ## aqs
