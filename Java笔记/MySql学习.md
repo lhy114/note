@@ -281,7 +281,7 @@ DML也就是update、delete、insert这些操作，如果where等走的是索引
 ![[Pasted image 20260807143142.png]]
 ##### 变量定义
 ![[Pasted image 20260807141940.png]]
-![[Pasted image 20260807142349.png]]![[Pasted image 20260807142658.png]]
+![[Pasted image 20260807142349.png]]
 ##### if
 ![[Pasted image 20260807142844.png]]
 
